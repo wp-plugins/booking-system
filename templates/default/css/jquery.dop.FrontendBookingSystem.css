@@ -1,0 +1,1488 @@
+@charset "utf-8";
+
+/*
+* Title                   : Booking System (WordPress Plugin)
+* Version                 : 1.0
+* File                    : jquery.dop.FrontendBookingSystem.css
+* File Version            : 1.0
+* Created / Last Modified : 29 July 2013
+* Author                  : Dot on Paper
+* Copyright               : © 2013 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : Booking System Stylesheet.
+*/
+
+.DOPBookingSystemContainer{
+    min-width: 250px;
+}
+
+.DOPBookingSystemContainer .loader{
+    background: url('../images/loader.gif') no-repeat center;
+    background-color: #eeeeee;
+    height: 15px;
+    margin: 10px 0 0 0;
+    padding: 5px 0;
+}
+
+/******************************************************************************* Container */
+
+.DOPBookingSystem_Container{
+    background: #ffffff;
+    font-family: Arial, Helvetica, sans-serif !important;
+    line-height: 1em !important;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.DOPBookingSystem_Clear{
+    clear: both;
+}
+
+/******************************************************************************* Navigation */
+
+.DOPBookingSystem_Navigation{
+    background-color: #ededed;
+    -webkit-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 200;
+}
+
+.DOPBookingSystem_Navigation .previous_btn{
+    background: url("../images/sprite.png") 0 0;
+    cursor: pointer;
+    display: none;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    width: 24px;
+    z-index: 100;
+}
+
+.DOPBookingSystem_Navigation .previous_btn.hover{
+    background: url("../images/sprite.png") -25px 0;
+}
+
+.DOPBookingSystem_Navigation .next_btn{
+    background: url("../images/sprite.png") -50px 0;
+    cursor: pointer;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 24px;
+    z-index: 200;
+}
+
+.DOPBookingSystem_Navigation .next_btn.hover{
+    background: url("../images/sprite.png") -75px 0;
+}
+
+.DOPBookingSystem_Navigation .add_btn{
+    background: url("../images/sprite.png") -100px 0;
+    cursor: pointer;
+    height: 24px;
+    left: 10px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    width: 24px;
+    z-index: 200;
+}
+
+.DOPBookingSystem_Navigation .add_btn.hover{
+    background: url("../images/sprite.png") -125px 0;
+}
+
+.DOPBookingSystem_Navigation .remove_btn{
+    background: url("../images/sprite.png") -150px 0;
+    cursor: pointer;
+    display: none;
+    height: 24px;
+    left: 40px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    width: 24px;
+    z-index: 200;
+}
+
+.DOPBookingSystem_Navigation .remove_btn.hover{
+    background: url("../images/sprite.png") -175px 0;
+}
+
+.DOPBookingSystem_Navigation .month_year{
+    color: #606060;
+    font-family: Hevetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.DOPBookingSystem_Navigation .week{
+    margin: 0;
+    padding: 0 5px 10px 5px;
+}
+
+.DOPBookingSystem_Navigation .week .day{
+    color: #606060;
+    display: block;
+    font-family: Hevetica, Arial, sans-serif;
+    font-size: 12px;
+    float: left;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/******************************************************************************* Calendar */
+
+.DOPBookingSystem_Calendar{
+    margin: 0;
+    position: relative;
+    text-align: center;
+    z-index: 300;
+}
+
+.DOPBookingSystem_Calendar .loader{
+    background: url('../images/loader.gif') no-repeat center;
+    background-color: #eeeeee;
+    height: 15px;
+    margin: 10px 0 0 0;
+    padding: 5px 0;
+}
+
+.DOPBookingSystem_Month{
+    background: #eeeeee;
+    margin: 10px 0 0 0;
+    padding: 5px;
+}
+
+.DOPBookingSystem_Month .month_year{
+    border-bottom: 1px solid #e0e0e0;
+    color: #6f6f6f;
+    font-size: 15px;
+    font-weight: bolder;
+    line-height: 1em;
+    margin: 0 0 10px 0;
+    padding: 5px 0 10px 5px;
+    position: relative;
+    text-align: left;
+}
+
+/************************************************************************ Day */
+
+.DOPBookingSystem_Day{
+    float: left;
+    margin: 2px 0 0 0;
+    padding: 0;
+    /*width: 14.285%;*/
+}
+
+.DOPBookingSystem_Day .bind-left, 
+.DOPBookingSystem_Day .bind-right{
+    float: left;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: 1px;
+}
+
+.DOPBookingSystem_Day .bind-left.enabled,
+.DOPBookingSystem_Day .bind-left.extended,  
+.DOPBookingSystem_Day .bind-right.enabled,  
+.DOPBookingSystem_Day .bind-right.extended{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.DOPBookingSystem_Day .bind-left .header, 
+.DOPBookingSystem_Day .bind-right .header{
+    background: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border: 1px solid #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border-left: none !important;
+    border-right: none !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    line-height: 15px !important;
+    margin: 0 !important;
+    padding: 2px 0 2px 0 !important;
+    width: 1px !important;
+}
+
+.DOPBookingSystem_Day .bind-left .content, 
+.DOPBookingSystem_Day .bind-right .content{
+    background: #ffffff !important;
+    border-bottom: 1px solid #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    margin: 0 !important;
+    padding: 4px 0 4px 0 !important;
+    width: 1px !important;
+}
+
+.DOPBookingSystem_Day .bind-content{
+    float: left;
+}
+
+.DOPBookingSystem_Day .bind-content .header{
+    background: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border: 1px solid #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    -webkit-border-top-left-radius: 2px !important;
+    -webkit-border-top-right-radius: 2px !important;
+    -moz-border-topleft-radius: 2px !important;
+    -moz-border-topright-radius: 2px !important;
+    border-top-left-radius: 2px !important;
+    border-top-right-radius: 2px !important;
+    display: block !important;
+    font-size: 12px !important;
+    line-height: 1em !important;
+    margin: 0 !important;
+    padding: 2px 0 2px 5px !important;
+    position: relative !important;
+    width: auto !important;   
+}
+
+.DOPBookingSystem_Day .bind-content.group1 .header{
+    -webkit-border-top-left-radius: 2px !important;
+    -webkit-border-top-right-radius: 0px !important;
+    -moz-border-topleft-radius: 2px !important;
+    -moz-border-topright-radius: 0px !important;
+    border-top-left-radius: 2px !important;
+    border-top-right-radius: 0px !important;
+    border-right: none !important;
+}
+
+.DOPBookingSystem_Day .bind-content.group2 .header,
+.DOPBookingSystem_Day .bind-content.group3.extended .header{
+    -webkit-border-top-left-radius: 0px !important;
+    -webkit-border-top-right-radius: 0px !important;
+    -moz-border-topleft-radius: 0px !important;
+    -moz-border-topright-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-left-color: transparent !important;
+    border-right-color: transparent !important;
+}
+
+.DOPBookingSystem_Day .bind-content.group0.extended .header,
+.DOPBookingSystem_Day .bind-content.group1.extended .header,
+.DOPBookingSystem_Day .bind-content.group3 .header{
+    -webkit-border-top-left-radius: 0px !important;
+    -webkit-border-top-right-radius: 2px !important;
+    -moz-border-topleft-radius: 0px !important;
+    -moz-border-topright-radius: 2px !important;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 2px !important;
+    border-left: none !important;
+}
+
+.DOPBookingSystem_Day .bind-content .header .day{
+    color: #ffffff;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 15px;
+    margin: 0;
+    padding: 0;
+    position: relative !important;
+}
+
+.DOPBookingSystem_Day .bind-content .header .co{
+    background: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border: 1px solid #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border-right: none;
+    -webkit-border-top-left-radius: 2px !important;
+    -moz-border-topleft-radius: 2px !important;
+    border-top-left-radius: 2px !important;
+    height: 19px;
+    left: -1px;
+    margin: 0 !important;
+    padding: 0px 0px 0px 1px !important;
+    position: absolute !important;
+    top: -1px;
+    width: 50% !important;
+}
+
+.DOPBookingSystem_Day .bind-content .header .ci{
+    background: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border: 1px solid #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border-left: none;
+    -webkit-border-top-right-radius: 2px !important;
+    -moz-border-topright-radius: 2px !important;
+    border-top-right-radius: 2px !important;
+    height: 19px;
+    right: -1px;
+    margin: 0 !important;
+    position: absolute !important;
+    top: -1px;
+    width: 50% !important;
+}
+
+.DOPBookingSystem_Day .bind-content.group2 .header .co{
+    -webkit-border-top-left-radius: 0px !important;
+    -moz-border-topleft-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+    border-left-color: transparent !important;
+}
+
+.DOPBookingSystem_Day .bind-content.group3.extended .header .co{
+    -webkit-border-top-left-radius: 0px !important;
+    -moz-border-topleft-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+    border-left-color: transparent !important;
+}
+
+.DOPBookingSystem_Day .bind-content.group0.extended .header .co,
+.DOPBookingSystem_Day .bind-content.group1.extended .header .co,
+.DOPBookingSystem_Day .bind-content.group1 .header .ci,
+.DOPBookingSystem_Day .bind-content.group2 .header .ci{
+    -webkit-border-top-right-radius: 0px !important;
+    -moz-border-topright-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-right-color: transparent !important;
+}
+
+.DOPBookingSystem_Day .bind-content .header .info{
+    background: url("../images/sprite.png") -200px 0;
+    cursor: pointer;
+    float: right;
+    height: 15px;
+    margin: 0 2px 0 0;
+    width: 15px;
+    position: relative !important;
+}
+
+.DOPBookingSystem_Day .bind-content .header .info:hover{
+    background: url("../images/sprite.png") -215px 0;
+}
+
+.DOPBookingSystem_Day .bind-content .content{
+    background: #ffffff !important;
+    border: 1px solid #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border-top: none !important;
+    -webkit-border-bottom-left-radius: 2px !important;
+    -webkit-border-bottom-right-radius: 2px !important;
+    -moz-border-bottomleft-radius: 2px !important;
+    -moz-border-bottomright-radius: 2px !important;
+    border-bottom-left-radius: 2px !important;
+    border-bottom-right-radius: 2px !important;
+    color: #222222 !important;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 12px !important;
+    line-height: 1em !important;
+    margin: 0 !important;
+    padding: 4px 5px 4px 5px !important;
+    position: relative !important;
+    text-align: left !important;
+    vertical-align: middle !important;
+    width: auto !important;
+}
+
+.DOPBookingSystem_Day .bind-content .content .co{
+    background: transparent;
+    border: 1px solid #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border-right: none;
+    border-top: none;
+    -webkit-border-bottom-left-radius: 2px !important;
+    -moz-border-bottomleft-radius: 2px !important;
+    border-bottom-left-radius: 2px !important;
+    left: -1px;
+    height: inherit !important;
+    margin: 0 !important;
+    padding: 4px 0px 4px 1px !important;
+    position: absolute !important;
+    top: 0;
+    width: 50% !important;
+}
+
+.DOPBookingSystem_Day .bind-content .content .ci{
+    background: transparent;
+    border: 1px solid #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border-left: none;
+    border-top: none;
+    -webkit-border-bottom-right-radius: 2px !important;
+    -moz-border-bottomright-radius: 2px !important;
+    border-bottom-right-radius: 2px !important;
+    height: inherit !important;
+    margin: 0 !important;
+    padding: 4px 1px 4px 0 !important;
+    position: absolute !important;
+    right: -1px;
+    top: 0;
+    width: 50% !important;
+}
+
+.DOPBookingSystem_Day .bind-content.group1 .content{
+    -webkit-border-bottom-left-radius: 3px !important;
+    -webkit-border-bottom-right-radius: 0px !important;
+    -moz-border-bottomleft-radius: 3px !important;
+    -moz-border-bottomright-radius: 0px !important;
+    border-bottom-left-radius: 3px !important;
+    border-bottom-right-radius: 0px !important;
+    border-right-color: transparent !important;
+}
+
+.DOPBookingSystem_Day .bind-content.group0.extended .content,
+.DOPBookingSystem_Day .bind-content.group1.extended .content,
+.DOPBookingSystem_Day .bind-content.group3 .content{
+    -webkit-border-bottom-left-radius: 0px !important;
+    -webkit-border-bottom-right-radius: 3px !important;
+    -moz-border-bottomleft-radius: 0px !important;
+    -moz-border-bottomright-radius: 3px !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 3px !important;
+    border-left-color: transparent !important;
+}
+
+.DOPBookingSystem_Day .bind-content.group2 .content,
+.DOPBookingSystem_Day .bind-content.group3.extended .content{
+    -webkit-border-bottom-left-radius: 0px !important;
+    -webkit-border-bottom-right-radius: 0px !important;
+    -moz-border-bottomleft-radius: 0px !important;
+    -moz-border-bottomright-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-left-color: transparent !important;
+    border-right-color: transparent !important;
+}
+
+.DOPBookingSystem_Day .bind-content.group0.extended .content .co,
+.DOPBookingSystem_Day .bind-content.group1.extended .content .co,
+.DOPBookingSystem_Day .bind-content.group2 .content .co,
+.DOPBookingSystem_Day .bind-content.group3 .content .co{
+    -webkit-border-bottom-left-radius: 0px !important;
+    -moz-border-bottomleft-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-left: none !important;
+}
+
+.DOPBookingSystem_Day .bind-content.group1 .content .ci,
+.DOPBookingSystem_Day .bind-content.group2 .content .ci,
+.DOPBookingSystem_Day .bind-content.group3.extended .content .ci{
+    -webkit-border-bottom-right-radius: 0px !important;
+    -moz-border-bottomright-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-right-color: transparent !important;
+    border-right: transparent !important;
+}
+
+
+.DOPBookingSystem_Day .bind-content .content .old-price{
+    color: #909090;
+    float: left;
+    font-size: 12px;        
+    line-height: 1em;
+    margin: 0 !important;
+    text-decoration: line-through;
+}
+
+.DOPBookingSystem_Day .bind-content .content .price{
+    color: #606060;
+    float: left;
+    font-size: 12px;    
+    font-weight: bold;
+    line-height: 1em;
+    margin: 0 !important;
+    padding: 0 5px 0 0;
+}
+
+.DOPBookingSystem_Day .bind-content .content .available{
+    color: #909090;
+    font-size: 11px;
+    line-height: 1em;
+    margin: 0 !important;
+    width: 100%;
+}
+
+/* Last Month Day */
+
+.DOPBookingSystem_Day.last_month,
+.DOPBookingSystem_Day.last_month .bind-left.enabled,
+.DOPBookingSystem_Day.last_month .bind-left.extended,  
+.DOPBookingSystem_Day.last_month .bind-right.enabled,  
+.DOPBookingSystem_Day.last_month .bind-right.extended{
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+/* Past Day */
+
+.DOPBookingSystem_Day.past_day,
+.DOPBookingSystem_Day.past_day .bind-left.enabled,
+.DOPBookingSystem_Day.past_day .bind-left.extended,  
+.DOPBookingSystem_Day.past_day .bind-right.enabled,  
+.DOPBookingSystem_Day.past_day .bind-right.extended{
+    opacity: 0.25;
+    filter: alpha(opacity=25);
+}
+
+/* Current Month Day */
+
+.DOPBookingSystem_Day.curr_month{
+}
+
+/* Next Month Day */
+
+.DOPBookingSystem_Day.next_month{
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+/* Available Day */
+
+.DOPBookingSystem_Day.available .header,
+.DOPBookingSystem_Day .header .co.available,
+.DOPBookingSystem_Day .header .ci.available,
+.DOPBookingSystem_Day .bind-left.extended.available .header{
+    background-color: #68ba68 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+    border-color: #68ba68 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBookingSystem_Day.available .content,
+.DOPBookingSystem_Day .content .co.available,
+.DOPBookingSystem_Day .content .ci.available,
+.DOPBookingSystem_Day .bind-left.extended.available .content{
+    border-color: #68ba68 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBookingSystem_Day .header .co.available,
+.DOPBookingSystem_Day .header .ci.available,
+.DOPBookingSystem_Day .content .co.available,
+.DOPBookingSystem_Day .content .ci.available{
+    cursor: pointer;
+}
+
+/* Booked Day */
+
+.DOPBookingSystem_Day.booked .header,
+.DOPBookingSystem_Day .header .co.booked,
+.DOPBookingSystem_Day .header .ci.booked{
+    background-color: #dd6464 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+    border-color: #dd6464 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBookingSystem_Day.booked .content,
+.DOPBookingSystem_Day .content .co.booked,
+.DOPBookingSystem_Day .content .ci.booked{
+    border-color: #dd6464 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+/* Special Day */
+
+.DOPBookingSystem_Day.special .header,
+.DOPBookingSystem_Day .header .co.special,
+.DOPBookingSystem_Day .header .ci.special,
+.DOPBookingSystem_Day .bind-left.extended.special .header{
+    background-color: #ba68ba !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+    border-color: #ba68ba !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBookingSystem_Day.special .content,
+.DOPBookingSystem_Day .content .co.special,
+.DOPBookingSystem_Day .content .ci.special,
+.DOPBookingSystem_Day .bind-left.extended.special .content{
+    border-color: #ba68ba !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBookingSystem_Day .header .co.special,
+.DOPBookingSystem_Day .header .ci.special,
+.DOPBookingSystem_Day .content .co.special,
+.DOPBookingSystem_Day .content .ci.special{
+    cursor: pointer;
+}
+
+/* Unavailable Day */
+
+.DOPBookingSystem_Day.unavailable .header,
+.DOPBookingSystem_Day .header .co.unavailable,
+.DOPBookingSystem_Day .header .ci.unavailable{
+    background-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+    border-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBookingSystem_Day.unavailable .content,
+.DOPBookingSystem_Day .content .co.unavailable,
+.DOPBookingSystem_Day .content .ci.unavailable{
+    border-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+/* Selected Day */
+
+.DOPBookingSystem_Day.selected .header,
+.DOPBookingSystem_Day.selected .header .co,
+.DOPBookingSystem_Day.selected .header .ci,
+.DOPBookingSystem_Day.selected .bind-left.extended .header{
+    background-color: #000000 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+    border-color: #000000 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBookingSystem_Day.selected .content,
+.DOPBookingSystem_Day.selected .content .co,
+.DOPBookingSystem_Day.selected .content .ci,
+.DOPBookingSystem_Day.selected .bind-left.extended .content{
+    border-color: #000000 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBookingSystem_Day.selected.first .header .co.none,
+.DOPBookingSystem_Day.selected.last .header .ci.none{
+    background-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+}
+
+.DOPBookingSystem_Day.selected.first .content .co.none,
+.DOPBookingSystem_Day.selected.last .content .ci.none{
+    border-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+}
+
+.DOPBookingSystem_Day.selected.first .header .co.available,
+.DOPBookingSystem_Day.selected.last .header .ci.available,
+.DOPBookingSystem_Day.selected.first .bind-left.available.extended .header{
+    background-color: #68ba68 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+    border-color: #68ba68 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBookingSystem_Day.selected.first .content .co.available,
+.DOPBookingSystem_Day.selected.last .content .ci.available,
+.DOPBookingSystem_Day.selected.first .bind-left.available.extended .content{
+    border-color: #68ba68 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBookingSystem_Day.selected.first .header .co.booked,
+.DOPBookingSystem_Day.selected.last .header .ci.booked{
+    background-color: #dd6464 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+    border-color: #dd6464 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBookingSystem_Day.selected.first .content .co.booked,
+.DOPBookingSystem_Day.selected.last .content .ci.booked{
+    border-color: #dd6464 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBookingSystem_Day.selected.first .header .co.special,
+.DOPBookingSystem_Day.selected.last .header .ci.special{
+    background-color: #ba68ba !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+    border-color: #ba68ba !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBookingSystem_Day.selected.first .content .co.special,
+.DOPBookingSystem_Day.selected.last .content .ci.special{
+    border-color: #ba68ba !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBookingSystem_Day.selected.first .header .co.unavailable,
+.DOPBookingSystem_Day.selected.last .header .ci.unavailable{
+    background-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+    border-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBookingSystem_Day.selected.first .content .co.unavailable,
+.DOPBookingSystem_Day.selected.last .content .ci.unavailable{
+    border-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBookingSystem_Day.selected.first .extended .content .co{
+    border-left-color: transparent !important;
+}
+
+/* Mask Day */
+
+.DOPBookingSystem_Day.mask{
+    cursor: default;
+    opacity: 0;
+    filter: alpha(opacity=0);    
+}
+
+/* Hide Day */
+
+.DOPBookingSystem_Day.hide{
+    display: none;
+}
+
+/* Grouped Days - First Column */
+
+.DOPBookingSystem_Day.first-column .bind-left{
+    opacity: 0 !important;
+    filter: alpha(opacity=0) !important;
+}
+
+/* Grouped Days - Last Column */
+
+.DOPBookingSystem_Day.last-column .bind-content.group1 .header .ci,
+.DOPBookingSystem_Day.last-column .bind-content.group2 .header .ci{
+    right: 0px !important;
+}
+
+.DOPBookingSystem_Day.last-column .bind-right{
+    opacity: 0 !important;
+    filter: alpha(opacity=0) !important;
+}
+
+/*********************************************************************** Hour */ 
+
+.DOPBookingSystem_Hours{
+    background: #eeeeee;
+    padding: 0 5px 5px 5px;
+}
+
+.DOPBookingSystem_Hour{
+    color: #222222;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0 3px 0 1px;
+    text-align: left;
+}
+
+.DOPBookingSystem_Hour .bind-top,
+.DOPBookingSystem_Hour .bind-bottom{
+    background: #ffffff;
+    border: 1px solid #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    border-bottom: none;
+    border-top: none;
+    height: 1px;
+    opacity: 0;
+    filter: alpha(opacity=0);    
+}
+
+.DOPBookingSystem_Hour .bind-top .hour,
+.DOPBookingSystem_Hour .bind-bottom .hour{
+    background: #ffffff;
+    color: #ffffff;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1px;
+    padding: 0 5px;
+}
+
+.DOPBookingSystem_Hour .bind-top.enabled,
+.DOPBookingSystem_Hour .bind-bottom.enabled{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.DOPBookingSystem_Hour .bind-top.enabled .hour,
+.DOPBookingSystem_Hour .bind-bottom.enabled .hour{
+    background: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+}
+
+.DOPBookingSystem_Hour .bind-content{    
+    background: #ffffff;
+    border: 1px solid #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    line-height: 1em;
+    margin: 0;
+}
+
+.DOPBookingSystem_Hour .bind-content.group1{
+    -webkit-border-bottom-left-radius: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    -moz-border-bottomleft-radius: 0px;
+    -moz-border-bottomright-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: none;
+}
+
+.DOPBookingSystem_Hour .bind-content.group2{
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-bottom: none;
+    border-top: none;
+}
+
+.DOPBookingSystem_Hour .bind-content.group3{
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 0px;
+    -moz-border-topleft-radius: 0px;
+    -moz-border-topright-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top: none;
+}
+
+.DOPBookingSystem_Hour .bind-content .hour{    
+    background: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+    color: #ffffff;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 15px;
+    padding: 2px 5px;
+}
+
+.DOPBookingSystem_Hour .bind-content .price,
+.DOPBookingSystem_Hour .bind-content .price-promo{
+    color: #606060;
+    float: left;
+    font-size: 12px;    
+    font-weight: bold;
+    line-height: 15px;
+    padding: 2px 0px 2px 10px;
+}
+
+.DOPBookingSystem_Hour .bind-content .price-promo{
+    padding: 2px 5px 2px 10px;
+}
+
+.DOPBookingSystem_Hour .bind-content .old-price{
+    color: #909090;
+    float: left;
+    font-size: 12px;        
+    line-height: 15px;
+    padding: 2px 0;
+    text-decoration: line-through;
+}
+
+.DOPBookingSystem_Hour .bind-content .available{
+    color: #909090;
+    float: left;
+    font-size: 11px;
+    line-height: 15px;
+    padding: 2px 0px 2px 10px;
+}
+
+.DOPBookingSystem_Hour .bind-content .info{
+    background: url("../images/sprite.png") -200px 0;
+    cursor: pointer;
+    float: right;
+    height: 15px;
+    margin: 2px 5px 2px 0;
+    width: 15px;
+}
+
+.DOPBookingSystem_Hour .bind-content .info:hover{
+    background: url("../images/sprite.png") -215px 0;
+}
+
+/* Available Hour */
+
+.DOPBookingSystem_Hour.available .hour{    
+    background: #68ba68; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBookingSystem_Hour.available{    
+    cursor: pointer;
+}
+
+.DOPBookingSystem_Hour.available .bind-content,
+.DOPBookingSystem_Hour.available .bind-top,
+.DOPBookingSystem_Hour.available .bind-bottom{    
+    border-color: #68ba68; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBookingSystem_Hour.available .bind-top .hour,
+.DOPBookingSystem_Hour.available .bind-bottom .hour{    
+    color: #68ba68; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+.DOPBookingSystem_Hour.available .bind-top.enabled .hour,
+.DOPBookingSystem_Hour.available .bind-bottom.enabled .hour{
+    background: #68ba68; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+    color: #68ba68; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+
+/* Booked Hour */
+
+.DOPBookingSystem_Hour.booked .hour{    
+    background: #dd6464; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBookingSystem_Hour.booked .bind-content
+.DOPBookingSystem_Hour.booked .bind-top,
+.DOPBookingSystem_Hour.booked .bind-bottom{    
+    border-color: #dd6464; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBookingSystem_Hour.booked .bind-top .hour,
+.DOPBookingSystem_Hour.booked .bind-bottom .hour{    
+    color: #dd6464; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+.DOPBookingSystem_Hour.booked .bind-top.enabled .hour,
+.DOPBookingSystem_Hour.booked .bind-bottom.enabled .hour{
+    background: #dd6464; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+    color: #dd6464; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+
+/* Special Hour */
+
+.DOPBookingSystem_Hour.special{    
+    cursor: pointer;
+}
+
+.DOPBookingSystem_Hour.special .hour{    
+    background: #ba68ba; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBookingSystem_Hour.special .bind-content,
+.DOPBookingSystem_Hour.special .bind-top,
+.DOPBookingSystem_Hour.special .bind-bottom{    
+    border-color: #ba68ba; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBookingSystem_Hour.special .bind-top .hour,
+.DOPBookingSystem_Hour.special .bind-bottom .hour{    
+    color: #ba68ba; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+.DOPBookingSystem_Hour.special .bind-top.enabled .hour,
+.DOPBookingSystem_Hour.special .bind-bottom.enabled .hour{
+    background: #ba68ba; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+    color: #ba68ba; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+
+/* Unavailable Hour */
+
+.DOPBookingSystem_Hour.unavailable .bind-content,
+.DOPBookingSystem_Hour.unavailable .bind-top,
+.DOPBookingSystem_Hour.unavailable .bind-bottom{    
+    border-color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBookingSystem_Hour.unavailable .bind-top .hour,
+.DOPBookingSystem_Hour.unavailable .bind-bottom .hour{    
+    color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+.DOPBookingSystem_Hour.unavailable .bind-top.enabled .hour,
+.DOPBookingSystem_Hour.unavailable .bind-bottom.enabled .hour{
+    background: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+    color: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+
+/* Selected Hour */
+
+.DOPBookingSystem_Hour.selected .bind-content{    
+    border-color: #000000; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBookingSystem_Hour.selected .bind-content .hour{    
+    background: #000000; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+.DOPBookingSystem_Hour.selected .bind-top .hour,
+.DOPBookingSystem_Hour.selected .bind-bottom .hour,
+.DOPBookingSystem_Hour.selected .bind-top.enabled .hour,
+.DOPBookingSystem_Hour.selected .bind-bottom.enabled .hour{ 
+    background: #000000; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+    color: #000000; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+
+/* Past Hour */
+
+.DOPBookingSystem_Hour.past_hour{  
+    cursor: default;
+    opacity: 0.25;
+    filter: alpha(opacity=25);
+}
+
+.DOPBookingSystem_Hour.past_hour .bind-content .info{
+    cursor: pointer;
+    display: none;
+}
+
+/******************************************************************************* Sidebar */
+
+.DOPBookingSystem_Sidebar{
+    background: #eeeeee;
+    -webkit-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif !important;
+    margin: 0 0 0 10px;
+    width: 250px;
+}
+
+.DOPBookingSystem_Sidebar.bottom{
+    width: 100%;
+}
+
+.DOPBookingSystem_Sidebar .DOPBookingSystem_HoursSelect,
+.DOPBookingSystem_Sidebar .DOPBookingSystem_NoItemsSelect,
+.DOPBookingSystem_Sidebar .DOPBookingSystem_ContactForm{
+    display: none;
+}
+
+.DOPBookingSystem_Sidebar .section{
+    background: #f3f3f3;
+    -webkit-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+    margin: 5px;
+    padding: 0 10px 10px 10px;
+    width: auto;
+}
+
+.DOPBookingSystem_Sidebar .section-item{
+    margin: 10px 0 0 0;
+}
+
+.DOPBookingSystem_Sidebar .section-item.left{
+    float: left;
+    width: 106px;
+}
+
+.DOPBookingSystem_Sidebar .section-item.second{
+    margin: 10px 0 0 5px;
+}
+
+.DOPBookingSystem_Sidebar .section-item.price{
+    color: #000000;     
+    display: none;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1em !important;
+    margin: 10px 0 0 0;
+    padding: 5px 0 5px 0;
+    text-align: center;
+}
+
+.DOPBookingSystem_Sidebar .section-item.price .cut{
+    text-decoration: line-through;
+}
+
+.DOPBookingSystem_Sidebar .section-item.price .small{
+    color: #202020;
+    font-size: 12px;
+    line-height: 1em !important;
+}
+
+.DOPBookingSystem_Sidebar .section-item.price .medium{
+    font-size: 14px;
+    line-height: 1em !important;
+}
+
+.DOPBookingSystem_Sidebar .section-item.message{
+    color: #ff0000; 
+    display: none;    
+    font-size: 12px;
+    line-height: 1em;
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+.DOPBookingSystem_Sidebar .section-item.message .success{
+    color: #0e9f0e; 
+}
+
+.DOPBookingSystem_Sidebar .section-item.title{
+    color: #606060;     
+    border-bottom: 1px solid #cccccc;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1em;
+    margin: 10px 0 0 0;
+    padding: 0 0 10px 0;
+}
+
+.DOPBookingSystem_Sidebar .section-item label{
+    color: #606060;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1em;
+}
+
+.DOPBookingSystem_Sidebar .section-item label.radio{
+    font-weight: normal;
+}
+
+.DOPBookingSystem_Sidebar .section-item label.checkbox{
+    font-weight: normal;
+}
+
+.DOPBookingSystem_Sidebar .section-item label a{
+    color: #222222;
+    text-decoration: none;
+}
+
+.DOPBookingSystem_Sidebar .section-item label a:hover{
+    text-decoration: underline;
+}
+
+.DOPBookingSystem_Sidebar .section-item input{
+    background: #ffffff;
+    border: 1px solid #dfdfdf;
+    -webkit-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    color: #333333 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 12px !important;
+    line-height: 1em !important;
+    margin: 5px 0 0 0;
+    padding: 4px 2px;
+    width: 212px;
+}
+
+.DOPBookingSystem_Sidebar .section-item input.small{
+    width: 100px;
+}
+
+.DOPBookingSystem_Sidebar .section-item select{
+    background: #ffffff;
+    border: 1px solid #dfdfdf;
+    -webkit-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;    
+    color: #333333 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 12px !important;
+    line-height: 1em !important;
+    margin: 5px 0 0 0;
+    padding: 4px 2px;
+    width: 212px;
+}
+
+.DOPBookingSystem_Sidebar .section-item select.small{    
+    width: 100px;
+}
+
+.DOPBookingSystem_Sidebar .section-item select[multiple=multiple]{
+    border: 0 inset #dfdfdf;
+    border: 1px solid #dfdfdf;
+    width: 216px;
+}
+
+.DOPBookingSystem_Sidebar .section-item textarea{
+    background: #ffffff;
+    border: 1px solid #dfdfdf;
+    -webkit-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 0 inset #dfdfdf;
+    border: 1px solid #dfdfdf;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    color: #333333 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 12px !important;
+    line-height: 1em !important;
+    margin: 5px 0 0 0;
+    padding: 4px 2px;
+    resize: vertical;
+    width: 212px;
+}
+
+.DOPBookingSystem_Sidebar .section-item input[type=radio],
+.DOPBookingSystem_Sidebar .section-item input[type=checkbox]{
+    float: left;
+    margin: 0 5px 0 0;
+    padding: 0;
+    width: auto;
+}
+
+.DOPBookingSystem_Sidebar .section-item input:focus,
+.DOPBookingSystem_Sidebar .section-item select:focus,
+.DOPBookingSystem_Sidebar .section-item textarea:focus{
+    border-color: #bbce3d;
+    outline: none;
+}
+
+.DOPBookingSystem_Sidebar .section-item input[type=submit]{
+    background: #999;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#eeeeee');
+    background: -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#eeeeee));
+    background: -moz-linear-gradient(top,  #cccccc,  #eeeeee); 
+    border: 1px solid #d0d0d0;
+    -webkit-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #333333 !important;
+    cursor: pointer;
+    font-size: 16px !important;
+    line-height: 1em !important;
+    margin: 0;
+    padding: 5px;
+    width: 218px;
+}
+
+.DOPBookingSystem_Sidebar .section-item input[type=submit]:hover{
+    background: #999999;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bbbbbb', endColorstr='#dddddd');
+    background: -webkit-gradient(linear, left top, left bottom, from(#bbbbbb), to(#dddddd));
+    background: -moz-linear-gradient(top,  #bbbbbb,  #dddddd); 
+    border: 1px solid #b0b0b0;
+    color: #000000 !important;
+}
+
+/******************************************************************************* Sidebar Widget */
+
+.DOPBookingSystem_SidebarWidget{
+    background: #eeeeee;
+    -webkit-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif !important;
+    margin: 0;
+    min-width: 250px;
+    width: 100%;
+}
+
+.DOPBookingSystem_SidebarWidget .DOPBookingSystem_HoursSelect,
+.DOPBookingSystem_SidebarWidget .DOPBookingSystem_NoItemsSelect,
+.DOPBookingSystem_SidebarWidget .DOPBookingSystem_ContactForm{
+    display: none;
+}
+
+.DOPBookingSystem_SidebarWidget .section{
+    background: #f3f3f3;
+    -webkit-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+    margin: 5px;
+    padding: 0 10px 10px 10px;
+}
+
+.DOPBookingSystem_SidebarWidget .section-item{
+    margin: 10px 0 0 0;
+}
+
+.DOPBookingSystem_SidebarWidget .section-item.left{
+    float: left;
+    width: 106px;
+}
+
+.DOPBookingSystem_SidebarWidget .section-item.second{
+    margin: 10px 0 0 5px;
+}
+
+.DOPBookingSystem_SidebarWidget .section-item.price{
+    color: #000000;     
+    display: none;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+    padding: 5px 0 5px 0;
+    text-align: center;
+}
+
+.DOPBookingSystem_SidebarWidget .section-item.price .cut{
+    text-decoration: line-through;
+}
+
+.DOPBookingSystem_SidebarWidget .section-item.price .small{
+    color: #202020;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+.DOPBookingSystem_SidebarWidget .section-item.price .medium{
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.DOPBookingSystem_SidebarWidget .section-item.message{
+    color: #ff0000; 
+    display: none;    
+    font-size: 12px;
+    line-height: 1em;
+    margin: 10px 0 0 0;
+    padding: 0 0 10px 0;
+    text-align: center;
+}
+
+.DOPBookingSystem_SidebarWidget .section-item.message .success{
+    color: #0e9f0e; 
+}
+
+.DOPBookingSystem_SidebarWidget .section-item.title{
+    color: #606060;     
+    border-bottom: 1px solid #cccccc;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1em;
+    margin: 10px 0 0 0;
+    padding: 0 0 10px 0;
+}
+
+.DOPBookingSystem_SidebarWidget .section-item label{
+    color: #606060;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1em;
+}
+
+.DOPBookingSystem_SidebarWidget .section-item label.radio{
+    font-weight: normal;
+}
+
+.DOPBookingSystem_SidebarWidget .section-item label.checkbox{
+    font-weight: normal;
+}
+
+.DOPBookingSystem_SidebarWidget .section-item label a{
+    color: #222222;
+    text-decoration: none;
+}
+
+.DOPBookingSystem_SidebarWidget .section-item label a:hover{
+    text-decoration: underline;
+}
+
+.DOPBookingSystem_SidebarWidget .section-item input{
+    background: #ffffff;
+    border: 1px solid #dfdfdf;
+    -webkit-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    color: #333333 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 12px !important;
+    line-height: 1em !important;
+    margin: 5px 0 0 0;
+    padding: 4px 2px;
+    width: 212px;
+}
+
+.DOPBookingSystem_SidebarWidget .section-item input.small{
+    width: 100px;
+}
+
+.DOPBookingSystem_SidebarWidget .section-item select{
+    background: #ffffff;
+    border: 1px solid #dfdfdf;
+    -webkit-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;    
+    color: #333333 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 12px !important;
+    line-height: 1em !important;
+    margin: 5px 0 0 0;
+    padding: 4px 2px;
+    width: 212px;
+}
+
+.DOPBookingSystem_SidebarWidget .section-item select.small{    
+    width: 100px;
+}
+
+.DOPBookingSystem_SidebarWidget .section-item select[multiple=multiple]{
+    border: 0 inset #dfdfdf;
+    border: 1px solid #dfdfdf;
+    width: 216px;
+}
+
+.DOPBookingSystem_SidebarWidget .section-item textarea{
+    background: #ffffff;
+    border: 1px solid #dfdfdf;
+    -webkit-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 0 inset #dfdfdf;
+    border: 1px solid #dfdfdf;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    color: #333333 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 12px !important;
+    line-height: 1em !important;
+    margin: 5px 0 0 0;
+    padding: 4px 2px;
+    resize: vertical;
+    width: 212px;
+}
+
+.DOPBookingSystem_SidebarWidget .section-item input[type=radio],
+.DOPBookingSystem_SidebarWidget .section-item input[type=checkbox]{
+    float: left;
+    margin: 0 5px 0 0;
+    padding: 0;
+    width: auto;
+}
+
+.DOPBookingSystem_SidebarWidget .section-item input:focus,
+.DOPBookingSystem_SidebarWidget .section-item select:focus,
+.DOPBookingSystem_SidebarWidget .section-item textarea:focus{
+    border-color: #bbce3d;
+    outline: none;
+}
+
+.DOPBookingSystem_SidebarWidget .section-item input[type=submit]{
+    background: #999;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#eeeeee');
+    background: -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#eeeeee));
+    background: -moz-linear-gradient(top,  #cccccc,  #eeeeee); 
+    border: 1px solid #d0d0d0;
+    -webkit-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #333333 !important;
+    cursor: pointer;
+    font-size: 16px !important;
+    line-height: 1em !important;
+    margin: 0;
+    padding: 5px;
+    width: 218px;
+}
+
+.DOPBookingSystem_SidebarWidget .section-item input[type=submit]:hover{
+    background: #999999;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bbbbbb', endColorstr='#dddddd');
+    background: -webkit-gradient(linear, left top, left bottom, from(#bbbbbb), to(#dddddd));
+    background: -moz-linear-gradient(top,  #bbbbbb,  #dddddd); 
+    border: 1px solid #b0b0b0;
+    color: #000000 !important;
+}
+
+/******************************************************************************* Info */
+
+.DOPBookingSystem_Info{
+    background: #fcfcfc;
+    border: 1px solid #909090;
+    -webkit-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: 2px 2px 4px #b0b0b0;
+    -webkit-box-shadow: 2px 2px 4px #b0b0b0;
+    box-shadow: 2px 2px 4px #b0b0b0;
+    color: #606060;
+    display: none;
+    line-height: 1em;
+    max-width: 300px;
+    left: 0px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    z-index: 1000000;
+}
