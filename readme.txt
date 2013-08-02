@@ -22,7 +22,9 @@ View [booking calendar demo with hours](http://dopdemo.net/wp/booking-system/exa
 
 This Plugin will help you to easily create a booking/reservation system into your WordPress website or blog. The Booking System will display a calendar for users to see availability and book dates and hours.
 
-This is intended to book anything, anywhere, anytime. We always accept feedback and constructive criticism so if you have something to say please use the [support forum](http://wordpress.org/support/plugin/booking-system).
+Booking System is great for booking hotel rooms, apartments, houses, villas, rooms etc, make appointments to doctors, dentists, lawyers, beauty salons, spas, massage therapists etc or schedule events.
+
+The Plugin is intended to book anything, anywhere, anytime. We always accept feedback and constructive criticism so if you have something to say please use the [support forum](http://wordpress.org/support/plugin/booking-system).
 
 = Features =
 * **Responsive** - Front End Booking Calendar is responsive and can be viewed on all browsers and devices.
