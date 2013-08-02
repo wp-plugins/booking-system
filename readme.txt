@@ -1,7 +1,7 @@
 === Plugin Name ===
 Contributors: DOTonPAPER
 Donate link: http://www.dopdemo.net/wp/booking-system
-Tags: appointment, availability, bookbooking, calendar, hotel, management, meeting, organizer, payment, paypal, rent, reservation, schedule, service
+Tags: accommodations, appointment, availability, availability calendar, book, bookable, bookable events, booking, booking calendar, bookings, calendar, event, event calendar, events, hotel, management, meeting, meeting scheduling, organizer, payment, paypal, rent, rental, reservation, schedule, scheduling, service, to book
 Requires at least: 3.3
 Tested up to: 3.6
 Stable tag: trunk
@@ -19,7 +19,8 @@ This Plugin will help you to easily create a booking/reservation system your Wor
 This is intended to book anything, anywhere, anytime. We always accept feedback and constructive criticism so if you have something to say please use the [support forum](http://wordpress.org/support/plugin/booking-system).
 
 = Features =
-* Responsive
+* <strong>Responsive</strong><br />
+Front End Booking Calendar is responsive and can be viewed on all browsers and devices.
 * Book days or hours
 * Front End Calendar is responsive
 * Multi Language support for Front End & Back End	
