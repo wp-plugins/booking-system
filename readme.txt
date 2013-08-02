@@ -19,7 +19,7 @@ This Plugin will help you to easily create a booking/reservation system your Wor
 This is intended to book anything, anywhere, anytime. We always accept feedback and constructive criticism so if you have something to say please use the [support forum](http://wordpress.org/support/plugin/booking-system).
 
 = Features =
-* <strong>Responsive</strong><br />
+* Responsive
 Front End Booking Calendar is responsive and can be viewed on all browsers and devices.
 * Book days or hours
 * Front End Calendar is responsive
