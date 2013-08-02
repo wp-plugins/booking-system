@@ -26,14 +26,13 @@ This is intended to book anything, anywhere, anytime. We always accept feedback 
 * **Book days or hours**
 * **Multi Language support for Front End & Back End** - All languages are supported with this Booking System (Note: Not all files languages are translated. View documentation to see were you can translate into your language).
 * **Ability to change currency** - You can select any currency to show into your Booking Calendar.
-* **Change hours definitions** - You have complete control to what hours you are using in you Booking Calendar. You can set same hours by the minute for the hole calendar or you can set different hours for different days.
-* Group days/hours
-* Add information for users to days/hours in Front End
-* Add notes for admins to days/hours in Back End
-* Set availability for week days
+* **Change hours definitions** - You have complete control to what hours you are using in you Booking Calendar. You can set same hours by the minute for the hole calendar or you can set different hours for different days. You have also the possibility to Display the hours in American or European format.
+* **Group days/hours** - Set pricing and let users book groups of days or hours.
+* **Add information for users to days/hours in Front End** 
+* **Add notes for admins to days/hours in Back End**
+* **Set availability for week days**
 * Set week first day
 * Set date type (american or european)
-* Set hour type (american or european)
 * Set availability for week days
 * Set minimum & maximum booking period.
 * Enable/Disable the field where you select the number of items you want to book
