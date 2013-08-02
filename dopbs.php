@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Booking System
+Plugin Name: Booking System (Booking Calendar)
 Version: 1.0
 Plugin URI: http://www.dopdemo.net/wp/booking-system
 Description: This Plugin will help you to easily create a booking/reservation system your WordPress website or blog.
