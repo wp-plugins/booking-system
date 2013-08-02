@@ -19,10 +19,10 @@ This Plugin will help you to easily create a booking/reservation system your Wor
 This is intended to book anything, anywhere, anytime. We always accept feedback and constructive criticism so if you have something to say please use the [support forum](http://wordpress.org/support/plugin/booking-system).
 
 = Features =
-* Responsive - Front End Booking Calendar is responsive and can be viewed on all browsers and devices.
-* Book days or hours
-* Multi Language support for Front End & Back End - All languages are supported with this Booking System (Note: Not all files languages are translated. View documentation to see were you can translate into your language).
-* Ability to change currency - You can select any currency to show into your Booking Calendar.
+* `Responsive` - Front End Booking Calendar is responsive and can be viewed on all browsers and devices.
+* `Book days or hours`
+* `Multi Language support for Front End & Back End` - All languages are supported with this Booking System (Note: Not all files languages are translated. View documentation to see were you can translate into your language).
+* `Ability to change currency` - You can select any currency to show into your Booking Calendar.
 * Change hours definitions to create your own hours to book
 * Group days/hours
 * Add information for users to days/hours in Front End
