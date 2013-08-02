@@ -13,8 +13,11 @@ This Plugin will help you to easily create a booking/reservation system into you
 == Description ==
 
 View [demos](http://dopdemo.net/wp/booking-system/).
+
 View [default booking calendar demo](http://dopdemo.net/wp/booking-system/default-example/).
+
 View [booking calendar demo with morning Check Out](http://dopdemo.net/wp/booking-system/example-with-morning-check-out/) .
+
 View [booking calendar demo with hours](http://dopdemo.net/wp/booking-system/example-with-hours/).
 
 This Plugin will help you to easily create a booking/reservation system into your WordPress website or blog. The Booking System will display a calendar for users to see availability and book dates and hours.
@@ -29,28 +32,28 @@ This is intended to book anything, anywhere, anytime. We always accept feedback 
 * **Change hours definitions** - You have complete control to what hours you are using in you Booking Calendar. You can set same hours by the minute for the hole calendar or you can set different hours for different days. You have also the possibility to Display the hours in American or European format.
 * **Group days/hours** - Set pricing and let users book groups of days or hours.
 * **Add information for users to days/hours in Front End** 
-* **Add notes for admins to days/hours in Back End**
+* **Add notes for yourself to days/hours in Back End**
+* **Set availability for weekdays** - You can disable weekdays for the all Booking Calendar.
+* **Set week first day** - Set the First day of the week in Booking Calendar.
+* **Set date type (american or european)** 
 * **Set availability for week days**
-* Set week first day
-* Set date type (american or european)
-* Set availability for week days
-* Set minimum & maximum booking period.
-* Enable/Disable the field where you select the number of items you want to book
-* Display only information calendar
-* Enable/Disable Morning Check Out (useful for hotels or when booking rooms)
-* Book multiple days or only one day
-* Book multiple hours or only one hour
-* Set % discount by number of booked days
-* Set deposit % value
-* Add Terms & Conditions link
-* Display multiple months for better visualization
-* Show promotional prices for days or hours
-* CSS Template Syste
-* Email notifications system integrated, with template system
-* Email notifications can be sent using SMTP
-* Create your own booking form fields
-* Support of multiple booking forms
-* = PayPal = supported
+* **Set minimum & maximum booking period**
+* **Enable/Disable the field where you select the number of items you want to book**
+* **Display only information calendar**
+* **Enable/Disable Morning Check Out (useful for hotels or when booking rooms)**
+* **Book multiple days or only one day**
+* **Book multiple hours or only one hour**
+* **Set % discount by number of booked days**
+* **Set deposit % value**
+* **Add Terms & Conditions link**
+* **Display multiple months for better visualization**
+* **Show promotional prices for days or hours**
+* **CSS Template System**
+* **Email notifications system integrated, with template system**
+* **Email notifications can be sent using SMTP**
+* **Create your own booking form fields**
+* **Support of multiple booking forms**
+* **PayPal** supported
 * View complete [List of Features](http://dopdemo.net/wp/booking-system/features/).
 
 == Installation ==
