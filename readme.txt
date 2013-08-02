@@ -8,22 +8,25 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This Plugin will help you to easily create a booking/reservation system your WordPress website or blog.
+This Plugin will help you to easily create a booking/reservation system into your WordPress website or blog.
 
 == Description ==
 
-View [demo](http://dopdemo.net/wp/booking-system/) here.
+View [demos](http://dopdemo.net/wp/booking-system/).
+View [default booking calendar demo](http://dopdemo.net/wp/booking-system/default-example/).
+View [booking calendar demo with morning Check Out](http://dopdemo.net/wp/booking-system/example-with-morning-check-out/) .
+View [booking calendar demo with hours](http://dopdemo.net/wp/booking-system/example-with-hours/).
 
-This Plugin will help you to easily create a booking/reservation system your WordPress website or blog. The Booking System will display a calendar for users to see availability and book dates and hours.
+This Plugin will help you to easily create a booking/reservation system into your WordPress website or blog. The Booking System will display a calendar for users to see availability and book dates and hours.
 
 This is intended to book anything, anywhere, anytime. We always accept feedback and constructive criticism so if you have something to say please use the [support forum](http://wordpress.org/support/plugin/booking-system).
 
 = Features =
-* `Responsive` - Front End Booking Calendar is responsive and can be viewed on all browsers and devices.
-* `Book days or hours`
-* `Multi Language support for Front End & Back End` - All languages are supported with this Booking System (Note: Not all files languages are translated. View documentation to see were you can translate into your language).
-* `Ability to change currency` - You can select any currency to show into your Booking Calendar.
-* Change hours definitions to create your own hours to book
+* **Responsive** - Front End Booking Calendar is responsive and can be viewed on all browsers and devices.
+* **Book days or hours**
+* **Multi Language support for Front End & Back End** - All languages are supported with this Booking System (Note: Not all files languages are translated. View documentation to see were you can translate into your language).
+* **Ability to change currency** - You can select any currency to show into your Booking Calendar.
+* **Change hours definitions** - You have complete control to what hours you are using in you Booking Calendar. You can set same hours by the minute for the hole calendar or you can set different hours for different days.
 * Group days/hours
 * Add information for users to days/hours in Front End
 * Add notes for admins to days/hours in Back End
