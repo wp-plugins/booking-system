@@ -12,7 +12,7 @@ This Plugin will help you to easily create a booking/reservation system into you
 
 == Description ==
 
-View [demo](http://dopdemo.net/wp/booking-system/).
+View live demo of Booking System Front End [here](http://dopdemo.net/wp/booking-system/).
 
 This Plugin will help you to easily create a booking/reservation system into your WordPress website or blog. The Booking System will display a calendar for users to see availability and book dates and hours.
 
