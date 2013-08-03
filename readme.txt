@@ -21,6 +21,7 @@ Booking System is great for booking hotel rooms, apartments, houses, villas, roo
 The Plugin is intended to book anything, anywhere, anytime. We always accept feedback and constructive criticism so if you have something to say please use the [support forum](http://wordpress.org/support/plugin/booking-system).
 
 = Features =
+If you want new features or functionalities in the Booking System drop us a line in [support forum](http://wordpress.org/support/plugin/booking-system).
 
 **Responsive**
 
@@ -66,6 +67,7 @@ The Plugin is intended to book anything, anywhere, anytime. We always accept fee
 * You can select any currency to use into your Booking Calendar.
 
 **Reservations**
+
 * Booking requests can be instantly approved or can be approved/rejected by administrators. The booking calendar will be changed accordingly.
 * Administrators have the possibility to Approve, Reject or Cancel a reservation.
 
