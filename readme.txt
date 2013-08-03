@@ -12,13 +12,7 @@ This Plugin will help you to easily create a booking/reservation system into you
 
 == Description ==
 
-View [demos](http://dopdemo.net/wp/booking-system/).
-
-View [default booking calendar demo](http://dopdemo.net/wp/booking-system/default-example/).
-
-View [booking calendar demo with morning Check Out](http://dopdemo.net/wp/booking-system/example-with-morning-check-out/).
-
-View [booking calendar demo with hours](http://dopdemo.net/wp/booking-system/example-with-hours/).
+View [demo](http://dopdemo.net/wp/booking-system/).
 
 This Plugin will help you to easily create a booking/reservation system into your WordPress website or blog. The Booking System will display a calendar for users to see availability and book dates and hours.
 
@@ -50,6 +44,10 @@ The Plugin is intended to book anything, anywhere, anytime. We always accept fee
 * **PayPal** - The Booking System has complete PayPal Support. Clients can pay using their PayPal account or credit card.
 * **Set deposit % value** - Clients can only pay a deposit for the period they booked.
 * View complete [List of Features](http://dopdemo.net/wp/booking-system/features/).
+
+Page Views:
+<div style="text-align:center"><a href="http://www.webcounter.com"><img border="0" src="http://www.webcounter.com/51fc87db46b48/counter.png"/></a><br /><a href="http://www.webcounter.com">visit counter</a></div>
+
 
 == Installation ==
 
