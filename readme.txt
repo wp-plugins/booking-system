@@ -22,9 +22,11 @@ The Plugin is intended to book anything, anywhere, anytime. We always accept fee
 
 = Features =
 **Responsive**
+
 * Front End Booking Calendar is responsive and can be viewed on all browsers and devices.
 
 **Booking Calendar**
+
 * A Booking Calendar is displayed in Front End, where clients can view availability and make reservations & appointments.
 * The clients can select to display multiple or fewer months for better visualization.
 * The clients can click on the calendar's days and/or hours to select the booking period they want.
@@ -35,8 +37,8 @@ The Plugin is intended to book anything, anywhere, anytime. We always accept fee
 * The Back End Booking Calendar is similar to the Front End version so that administrators can have a very familiar way to add information ... <em>what they see the clients see.</em>
 
 **Book Days**
-* Add price, promo price, number of items available and information for each day in the Front End Booking Calendar. In the Back End Booking Calendar administrators can add notes to themselves or other administrators.
-* The days are displayed in the Booking Calendar with the following statuses: None, Available, Booked, Special, Unavailable.
+*Add price, promo price, number of items available and information for each day in the Front End Booking Calendar. In the Back End Booking Calendar administrators can add notes to themselves or other administrators.
+*The days are displayed in the Booking Calendar with the following statuses: None, Available, Booked, Special, Unavailable.
 * Set Price & Status for a groups of days.
 * Set discounts depending on the number of days that are booked.
 * Set minimum & maximum number of days that you are permitted to book.
