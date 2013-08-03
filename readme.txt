@@ -21,33 +21,56 @@ Booking System is great for booking hotel rooms, apartments, houses, villas, roo
 The Plugin is intended to book anything, anywhere, anytime. We always accept feedback and constructive criticism so if you have something to say please use the [support forum](http://wordpress.org/support/plugin/booking-system).
 
 = Features =
-* **Responsive** - Front End Booking Calendar is responsive and can be viewed on all browsers and devices.
-* **Book days or hours**
-* **Multi Language support for Front End & Back End** - All languages are supported with this Booking System (Note: Not all files languages are translated. View documentation to see were you can translate into your language).
-* **Ability to change currency** - You can select any currency to show into your Booking Calendar.
-* **Change hours definitions** - You have complete control to what hours you are using in you Booking Calendar. You can set same hours by the minute for the hole calendar or you can set different hours for different days. You have also the possibility to Display the hours in American or European format.
-* **Group days/hours** - Set pricing and let users book groups of days or hours.
-* **Add information for users to days/hours in Front End** 
-* **Add notes for yourself to days/hours in Back End**
-* **Set availability for weekdays** - You can disable weekdays for the all Booking Calendar.
-* **Set week first day** - Set the First day of the week in Booking Calendar.
-* **Set date type (american or european)**
-* **Set minimum & maximum booking period** - You can set the minimum and maximum number of days an user can book in the Booking Calendar.
-* **Display only information calendar** - Show information to users, in the Booking Calendar, by day(s)/hours(s).
-* **Enable/Disable Morning Check Out** - The Booking System has the option to display Morning Check Outs ... very useful for hotels were Check In is done in the afternoon and Check Out is done in the morning. View [booking calendar demo with morning Check Out](http://dopdemo.net/wp/booking-system/example-with-morning-check-out/).
-* **Set % discount by number of booked days** - You can set in the Booking Calendar price discount depending on the number of days booked.
-* **Display multiple months for better visualization** - Both in Back End & Front End the Booking Calendar has the possibility to display multiple months depending on how the admins or the clients find it more comfortable.
-* **CSS Template System** - You can customize the Front End Booking calendar using CSS Templates.
-* **Approve/Reject/Cancel Reservations** - Admins can manage reservations from the Back End of the Booking System.
-* **Email notifications system** - When you receive a booking request, or you approve, reject or cancel a reservation you can set for a notification email to be sent. A template system is integrated and emails can be send using 'wp_mail()` function or SMTP.
-* **Create your own booking form** - You have the possibility to create your own form for the Front End Booking Calendar. Fields supported are Texts (Email, Phone, Name etc), Text Areas, Checkboxes & Drop Downs. 
-* **PayPal** - The Booking System has complete PayPal Support. Clients can pay using their PayPal account or credit card.
-* **Set deposit % value** - Clients can only pay a deposit for the period they booked.
-* View complete [List of Features](http://dopdemo.net/wp/booking-system/features/).
+**Responsive**
+* Front End Booking Calendar is responsive and can be viewed on all browsers and devices.
 
-Page Views:
-<div style="text-align:center"><a href="http://www.webcounter.com"><img border="0" src="http://www.webcounter.com/51fc87db46b48/counter.png"/></a><br /><a href="http://www.webcounter.com">visit counter</a></div>
+**Booking Calendar**
+* A Booking Calendar is displayed in Front End, where clients can view availability and make reservations & appointments.
+* The clients can select to display multiple or fewer months for better visualization.
+* The clients can click on the calendar's days and/or hours to select the booking period they want.
+* The Booking Calendar contains a Sidebar where clients can search availability through the calendar, select number of rooms/items they want, see the price and book them by completing a very customizable Booking Form.
+* Support for Terms &amp; Conditions.
+* The Check In/Out dates can be in american (MM DD, YYYY) or european (DD MM YYYY) format.
+* Only the Calendar be displayed so that your users can check only availability.
+* The Back End Booking Calendar is similar to the Front End version so that administrators can have a very familiar way to add information ... <em>what they see the clients see.</em>
 
+**Book Days**
+* Add price, promo price, number of items available and information for each day in the Front End Booking Calendar. In the Back End Booking Calendar administrators can add notes to themselves or other administrators.
+* The days are displayed in the Booking Calendar with the following statuses: None, Available, Booked, Special, Unavailable.
+* Set Price & Status for a groups of days.
+* Set discounts depending on the number of days that are booked.
+* Set minimum & maximum number of days that you are permitted to book.
+* Set the first day of the week that will appear in the Booking calendar.
+* Set general available/unavailable weekdays.
+* Support for Morning Check Out. It will display information in the Booking Calendar if you need to Check In in the afternoon and Check Out in the morning. This option is very useful for hotels.
+
+**Book Hours**
+* You have complete control to what hours you are using in your Booking Calendar. You can set same hours by the minute for the whole calendar or you can set different hours for different days.
+* Add price, promo price, number of items available and information for each hour in the Front End Booking Calendar. In the Back End Booking Calendar administrators can add notes to themselves or other administrators.
+* The hours are displayed in the Booking Calendar with the following statuses: None, Available, Booked, Special, Unavailable.
+* Set Price & Status for a groups of hours.
+* Hours can be in AM/PM or 24 hours format.
+* Hours intervals are supported.
+
+**Multi Language support for Front End &amp; Back End**
+* Note: Not all language files are translated. View documentation to see where you can translate them if needed.
+
+**Ability to change currency**
+* You can select any currency to use into your Booking Calendar.
+
+**Reservations**
+* Booking requests can be instantly approved or can be approved/rejected by administrators. The booking calendar will be changed accordingly.
+* Administrators have the possibility to Approve, Reject or Cancel a reservation.
+
+
+**Booking Forms**
+* Create your own custom booking form to get what information you want from your clients.
+* The Booking form supports Text Fields (Email, Phone, Name etc), Text Areas, Checkboxes & Drop Downs.
+
+**Payment Systems**
+* PayPal (credit card supported)
+
+**View complete [List of Features](http://dopdemo.net/wp/booking-system/features/)**
 
 == Installation ==
 
