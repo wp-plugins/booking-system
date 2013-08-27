@@ -90,6 +90,7 @@ Upload the folder **booking-system** from the zip file to "wp-content/plugins/" 
 == Frequently Asked Questions ==
 
 Click [here](http://help.dotonpaper.net/booking-system-wordpress-plugin.html) to view Boking System Documentation.
+
 Click [here](http://help.dotonpaper.net/booking-system-wordpress-plugin.html#faq) to view Booking System FAQ.
 
 == Screenshots ==
