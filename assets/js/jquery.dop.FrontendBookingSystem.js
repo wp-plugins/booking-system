@@ -1,10 +1,10 @@
 
 /*
 * Title                   : Booking System (WordPress Plugin)
-* Version                 : 1.0
+* Version                 : 1.1
 * File                    : jquery.dop.FrontendBookingSystem.js
-* File Version            : 1.0
-* Created / Last Modified : 29 July 2013
+* File Version            : 1.1
+* Created / Last Modified : 27 August 2013
 * Author                  : Dot on Paper
 * Copyright               : © 2013 Dot on Paper
 * Website                 : http://www.dotonpaper.net
@@ -3054,38 +3054,56 @@
                             var topURL = window.location.href,
                             pathPiece1 = '', pathPiece2 = '';
                             
-                            if (dataURL.indexOf('https') != -1 || dataURL.indexOf('http') != -1){
-                                if (topURL.indexOf('http://www.') != -1){
-                                    pathPiece1 = prototypes.isSubdomain(dataURL) ? 'http://':'http://www.';
+                            if (prototypes.getDomain(topURL) == prototypes.getDomain(dataURL)){
+                                if (dataURL.indexOf('https') != -1 || dataURL.indexOf('http') != -1){
+                                    if (topURL.indexOf('http://www.') != -1){
+                                        pathPiece1 = 'http://www.';
+                                    }
+                                    else if (topURL.indexOf('http://') != -1){
+                                        pathPiece1 = 'http://';
+                                    }
+                                    else if (topURL.indexOf('https://www.') != -1){
+                                        pathPiece1 = 'https://www.';
+                                    }
+                                    else if (topURL.indexOf('https://') != -1){
+                                        pathPiece1 = 'https://';
+                                    }
+
+                                    if (dataURL.indexOf('http://www.') != -1){
+                                        pathPiece2 = dataURL.split('http://www.')[1];
+                                    }
+                                    else if (dataURL.indexOf('http://') != -1){
+                                        pathPiece2 = dataURL.split('http://')[1];
+                                    }
+                                    else if (dataURL.indexOf('https://www.') != -1){
+                                        pathPiece2 = dataURL.split('https://www.')[1];
+                                    }
+                                    else if (dataURL.indexOf('https://') != -1){
+                                        pathPiece2 = dataURL.split('https://')[1];
+                                    }
+
+                                    return pathPiece1+pathPiece2;
                                 }
-                                else if (topURL.indexOf('http://') != -1){
-                                    pathPiece1 = 'http://';
+                                else{
+                                    return dataURL;
                                 }
-                                else if (topURL.indexOf('https://www.') != -1){
-                                    pathPiece1 = prototypes.isSubdomain(dataURL) ? 'https://':'https://www.';
-                                }
-                                else if (topURL.indexOf('https://') != -1){
-                                    pathPiece1 = 'https://';
-                                }
-                                    
-                                if (dataURL.indexOf('http://www.') != -1){
-                                    pathPiece2 = dataURL.split('http://www.')[1];
-                                }
-                                else if (dataURL.indexOf('http://') != -1){
-                                    pathPiece2 = dataURL.split('http://')[1];
-                                }
-                                else if (dataURL.indexOf('https://www.') != -1){
-                                    pathPiece2 = dataURL.split('https://www.')[1];
-                                }
-                                else if (dataURL.indexOf('https://') != -1){
-                                    pathPiece2 = dataURL.split('https://')[1];
-                                }
-                                
-                                return pathPiece1+pathPiece2;
                             }
                             else{
                                 return dataURL;
                             }
+                        },
+                        getDomain:function(url, includeSubdomain){
+                            var domain = url;
+                            includeSubdomain = includeSubdomain == undefined ? true:false;
+ 
+                            domain = domain.replace(new RegExp(/^\s+/),""); // Remove white spaces from the begining of the url.
+                            domain = domain.replace(new RegExp(/\s+$/),""); // Remove white spaces from the end of the url.
+                            domain = domain.replace(new RegExp(/\\/g),"/"); // If found , convert back slashes to forward slashes.
+                            domain = domain.replace(new RegExp(/^http\:\/\/|^https\:\/\/|^ftp\:\/\//i),""); // If there, removes 'http://', 'https://' or 'ftp://' from the begining.
+                            domain = domain.replace(new RegExp(/^www\./i),""); // If there, removes 'www.' from the begining.
+                            domain = domain.replace(new RegExp(/\/(.*)/),""); // Remove complete string from first forward slaash on.
+
+                            return domain;
                         },
                         isSubdomain:function(url){
                             var subdomain;

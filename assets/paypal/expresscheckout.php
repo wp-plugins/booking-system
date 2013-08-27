@@ -2,7 +2,7 @@
 
 /*
 * Title                   : Booking System (WordPress Plugin)
-* Version                 : 1.0
+* Version                 : 1.1
 * File                    : expresscheckout.php
 * File Version            : 1.0
 * Created / Last Modified : 29 July 2013
@@ -32,6 +32,7 @@
         $translation = json_decode(stripslashes($field->translation));
         $field->translation = $translation->$_POST['DOPBookingSystem_Language'.$cID];
         
+        $field_data[$i] = new stdClass();
         $field_data[$i]->id = $field->id;
         $field_data[$i]->name = $field->translation;
                             

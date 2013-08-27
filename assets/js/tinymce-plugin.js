@@ -1,6 +1,6 @@
 /*
 * Title                   : Booking System (WordPress Plugin)
-* Version                 : 1.0
+* Version                 : 1.1
 * File                    : tinymce-plugin.php
 * File Version            : 1.0
 * Created / Last Modified : 29 July 2013

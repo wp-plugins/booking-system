@@ -2,7 +2,7 @@
 
 /*
 * Title                   : Booking System (WordPress Plugin)
-* Version                 : 1.0
+* Version                 : 1.1
 * File                    : jquery.dop.FrontendBookingSystem.css
 * File Version            : 1.0
 * Created / Last Modified : 29 July 2013
@@ -864,7 +864,7 @@
     float: left;
     font-size: 11px;
     line-height: 15px;
-    padding: 2px 0px 2px 10px;
+    padding: 2px 10px;
 }
 
 .DOPBookingSystem_Hour .bind-content .info{
