@@ -2,7 +2,7 @@
 
 /*
 * Title                   : Booking System (WordPress Plugin)
-* Version                 : 1.0
+* Version                 : 1.1
 * File                    : fr.php
 * File Version            : 1.0
 * Created / Last Modified : 29 July 2013
@@ -10,90 +10,90 @@
 * Copyright               : © 2013 Dot on Paper
 * Website                 : http://www.dotonpaper.net
 * Description             : French Front End Translation.
-* Translated by           : Dot on Paper
+* Translated by           : Asselin de Beauville Christophe - http://gegeek.net/
 */
    
     // Months & Week Days
-    global $DOPBS_month_names;
-    global $DOPBS_month_short_names;
-    $DOPBS_month_names = array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
-    $DOPBS_month_short_names = array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec');
+    global $DOPBSP_month_names;
+    global $DOPBSP_month_short_names;
+    $DOPBSP_month_names = array('Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre');
+    $DOPBSP_month_short_names = array('Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Jun', 'Jui', 'Aou', 'Sep', 'Oct', 'Nov', 'Dec');
     
-    global $DOPBS_day_names;
-    global $DOPBS_day_short_names;
-    $DOPBS_day_names = array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
-    $DOPBS_day_short_names = array('Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa');
+    global $DOPBSP_day_names;
+    global $DOPBSP_day_short_names;
+    $DOPBSP_day_names = array('Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi');
+    $DOPBSP_day_short_names = array('Di', 'lu', 'Ma', 'Me', 'Je', 'Ve', 'Sa');
     
     // Calendar 
-    define('DOPBS_ADD_MONTH_VIEW', "Add Month View");
-    define('DOPBS_REMOVE_MONTH_VIEW', "Remove Month View");
-    define('DOPBS_PREVIOUS_MONTH', "Previous Month");
-    define('DOPBS_NEXT_MONTH', "Next Month");
-    define('DOPBS_AVAILABLE_ONE_TEXT', "available");
-    define('DOPBS_AVAILABLE_TEXT', "available");
-    define('DOPBS_BOOKED_TEXT', "booked");
-    define('DOPBS_UNAVAILABLE_TEXT', "unavailable");
+    define('DOPBSP_ADD_MONTH_VIEW', "Ajouter la vue du mois suivant");
+    define('DOPBSP_REMOVE_MONTH_VIEW', "Supprimer la vue du mois suivant");
+    define('DOPBSP_PREVIOUS_MONTH', "Mois précédent");
+    define('DOPBSP_NEXT_MONTH', "Mois suivant");
+    define('DOPBSP_AVAILABLE_ONE_TEXT', "Disponible");
+    define('DOPBSP_AVAILABLE_TEXT', "disponible");
+    define('DOPBSP_BOOKED_TEXT', "Réservé");
+    define('DOPBSP_UNAVAILABLE_TEXT', "Indisponible");
                             
     // Calendar Form 
-    define('DOPBS_CHECK_IN_LABEL', "Check In");
-    define('DOPBS_CHECK_OUT_LABEL', "Check Out");
-    define('DOPBS_START_HOURS_LABEL', "Start at"); 
-    define('DOPBS_END_HOURS_LABEL', "Finish at");
-    define('DOPBS_NO_ITEMS_LABEL', "No book items"); 
-    define('DOPBS_SERVICES_LABEL', "Services");
-    define('DOPBS_TOTAL_PRICE_LABEL', "Total:");
-    define('DOPBS_DEPOSIT_PRICE_LABEL', "Deposit:");
-    define('DOPBS_DEPOSIT_PRICE_LEFT_LABEL', " Left to Pay:");
-    define('DOPBS_DISCOUNT_PRICE_LABEL', "Actual Price:");
-    define('DOPBS_DISCOUNT_TEXT', "discount");
-    define('DOPBS_DEPOSIT_TEXT', "deposit");
+    define('DOPBSP_CHECK_IN_LABEL', "Arrivée");
+    define('DOPBSP_CHECK_OUT_LABEL', "Départ");
+    define('DOPBSP_START_HOURS_LABEL', "Arrivée à"); 
+    define('DOPBSP_END_HOURS_LABEL', "Départ à");
+    define('DOPBSP_NO_ITEMS_LABEL', "Aucun élément de réservation"); 
+    define('DOPBSP_SERVICES_LABEL', "Services");
+    define('DOPBSP_TOTAL_PRICE_LABEL', "Total:");
+    define('DOPBSP_DEPOSIT_PRICE_LABEL', "Dépôt:");
+    define('DOPBSP_DEPOSIT_PRICE_LEFT_LABEL', " Reste à payer:");
+    define('DOPBSP_DISCOUNT_PRICE_LABEL', "Prix actuel:");
+    define('DOPBSP_DISCOUNT_TEXT', "rabais");
+    define('DOPBSP_DEPOSIT_TEXT', "dépôt");
     
-    define('DOPBS_NO_SERVICES_AVAILABLE', "There are no services available for the period you selected.");
-    define('DOPBS_MIN_STAY_WARNING', "You need to book a minimum number of days");
-    define('DOPBS_MAX_STAY_WARNING', "You can book only a maximum number of days");
+    define('DOPBSP_NO_SERVICES_AVAILABLE', "Il n'y a pas de services disponibles pour la période que vous avez sélectionné.");
+    define('DOPBSP_MIN_STAY_WARNING', "Vous avez besoin de réserver un nombre minimum de jours");
+    define('DOPBSP_MAX_STAY_WARNING', "Vous avez besoin de réserver un nombre maximum de jours");
     
-    define('DOPBS_FORM_TITLE', 'Contact Information');
-    define('DOPBS_FORM_REQUIRED', "is required.");    
-    define('DOPBS_FORM_EMAIL_INVALID', "is invalid. Please enter a valid Email."); 
-    define('DOPBS_NO_PEOPLE_LABEL', "No People");
-    define('DOPBS_NO_ADULTS_LABEL', "No Adults");
-    define('DOPBS_NO_CHILDREN_LABEL', "No Children");
-    define('DOPBS_PAYMENT_ARRIVAL_LABEL', "Pay on Arrival (need to be approved)"); 
-    define('DOPBS_PAYMENT_ARRIVAL_SUCCESS', "Your request has been successfully sent. Please wait for approval.");
-    define('DOPBS_PAYMENT_ARRIVAL_SUCCESS_INSTANT_BOOKING', "Your request has been successfully received. We are waiting you!");
-    define('DOPBS_PAYMENT_PAYPAL_LABEL', "Pay on PayPal (instant booking)");
-    define('DOPBS_PAYMENT_PAYPAL_TRANSACTON_ID_LABEL', "PayPal Transaction ID");
-    define('DOPBS_PAYMENT_PAYPAL_SUCCESS', "Your payment was approved and services are booked."); 
-    define('DOPBS_PAYMENT_PAYPAL_ERROR', "There was an error while processing PayPal payment. Please try again.");
-    define('DOPBS_TERMS_AND_CONDITIONS_INVALID', "You must agree with our Terms & Conditions to continue.");  
-    define('DOPBS_TERMS_AND_CONDITIONS_LABEL', "I accept to agree to the Terms & Conditions.");
-    define('DOPBS_BOOK_NOW_LABEL', "Book Now");
+    define('DOPBSP_FORM_TITLE', 'Informations de contact');
+    define('DOPBSP_FORM_REQUIRED', "est requis.");    
+    define('DOPBSP_FORM_EMAIL_INVALID', "est invalide. Veuillez entrer une adresse e-mail valide."); 
+    define('DOPBSP_NO_PEOPLE_LABEL', "Personne");
+    define('DOPBSP_NO_ADULTS_LABEL', "Aucun adulte");
+    define('DOPBSP_NO_CHILDREN_LABEL', "Aucun enfant");
+    define('DOPBSP_PAYMENT_ARRIVAL_LABEL', "Payer à l'arrivée (réservation instantanée)"); 
+    define('DOPBSP_PAYMENT_ARRIVAL_SUCCESS', "Votre demande a bien été envoyé. Veuillez attendre l'approbation.");
+    define('DOPBSP_PAYMENT_ARRIVAL_SUCCESS_INSTANT_BOOKING', "Votre demande a bien été reçue. Nous vous attendons!");
+    define('DOPBSP_PAYMENT_PAYPAL_LABEL', "Payer sur PayPal (réservation instantanée)");
+    define('DOPBSP_PAYMENT_PAYPAL_TRANSACTON_ID_LABEL', "ID de tansaction Paypal");
+    define('DOPBSP_PAYMENT_PAYPAL_SUCCESS', "Votre paiement a été approuvé et vos services sont réservés."); 
+    define('DOPBSP_PAYMENT_PAYPAL_ERROR', "Il y a eu une erreur lors du traitement de paiement PayPal. Veuillez essayer à nouveau.");
+    define('DOPBSP_TERMS_AND_CONDITIONS_INVALID', "Vous devez accepter nos Termes & Conditions pour continuer.");  
+    define('DOPBSP_TERMS_AND_CONDITIONS_LABEL', "Je m'engage à accepter les Termes & Conditions.");
+    define('DOPBSP_BOOK_NOW_LABEL', "Réserver maintenant");
     
     // Email 
-    define('DOPBS_EMAIL_RESERVATION_ID', 'Reservation ID');
-    define('DOPBS_EMAIL_CALENDAR_ID', 'Calendar ID');
-    define('DOPBS_EMAIL_CALENDAR_NAME', 'Calendar Name');
+    define('DOPBSP_EMAIL_RESERVATION_ID', 'ID de réservation');
+    define('DOPBSP_EMAIL_CALENDAR_ID', 'ID du calendrier');
+    define('DOPBSP_EMAIL_CALENDAR_NAME', 'Nom du calendrier');
     
-    define('DOPBS_EMAIL_TO_USER_SUBJECT', "Your booking request has been sent.");
-    define('DOPBS_EMAIL_TO_USER_MESSAGE_PAYMENT_ARRIVAL', "Please wait for approval. Below are the details.");
-    define('DOPBS_EMAIL_TO_USER_MESSAGE_PAYMENT_ARRIVAL_INSTANT_BOOKING', "Below are the details.");
-    define('DOPBS_EMAIL_TO_USER_MESSAGE_PAYMENT_PAYPAL', "The period has been book. Below are the details.");
+    define('DOPBSP_EMAIL_TO_USER_SUBJECT', "Votre demande de réservation a été envoyée.");
+    define('DOPBSP_EMAIL_TO_USER_MESSAGE_PAYMENT_ARRIVAL', "Veuillez attendre l'approbation. Voici les détails ci-dessous.");
+    define('DOPBSP_EMAIL_TO_USER_MESSAGE_PAYMENT_ARRIVAL_INSTANT_BOOKING', "Voici les détails ci-dessous.");
+    define('DOPBSP_EMAIL_TO_USER_MESSAGE_PAYMENT_PAYPAL', "La période a été réservée. Voici les détails.");
     
-    define('DOPBS_EMAIL_TO_ADMIN_SUBJECT', "You received a booking request.");
-    define('DOPBS_EMAIL_TO_ADMIN_MESSAGE_PAYMENT_ARRIVAL', "Below are the details. Go to admin to Approve or Reject the request.");
-    define('DOPBS_EMAIL_TO_ADMIN_MESSAGE_PAYMENT_ARRIVAL_INSTANT_BOOKING', "Below are the details. Go to admin to Cancel the request.");
-    define('DOPBS_EMAIL_TO_ADMIN_MESSAGE_PAYMENT_PAYPAL', "Below are the details. Payment has been done via PayPal and the period has been booked.");
+    define('DOPBSP_EMAIL_TO_ADMIN_SUBJECT', "Vous avez reçu une demande de réservation.");
+    define('DOPBSP_EMAIL_TO_ADMIN_MESSAGE_PAYMENT_ARRIVAL', "Voici les détails. Aller à l'administration pour approuver ou rejeter la demande.");
+    define('DOPBSP_EMAIL_TO_ADMIN_MESSAGE_PAYMENT_ARRIVAL_INSTANT_BOOKING', "Voici les détails. Aller à l'administration pour annuler la demande.");
+    define('DOPBSP_EMAIL_TO_ADMIN_MESSAGE_PAYMENT_PAYPAL', "Voici les détails. Le paiement a été effectué via PayPal et la période a été réservée.");
     
-    define('DOPBS_EMAIL_APPROVED_SUBJECT', "Your booking request has been approved.");
-    define('DOPBS_EMAIL_APPROVED_MESSAGE', "Congratulations! Your booking request has been approved. Details about your request are below.");
+    define('DOPBSP_EMAIL_APPROVED_SUBJECT', "Votre demande de réservation a été approuvée.");
+    define('DOPBSP_EMAIL_APPROVED_MESSAGE', "Félicitations! Votre demande de réservation a été approuvée. Les détails au sujet de votre demande sont ci-dessous.");
     
-    define('DOPBS_EMAIL_REJECTED_SUBJECT', "Your booking request has been rejected.");
-    define('DOPBS_EMAIL_REJECTED_MESSAGE', "I'm sorry but your booking request has been rejected. Details about your request are below.");
+    define('DOPBSP_EMAIL_REJECTED_SUBJECT', "Votre demande de réservation a été rejetée.");
+    define('DOPBSP_EMAIL_REJECTED_MESSAGE', "Nous sommes désolés mais votre demande de réservation a été rejetée. Les détails au sujet de votre demande sont ci-dessous.");
     
-    define('DOPBS_EMAIL_CANCELED_SUBJECT', "Your booking request has been canceled.");
-    define('DOPBS_EMAIL_CANCELED_MESSAGE', "I'm sorry but your booking request has been canceled. Details about your request are below.");
+    define('DOPBSP_EMAIL_CANCELED_SUBJECT', "Votre demande de réservation a été annulée.");
+    define('DOPBSP_EMAIL_CANCELED_MESSAGE', "Nous sommes désolés mais votre demande de réservation a été annulée. Les détails au sujet de votre demande sont ci-dessous.");
     
-    define('DOPBS_BOOKING_FORM_CHECKED', "Checked");
-    define('DOPBS_BOOKING_FORM_UNCHECKED', "Unchecked");
+    define('DOPBSP_BOOKING_FORM_CHECKED', "Coché");
+    define('DOPBSP_BOOKING_FORM_UNCHECKED', "Non coché");
     
 ?>
