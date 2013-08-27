@@ -1,7 +1,7 @@
 === Plugin Name ===
 Contributors: DOTonPAPER
 Donate link: http://www.dopdemo.net/wp/booking-system
-Tags: accommodations, admin, administration, ajax, appointment, availability, availability calendar, book, bookable, bookable events, booking, booking calendar, booking form, booking module, booking plugin, booking system, bookings, calendar, event, event calendar, events, hotel, hotel booking, hotel rooms, jquery, management, meeting, meeting scheduling, organizer, payment, paypal, plugin, rent, rental, reservation, reservation calendar, reservation plugin, reservation system, schedule, schedule calendar, schedule system, scheduling, service, to book, villa booking
+Tags: accommodations, admin, administration, ajax, appointment, availability, availability calendar, book, bookable, bookable events, boking, booking, booking calendar, booking form, booking module, booking plugin, booking system, bookings, calendar, event, event calendar, events, hotel, hotel booking, hotel rooms, jquery, management, meeting, meeting scheduling, organizer, payment, paypal, plugin, rent, rental, reservation, reservation calendar, reservation plugin, reservation system, schedule, schedule calendar, schedule system, scheduling, service, to book, villa booking
 Requires at least: 3.3
 Tested up to: 3.6
 Stable tag: trunk
@@ -89,7 +89,7 @@ Upload the folder **booking-system** from the zip file to "wp-content/plugins/" 
 
 == Frequently Asked Questions ==
 
-Click [here](http://help.dotonpaper.net/booking-system-wordpress-plugin.html) to view Booking System Documentation.
+Click [here](http://help.dotonpaper.net/booking-system-wordpress-plugin.html) to view Boking System Documentation.
 Click [here](http://help.dotonpaper.net/booking-system-wordpress-plugin.html#faq) to view Booking System FAQ.
 
 == Screenshots ==
