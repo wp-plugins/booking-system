@@ -2,7 +2,7 @@
 
 /*
 * Title                   : Booking System (WordPress Plugin)
-* Version                 : 1.0
+* Version                 : 1.1
 * File                    : fr.php
 * File Version            : 1.0
 * Created / Last Modified : 29 July 2013
@@ -10,318 +10,318 @@
 * Copyright               : © 2013 Dot on Paper
 * Website                 : http://www.dotonpaper.net
 * Description             : French Back End Translation.
-* Translated by           : Dot on Paper
+* Translated by           : Asselin de Beauville Christophe - http://gegeek.net/
 */
 
-    define('DOPBS_TITLE', "Booking System");
+    define('DOPBSP_TITLE', "Système de réservation Pro");
 
     // Loading ...
-    define('DOPBS_LOAD', "Load data ...");
+    define('DOPBSP_LOAD', "Chargement des informations ...");
 
     // Save ...
-    define('DOPBS_SAVE', "Save data ...");
-    define('DOPBS_SAVE_SUCCESS', "Data has been saved.");
+    define('DOPBSP_SAVE', "Sauvegarde des informations ...");
+    define('DOPBSP_SAVE_SUCCESS', "Les informations ont été sauvegardées.");
     
     // Months & Week Days
-    global $DOPBS_month_names;
-    $DOPBS_month_names = array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
+    global $DOPBSP_month_names;
+    $DOPBSP_month_names = array('Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre');
     
-    global $DOPBS_day_names;
-    $DOPBS_day_names = array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+    global $DOPBSP_day_names;
+    $DOPBSP_day_names = array('Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi');
     
     // Help
-    define('DOPBS_CALENDARS_HELP', "Click on a calendar item to open the editing area.");
-    define('DOPBS_CALENDAR_EDIT_HELP', "Select the days and hours to edit them. Click on the 'pencil' icon to edit calendar settings. Click on the 'mail' icon to see if you have reservations. Read documentation for more information.");
-    define('DOPBS_CALENDAR_EDIT_SETTINGS_HELP', "Click 'Submit Button' to save changes. Click 'Back Button' to return to the calendar.");
+    define('DOPBSP_CALENDARS_HELP', "Cliquez sur l'icône 'Plus' pour ajouter un mois. Cliquez sur un élément du calendrier pour ouvrir la zone d'édition.");
+    define('DOPBSP_CALENDAR_EDIT_HELP', "Sélectionnez les jours et les heures à éditer. Cliquez sur l'icône 'stylo' pour éditer les paramètres du calendrier. Cliquez sur l'icône 'e-mail' pour voir si vous avez des réservations. Lisez la documentation pour plus d'informations.");
+    define('DOPBSP_CALENDAR_EDIT_SETTINGS_HELP', "Cliquez sur le bouton 'Enregistrer' pour sauvegarder les changements. Cliquez sur le bouton 'Supprimer' pour supprimer le calendrier. Cliquez sur le bouton 'Retour' pour retourner au calendrier.");
     
     // Form
-    define('DOPBS_SUBMIT', "Submit");
-    define('DOPBS_DELETE', "Delete");
-    define('DOPBS_BACK', "Back");
-    define('DOPBS_BACK_SUBMIT', "Back to calendar.");
-    define('DOPBS_ENABLED', "Enabled");
-    define('DOPBS_DISABLED', "Disabled");
-    define('DOPBS_DATE_TYPE_AMERICAN', "American (mm dd, yyyy)");
-    define('DOPBS_DATE_TYPE_EUROPEAN', "European (dd mm yyyy)");
+    define('DOPBSP_SUBMIT', "Enregistrer");
+    define('DOPBSP_DELETE', "Supprimer");
+    define('DOPBSP_BACK', "Retour");
+    define('DOPBSP_BACK_SUBMIT', "Retour au calendrier.");
+    define('DOPBSP_ENABLED', "Activé");
+    define('DOPBSP_DISABLED', "Désactivé");
+    define('DOPBSP_DATE_TYPE_AMERICAN', "Américain (MM JJ, YYYY)");
+    define('DOPBSP_DATE_TYPE_EUROPEAN', "Européen (JJ MM YYYY)");
 
     // Calendars    
-    define('DOPBS_SHOW_CALENDARS', "Calendars");
-    define('DOPBS_CALENDARS_LOADED', "Calendars list loaded.");
-    define('DOPBS_CALENDAR_LOADED', "Calendar loaded.");
-    define('DOPBS_NO_CALENDARS', "No calendars.");    
+    define('DOPBSP_SHOW_CALENDARS', "Calendriers");
+    define('DOPBSP_CALENDARS_LOADED', "Liste des calendriers chargée.");
+    define('DOPBSP_CALENDAR_LOADED', "Calendrier chargé.");
+    define('DOPBSP_NO_CALENDARS', "Aucun calendrier.");    
     
     // Calendar 
-    define('DOPBS_ADD_MONTH_VIEW', "Add Month View");
-    define('DOPBS_REMOVE_MONTH_VIEW', "Remove Month View");
-    define('DOPBS_PREVIOUS_MONTH', "Previous Month");
-    define('DOPBS_NEXT_MONTH', "Next Month");
-    define('DOPBS_AVAILABLE_ONE_TEXT', "available");
-    define('DOPBS_AVAILABLE_TEXT', "available");
-    define('DOPBS_BOOKED_TEXT', "booked");
-    define('DOPBS_UNAVAILABLE_TEXT', "unavailable");
+    define('DOPBSP_ADD_MONTH_VIEW', "Ajouter la vue du mois suivant");
+    define('DOPBSP_REMOVE_MONTH_VIEW', "Supprimer la vue du mois suivant");
+    define('DOPBSP_PREVIOUS_MONTH', "Mois précédent");
+    define('DOPBSP_NEXT_MONTH', "Mois suivant");
+    define('DOPBSP_AVAILABLE_ONE_TEXT', "Disponible");
+    define('DOPBSP_AVAILABLE_TEXT', "disponible");
+    define('DOPBSP_BOOKED_TEXT', "Réservé");
+    define('DOPBSP_UNAVAILABLE_TEXT', "Indisponible");
                             
     // Calendar Form 
-    define('DOPBS_DATE_START_LABEL', "Start Date");
-    define('DOPBS_DATE_END_LABEL', "End Date");    
-    define('DOPBS_STATUS_LABEL', "Status");
-    define('DOPBS_STATUS_AVAILABLE_TEXT', "Available");
-    define('DOPBS_STATUS_BOOKED_TEXT', "Booked");
-    define('DOPBS_STATUS_SPECIAL_TEXT', "Special");
-    define('DOPBS_STATUS_UNAVAILABLE_TEXT', "Unavailable");
-    define('DOPBS_PRICE_LABEL', "Price");    
-    define('DOPBS_PROMO_LABEL', "Promo Price");               
-    define('DOPBS_AVAILABLE_LABEL', "No. Available");         
-    define('DOPBS_HOURS_DEFINITIONS_CHANGE_LABEL', "Change Hours Definitions (changing the definitions will overwrite any previous hours data)");
-    define('DOPBS_HOURS_DEFINITIONS_LABEL', "Hours Definitions (hh:mm add one per line). Use only 24 hours format.");  
-    define('DOPBS_HOURS_SET_DEFAULT_DATA_LABEL', "Set default hours values for this day(s). This will overwrite any existing data.)"); 
-    define('DOPBS_HOURS_START_LABEL', "Start Hour"); 
-    define('DOPBS_HOURS_END_LABEL', "End Hour");
-    define('DOPBS_HOURS_INFO_LABEL', "Information (users will see this message)");
-    define('DOPBS_HOURS_NOTES_LABEL', "Notes (only you will see this message)");
-    define('DOPBS_GROUP_DAYS_LABEL', "Group Days");
-    define('DOPBS_GROUP_HOURS_LABEL', "Group Hours");
-    define('DOPBS_RESET_CONFIRMATION', "Are you sure you want to reset data? If you reset days, hours data from those days will be reset to.");
+    define('DOPBSP_DATE_START_LABEL', "Date d'arrivée");
+    define('DOPBSP_DATE_END_LABEL', "Date de départ");    
+    define('DOPBSP_STATUS_LABEL', "Statut");
+    define('DOPBSP_STATUS_AVAILABLE_TEXT', "Disponible");
+    define('DOPBSP_STATUS_BOOKED_TEXT', "Réservé");
+    define('DOPBSP_STATUS_SPECIAL_TEXT', "Special");
+    define('DOPBSP_STATUS_UNAVAILABLE_TEXT', "Indisponible");
+    define('DOPBSP_PRICE_LABEL', "Prix");    
+    define('DOPBSP_PROMO_LABEL', "Prix Promotionnel");               
+    define('DOPBSP_AVAILABLE_LABEL', "No. Disponible");         
+    define('DOPBSP_HOURS_DEFINITIONS_CHANGE_LABEL', "Changer les horaires(cela remplacera toute autre définition horaire précédente)");
+    define('DOPBSP_HOURS_DEFINITIONS_LABEL', "Heures (hh:mm, ajouter une par ligne). Utiliser uniquement le format 24h.");  
+    define('DOPBSP_HOURS_SET_DEFAULT_DATA_LABEL', "Définir les horaires par défaut pour ce(s) jour(s). Cela remplacera toute configuration horaire existante.)"); 
+    define('DOPBSP_HOURS_START_LABEL', "Heure d'arrivée"); 
+    define('DOPBSP_HOURS_END_LABEL', "Heure de départ");
+    define('DOPBSP_HOURS_INFO_LABEL', "Information (les utilisateurs verront ce message)");
+    define('DOPBSP_HOURS_NOTES_LABEL', "Notes (vous serez le seul à voir ce message)");
+    define('DOPBSP_GROUP_DAYS_LABEL', "Groupe de jours");
+    define('DOPBSP_GROUP_HOURS_LABEL', "Groupe d'heures");
+    define('DOPBSP_RESET_CONFIRMATION', "Etes-vous sûr de vouloir réinitialiser les informations? Si vous réinitialisez les jours, les informations horaires de ces jours seront aussi réinitialisées.");
     
     // Add Calendar
-    define('DOPBS_ADD_CALENDAR_NAME', "Booking Calendar");
+    define('DOPBSP_ADD_CALENDAR_NAME', "Nouveau calendrier");
 
     // Edit Calendar
-    define('DOPBS_EDIT_CALENDAR_SUBMIT', "Edit Calendar");
-    define('DOPBS_EDIT_CALENDAR_USERS_PERMISSIONS', "Users Permissions");
-    define('DOPBS_EDIT_CALENDAR_SUCCESS', "You have succesfully edited the calendar.");
+    define('DOPBSP_EDIT_CALENDAR_SUBMIT', "Editer le calendrier");
+    define('DOPBSP_EDIT_CALENDAR_USERS_PERMISSIONS', "Permissions des utilisateurs");
+    define('DOPBSP_EDIT_CALENDAR_SUCCESS', "Vous avez éditer le calendrier avec succès.");
     
     // Reservations
-    define('DOPBS_SHOW_RESERVATIONS', "Show Reservations");    
-    define('DOPBS_NO_RESERVATIONS', "There are no reservations.");
+    define('DOPBSP_SHOW_RESERVATIONS', "Montrer les réservations");    
+    define('DOPBSP_NO_RESERVATIONS', "Il n'y a aucune réservations.");
     
-    define('DOPBS_RESERVATIONS_ID', "Reservation ID");
+    define('DOPBSP_RESERVATIONS_ID', "ID de la réservation");
     
-    define('DOPBS_RESERVATIONS_CHECK_IN_LABEL', "Check In");
-    define('DOPBS_RESERVATIONS_CHECK_OUT_LABEL', "Check Out");
-    define('DOPBS_RESERVATIONS_START_HOURS_LABEL', "Start at"); 
-    define('DOPBS_RESERVATIONS_END_HOURS_LABEL', "Finish at");
+    define('DOPBSP_RESERVATIONS_CHECK_IN_LABEL', "Arrivée");
+    define('DOPBSP_RESERVATIONS_CHECK_OUT_LABEL', "Départ");
+    define('DOPBSP_RESERVATIONS_START_HOURS_LABEL', "Arrivée à"); 
+    define('DOPBSP_RESERVATIONS_END_HOURS_LABEL', "Départ à");
     
-    define('DOPBS_RESERVATIONS_FIRST_NAME_LABEL', "First Name");
-    define('DOPBS_RESERVATIONS_LAST_NAME_LABEL', "Last Name");
-    define('DOPBS_RESERVATIONS_STATUS_LABEL', "Status");
-    define('DOPBS_RESERVATIONS_STATUS_PENDING', "Pending");
-    define('DOPBS_RESERVATIONS_STATUS_APPROVED', "Approved");        
-    define('DOPBS_RESERVATIONS_DATE_CREATED_LABEL', "Date Created");    
-    define('DOPBS_RESERVATIONS_PAYMENT_METHOD_LABEL', 'Payment Method');
-    define('DOPBS_RESERVATIONS_PAYMENT_METHOD_ARRIVAL', 'On Arrival');
-    define('DOPBS_RESERVATIONS_PAYMENT_METHOD_PAYPAL', 'PayPal');
-    define('DOPBS_RESERVATIONS_PAYMENT_METHOD_PAYPAL_TRANSACTION_ID_LABEL', 'PayPal Transaction ID');   
-    define('DOPBS_RESERVATIONS_TOTAL_PRICE_LABEL', "Total:"); 
-    define('DOPBS_RESERVATIONS_NO_ITEMS_LABEL', "No Booked Items"); 
-    define('DOPBS_RESERVATIONS_PRICE_LABEL', "Price"); 
-    define('DOPBS_RESERVATIONS_DEPOSIT_PRICE_LABEL', "Deposit");
-    define('DOPBS_RESERVATIONS_DEPOSIT_PRICE_LEFT_LABEL', " Left to Pay");
-    define('DOPBS_RESERVATIONS_DISCOUNT_PRICE_LABEL', "Actual Price");
-    define('DOPBS_RESERVATIONS_DISCOUNT_PRICE_TEXT', "discount");
-    define('DOPBS_RESERVATIONS_EMAIL_LABEL', "Email"); 
-    define('DOPBS_RESERVATIONS_PHONE_LABEL', "Phone"); 
-    define('DOPBS_RESERVATIONS_NO_PEOPLE_LABEL', "No People"); 
-    define('DOPBS_RESERVATIONS_NO_ADULTS_LABEL', "No Adults"); 
-    define('DOPBS_RESERVATIONS_NO_CHILDREN_LABEL', "No Children"); 
-    define('DOPBS_RESERVATIONS_MESSAGE_LABEL', "Message");
+    define('DOPBSP_RESERVATIONS_FIRST_NAME_LABEL', "Prénom");
+    define('DOPBSP_RESERVATIONS_LAST_NAME_LABEL', "Nom");
+    define('DOPBSP_RESERVATIONS_STATUS_LABEL', "Statut");
+    define('DOPBSP_RESERVATIONS_STATUS_PENDING', "En attente");
+    define('DOPBSP_RESERVATIONS_STATUS_APPROVED', "Approuvé");        
+    define('DOPBSP_RESERVATIONS_DATE_CREATED_LABEL', "Date de création");    
+    define('DOPBSP_RESERVATIONS_PAYMENT_METHOD_LABEL', 'Méthode de paiement');
+    define('DOPBSP_RESERVATIONS_PAYMENT_METHOD_ARRIVAL', 'A l\'arrivée');
+    define('DOPBSP_RESERVATIONS_PAYMENT_METHOD_PAYPAL', 'PayPal');
+    define('DOPBSP_RESERVATIONS_PAYMENT_METHOD_PAYPAL_TRANSACTION_ID_LABEL', 'ID de la transaction Paypal');   
+    define('DOPBSP_RESERVATIONS_TOTAL_PRICE_LABEL', "Total:"); 
+    define('DOPBSP_RESERVATIONS_NO_ITEMS_LABEL', "Aucun élément réservé"); 
+    define('DOPBSP_RESERVATIONS_PRICE_LABEL', "Prix"); 
+    define('DOPBSP_RESERVATIONS_DEPOSIT_PRICE_LABEL', "Dépôt");
+    define('DOPBSP_RESERVATIONS_DEPOSIT_PRICE_LEFT_LABEL', " Reste à payer");
+    define('DOPBSP_RESERVATIONS_DISCOUNT_PRICE_LABEL', "Prix actuel");
+    define('DOPBSP_RESERVATIONS_DISCOUNT_PRICE_TEXT', "Rabais");
+    define('DOPBSP_RESERVATIONS_EMAIL_LABEL', "Email"); 
+    define('DOPBSP_RESERVATIONS_PHONE_LABEL', "Téléphone"); 
+    define('DOPBSP_RESERVATIONS_NO_PEOPLE_LABEL', "Aucune personne"); 
+    define('DOPBSP_RESERVATIONS_NO_ADULTS_LABEL', "Aucun adulte"); 
+    define('DOPBSP_RESERVATIONS_NO_CHILDREN_LABEL', "Aucun enfant"); 
+    define('DOPBSP_RESERVATIONS_MESSAGE_LABEL', "Message");
     
-    define('DOPBS_RESERVATIONS_JUMP_TO_DAY_LABEL', 'Jump to day');
-    define('DOPBS_RESERVATIONS_APPROVE_LABEL', 'Approve');
-    define('DOPBS_RESERVATIONS_REJECT_LABEL', 'Reject');
-    define('DOPBS_RESERVATIONS_CANCEL_LABEL', 'Cancel');
+    define('DOPBSP_RESERVATIONS_JUMP_TO_DAY_LABEL', 'Aller au jour');
+    define('DOPBSP_RESERVATIONS_APPROVE_LABEL', 'Approuver');
+    define('DOPBSP_RESERVATIONS_REJECT_LABEL', 'Rejeter');
+    define('DOPBSP_RESERVATIONS_CANCEL_LABEL', 'Annuler');
     
-    define('DOPBS_RESERVATIONS_APPROVE_CONFIRMATION', 'Are you sure you want to approve this reservation?');
-    define('DOPBS_RESERVATIONS_APPROVE_SUCCESS', 'The reservation has been approved.');
-    define('DOPBS_RESERVATIONS_REJECT_CONFIRMATION', 'Are you sure you want to reject this reservation?');
-    define('DOPBS_RESERVATIONS_REJECT_SUCCESS', 'The reservation has been rejected.');
-    define('DOPBS_RESERVATIONS_CANCEL_CONFIRMATION', 'Are you sure you want to cancel this reservation?');
-    define('DOPBS_RESERVATIONS_CANCEL_SUCCESS', 'The reservation has been canceled.');
+    define('DOPBSP_RESERVATIONS_APPROVE_CONFIRMATION', 'Etes-vous sûr de vouloir approuver cette réservation?');
+    define('DOPBSP_RESERVATIONS_APPROVE_SUCCESS', 'Cette réservation à été approuvée.');
+    define('DOPBSP_RESERVATIONS_REJECT_CONFIRMATION', 'Etes-vous sûr de vouloir rejeter cette réservation?');
+    define('DOPBSP_RESERVATIONS_REJECT_SUCCESS', 'Cette réservation à été rejetée.');
+    define('DOPBSP_RESERVATIONS_CANCEL_CONFIRMATION', 'Etes-vous sûr de vouloir annuler cette réservation?');
+    define('DOPBSP_RESERVATIONS_CANCEL_SUCCESS', 'Cette réservation à été annulée.');
     
     // TinyMCE
-    define('DOPBS_TINYMCE_ADD', 'Add Calendar');
+    define('DOPBSP_TINYMCE_ADD', 'Ajouter un calendrier');
     
     // Settings
-    define('DOPBS_GENERAL_STYLES_SETTINGS', "General Settings");
-    define('DOPBS_CALENDAR_NAME', "Name");
-    define('DOPBS_AVAILABLE_DAYS', "Available Days");
-    define('DOPBS_FIRST_DAY', "First Day");
-    define('DOPBS_CURRENCY', "Currency");
-    define('DOPBS_DATE_TYPE', "Date Type");
-    define('DOPBS_PREDEFINED', "Select Predifined Settings");
-    define('DOPBS_TEMPLATE', "Style Template");
-    define('DOPBS_MIN_STAY', "Minimum Stay");
-    define('DOPBS_MAX_STAY', "Maximum Stay");
-    define('DOPBS_NO_ITEMS_ENABLED', "Enable Number of Items Select");
-    define('DOPBS_VIEW_ONLY', "View Only Info");
-    define('DOPBS_PAGE_URL', "Page URL");
+    define('DOPBSP_GENERAL_STYLES_SETTINGS', "Paramètres généraux");
+    define('DOPBSP_CALENDAR_NAME', "Nom");
+    define('DOPBSP_AVAILABLE_DAYS', "Jours disponibles");
+    define('DOPBSP_FIRST_DAY', "Premier jour");
+    define('DOPBSP_CURRENCY', "Devise");
+    define('DOPBSP_DATE_TYPE', "Date");
+    define('DOPBSP_PREDEFINED', "Selectionner les paramètres prédéfinis");
+    define('DOPBSP_TEMPLATE', "Modèle de style");
+    define('DOPBSP_MIN_STAY', "Durée minimum");
+    define('DOPBSP_MAX_STAY', "Durée maximum");
+    define('DOPBSP_NO_ITEMS_ENABLED', "Activer le nombre d\'éléments sélectionnés");
+    define('DOPBSP_VIEW_ONLY', "Voir uniquement les informations");
+    define('DOPBSP_PAGE_URL', "URL de la page");
     
-    define('DOPBS_NOTIFICATIONS_STYLES_SETTINGS', "Notifications Settings");
-    define('DOPBS_NOTIFICATIONS_TEMPLATE', "Email Template");
-    define('DOPBS_NOTIFICATIONS_EMAIL', "Notifications Email");
-    define('DOPBS_NOTIFICATIONS_SMTP_ENABLED', "Enable SMTP");
-    define('DOPBS_NOTIFICATIONS_SMTP_HOST_NAME', "SMTP Host Name");
-    define('DOPBS_NOTIFICATIONS_SMTP_HOST_PORT', "SMTP Host Port");
-    define('DOPBS_NOTIFICATIONS_SMTP_SSL', "SMTP SSL Conenction");
-    define('DOPBS_NOTIFICATIONS_SMTP_USER', "SMTP Host User");
-    define('DOPBS_NOTIFICATIONS_SMTP_PASSWORD', "SMTP Host Password");
+    define('DOPBSP_NOTIFICATIONS_STYLES_SETTINGS', "Paramètres de notifications");
+    define('DOPBSP_NOTIFICATIONS_TEMPLATE', "Modèle d'e-mail");
+    define('DOPBSP_NOTIFICATIONS_EMAIL', "E-mails de notifications");
+    define('DOPBSP_NOTIFICATIONS_SMTP_ENABLED', "Activer SMTP");
+    define('DOPBSP_NOTIFICATIONS_SMTP_HOST_NAME', "Nom d'hôte SMTP");
+    define('DOPBSP_NOTIFICATIONS_SMTP_HOST_PORT', "Port d'hôte SMTP");
+    define('DOPBSP_NOTIFICATIONS_SMTP_SSL', "Connexion SSL SMTP");
+    define('DOPBSP_NOTIFICATIONS_SMTP_USER', "Hôte utilisateur SMTP");
+    define('DOPBSP_NOTIFICATIONS_SMTP_PASSWORD', "Mot de passe hôte SMTP");
                                               
-    define('DOPBS_HOURS_STYLES_SETTINGS', "Days/Hours Settings");
-    define('DOPBS_MULTIPLE_DAYS_SELECT', "Use Check In/Check Out");
-    define('DOPBS_MORNING_CHECK_OUT', "Morning Check Out");
-    define('DOPBS_HOURS_ENABLED', "Use Hours");
-    define('DOPBS_HOURS_DEFINITIONS', "Define Hours");
-    define('DOPBS_MULTIPLE_HOURS_SELECT', "Use Start/Finish Hours");
-    define('DOPBS_HOURS_AMPM', "Enable AM/PM format");
-    define('DOPBS_LAST_HOUR_TO_TOTAL_PRICE', "Add last selected hour price to total price");
-    define('DOPBS_HOURS_INTERVAL_ENABLED', "Enable hours interval");
+    define('DOPBSP_HOURS_STYLES_SETTINGS', "Paramètres des heures");
+    define('DOPBSP_MULTIPLE_DAYS_SELECT', "Utiliser Arrivée/Départ");
+    define('DOPBSP_MORNING_CHECK_OUT', "Départ le matin");
+    define('DOPBSP_HOURS_ENABLED', "Utiliser les heures");
+    define('DOPBSP_HOURS_DEFINITIONS', "Definir les heures");
+    define('DOPBSP_MULTIPLE_HOURS_SELECT', "Utiliser le début/fin des heures");
+    define('DOPBSP_HOURS_AMPM', "Activer le format AM/PM");
+    define('DOPBSP_LAST_HOUR_TO_TOTAL_PRICE', "Ajouter le prix horaire précédemment sélectionné au prix total");
+    define('DOPBSP_HOURS_INTERVAL_ENABLED', "Ajouter les intervalles horaires");
     
-    define('DOPBS_DISCOUNTS_NO_DAYS_SETTINGS', "Discounts by Number of Days");
-    define('DOPBS_DISCOUNTS_NO_DAYS', "Number of Days");
-    define('DOPBS_DISCOUNTS_NO_DAYS_DAYS', "days booking");
+    define('DOPBSP_DISCOUNTS_NO_DAYS_SETTINGS', "Rabais par Nombre de jours");
+    define('DOPBSP_DISCOUNTS_NO_DAYS', "Nombre de jours");
+    define('DOPBSP_DISCOUNTS_NO_DAYS_DAYS', "jours de réservation");
     
-    define('DOPBS_DEPOSIT_SETTINGS', "Deposit");
-    define('DOPBS_DEPOSIT', "Deposit value");
+    define('DOPBSP_DEPOSIT_SETTINGS', "Depôt");
+    define('DOPBSP_DEPOSIT', "Valeur du dépôt");
     
-    define('DOPBS_FORM_STYLES_SETTINGS', "Contact Form Settings");
-    define('DOPBS_FORM', "Select Form");
-    define('DOPBS_INSTANT_BOOKING_ENABLED', "Instant Booking");
-    define('DOPBS_NO_PEOPLE_ENABLED', "Enable Number of People Allowed");
-    define('DOPBS_MIN_NO_PEOPLE', "Minimum number of allowed people");
-    define('DOPBS_MAX_NO_PEOPLE', "Maximum number of allowed people");
-    define('DOPBS_NO_CHILDREN_ENABLED', "Enable Number of Children Allowed");
-    define('DOPBS_MIN_NO_CHILDREN', "Minimum number of allowed children");
-    define('DOPBS_MAX_NO_CHILDREN', "Maximum number of allowed children");
-    define('DOPBS_PAYMENT_ARRIVAL_ENABLED', "Enable Payment on Arrival");
+    define('DOPBSP_FORM_STYLES_SETTINGS', "Paramètres des formulaires de contact");
+    define('DOPBSP_FORM', "Séléctionnez le formulaire");
+    define('DOPBSP_INSTANT_BOOKING_ENABLED', "Réservation instantanée");
+    define('DOPBSP_NO_PEOPLE_ENABLED', "Activer le nombre de personnes autorisées");
+    define('DOPBSP_MIN_NO_PEOPLE', "Nombre minimum de personnes autorisées");
+    define('DOPBSP_MAX_NO_PEOPLE', "Nombre maximum de personnes autorisées");
+    define('DOPBSP_NO_CHILDREN_ENABLED', "Activer le nombre d'enfants autorisés");
+    define('DOPBSP_MIN_NO_CHILDREN', "Nombre minimum d'enfants autorisés");
+    define('DOPBSP_MAX_NO_CHILDREN', "Nombre maximum d'enfants autorisés");
+    define('DOPBSP_PAYMENT_ARRIVAL_ENABLED', "Activer le paiement à l'arrivée");
     
-    define('DOPBS_PAYMENT_PAYPAL_STYLES_SETTINGS', "PayPal Settings");
-    define('DOPBS_PAYMENT_PAYPAL_ENABLED', "Enable PayPal Payment");
-    define('DOPBS_PAYMENT_PAYPAL_USERNAME', "PayPal API User Name");
-    define('DOPBS_PAYMENT_PAYPAL_PASSWORD', "PayPal API Password");
-    define('DOPBS_PAYMENT_PAYPAL_SIGNATURE', "PayPal API Signature");
-    define('DOPBS_PAYMENT_PAYPAL_CREDIT_CARD', "Enable Credit Card Payment");
-    define('DOPBS_PAYMENT_PAYPAL_SANDBOX_ENABLED', "Enable PayPal Sandbox");
+    define('DOPBSP_PAYMENT_PAYPAL_STYLES_SETTINGS', "Paramètres Paypal");
+    define('DOPBSP_PAYMENT_PAYPAL_ENABLED', "Activer le paiement par Paypal");
+    define('DOPBSP_PAYMENT_PAYPAL_USERNAME', "Nom d'utilisateur de l'API Paypal");
+    define('DOPBSP_PAYMENT_PAYPAL_PASSWORD', "Mot de passe de l'API Paypal");
+    define('DOPBSP_PAYMENT_PAYPAL_SIGNATURE', "Signature de l'API Paypal");
+    define('DOPBSP_PAYMENT_PAYPAL_CREDIT_CARD', "Activer la paiement par carte de crédit");
+    define('DOPBSP_PAYMENT_PAYPAL_SANDBOX_ENABLED', "Activer PayPal Sandbox");
     
-    define('DOPBS_TERMS_AND_CONDITIONS_ENABLED', "Enable Terms & Conditions");
-    define('DOPBS_TERMS_AND_CONDITIONS_LINK', "Terms & Conditions Link");
+    define('DOPBSP_TERMS_AND_CONDITIONS_ENABLED', "Activer les Termes & Conditions");
+    define('DOPBSP_TERMS_AND_CONDITIONS_LINK', "Lien des Termes & Conditions");
     
-    define('DOPBS_GO_TOP', "go top");
-    define('DOPBS_SHOW', "show");
-    define('DOPBS_HIDE', "hide");
+    define('DOPBSP_GO_TOP', "monter");
+    define('DOPBSP_SHOW', "montrer");
+    define('DOPBSP_HIDE', "cacher");
     
     // Settings Info
-    define('DOPBS_CALENDAR_NAME_INFO', "Change calendar name.");
-    define('DOPBS_AVAILABLE_DAYS_INFO', "Default value: all available. Select available days.");
-    define('DOPBS_FIRST_DAY_INFO', "Default value: Monday. Select calendar first day.");
-    define('DOPBS_CURRENCY_INFO', "Default value: USD. Select calendar currency.");
-    define('DOPBS_DATE_TYPE_INFO', "Default value: American. Select date format: American (mm dd, yyyy) or European (dd mm yyyy)");
-    define('DOPBS_PREDEFINED_INFO', "If selected on Submit the below settings will be changed.");
-    define('DOPBS_TEMPLATE_INFO', "Default value: default. Select styles template.");
-    define('DOPBS_MIN_STAY_INFO', "Default value: 1. Set minimum amount of days that can be selected.");
-    define('DOPBS_MAX_STAY_INFO', "Default value: 0. Set maximum amount of days that can be selected. If you set 0 the number is unlimited.");
-    define('DOPBS_NO_ITEMS_ENABLED_INFO', "Default value: Enabled. Set to display only booking information in Front End.");
-    define('DOPBS_VIEW_ONLY_INFO', "Default value: Enabled. Set to display only booking information in Front End.");
-    define('DOPBS_PAGE_URL_INFO', "Set page URL were the calendar will be added. It is mandatory if you create a searching system through some calendars.");
+    define('DOPBSP_CALENDAR_NAME_INFO', "Changer le nom du calendrier.");
+    define('DOPBSP_AVAILABLE_DAYS_INFO', "Valeur par défaut: tout disponible. Séléctionner les jours disponibles.");
+    define('DOPBSP_FIRST_DAY_INFO', "Valeur par défaut: Lundi. Sélectionner le premier jour du calendrier.");
+    define('DOPBSP_CURRENCY_INFO', "Valeur par défaut: USD. Sélectionner la devise du calendrier.");
+    define('DOPBSP_DATE_TYPE_INFO', "Valeur par défaut: Americain. Sélectionner le format de date: Americain (MM JJ, AAAA) ou Européen (JJ MM AAAA).");
+    define('DOPBSP_PREDEFINED_INFO', "Si sélectionnés à l'envoie, les paramètres ci-dessous seront changés.");
+    define('DOPBSP_TEMPLATE_INFO', "Valeur par défaut: défaut. Sélectionner le modèle de style.");
+    define('DOPBSP_MIN_STAY_INFO', "Valeur par défaut: 1. Fixer le nombre minimum de jours qui peuvent être sélectionnés.");
+    define('DOPBSP_MAX_STAY_INFO', "Valeur par défaut: 0. Fixer le nombre maximum de jours qui peuvent être sélectionnés. Si vous mettez 0, le nombre est illimité.");
+    define('DOPBSP_NO_ITEMS_ENABLED_INFO', "Valeur par défaut: Activé. Configuré pour afficher uniquement les informations de réservation sur le site.");
+    define('DOPBSP_VIEW_ONLY_INFO', "Valeur par défaut: Activé. Configuré pour afficher uniquement les informations de réservation sur le site.");
+    define('DOPBSP_PAGE_URL_INFO', "Définir le lien URL où le calendrier sera ajouté. Ceci est obligatoire si vous créez un système de recherche à travers des calendriers.");
     
-    define('DOPBS_NOTIFICATIONS_TEMPLATE_INFO', "Default value: default. Select email template.");
-    define('DOPBS_NOTIFICATIONS_EMAIL_INFO', "Enter the email were you will notified about booking requests or you will use to notify users.");
-    define('DOPBS_NOTIFICATIONS_SMTP_ENABLED_INFO', "Use SMTP to send emails.");
-    define('DOPBS_NOTIFICATIONS_SMTP_HOST_NAME_INFO', "Enter SMTP host name");
-    define('DOPBS_NOTIFICATIONS_SMTP_HOST_PORT_INFO', "Enter SMTP host port.");
-    define('DOPBS_NOTIFICATIONS_SMTP_SSL_INFO', "Use a  SSL conenction.");
-    define('DOPBS_NOTIFICATIONS_SMTP_USER_INFO', "Enter SMTP host username.");
-    define('DOPBS_NOTIFICATIONS_SMTP_PASSWORD_INFO', "Enter SMTP host password.");
+    define('DOPBSP_NOTIFICATIONS_TEMPLATE_INFO', "Valeur par défaut: default. Select email template.");
+    define('DOPBSP_NOTIFICATIONS_EMAIL_INFO', "Enter the email were you will notified about booking requests or you will use to notify users.");
+    define('DOPBSP_NOTIFICATIONS_SMTP_ENABLED_INFO', "Use SMTP to send emails.");
+    define('DOPBSP_NOTIFICATIONS_SMTP_HOST_NAME_INFO', "Enter SMTP host name.");
+    define('DOPBSP_NOTIFICATIONS_SMTP_HOST_PORT_INFO', "Enter SMTP host port.");
+    define('DOPBSP_NOTIFICATIONS_SMTP_SSL_INFO', "Use a  SSL conenction.");
+    define('DOPBSP_NOTIFICATIONS_SMTP_USER_INFO', "Enter SMTP host username.");
+    define('DOPBSP_NOTIFICATIONS_SMTP_PASSWORD_INFO', "Enter SMTP host password.");
     
-    define('DOPBS_MULTIPLE_DAYS_SELECT_INFO', "Default value: Enabled. Use Check In/Check Out or select only one day.");
-    define('DOPBS_MORNING_CHECK_OUT_INFO', "Default value: Disabled. This option enables Check In in the afternoon of first day and Check Out in the morning of the day after last day.");
-    define('DOPBS_HOURS_ENABLED_INFO', "Default value: Disabled. Enable hours for the calendar.");
-    define('DOPBS_HOURS_DEFINITIONS_INFO', "Enter hh:mm ... add one per line. Changing the definitions will overwrite any previous hours data. Use only 24 hours format.");
-    define('DOPBS_MULTIPLE_HOURS_SELECT_INFO', "Default value: Enabled. Use Start/Finish Hours or select only one hour.");
-    define('DOPBS_HOURS_AMPM_INFO', "Default value: Disabled. Display hours in AM/PM format. NOTE: Hours definitions still need to be in 24 hours format.");
-    define('DOPBS_LAST_HOUR_TO_TOTAL_PRICE_INFO', "Default value: Enabled. It calculates the total price before the last hours selected if Disabled. It calculates the total price including the last hour selected if Enabled.");
-    define('DOPBS_HOURS_INTERVAL_ENABLED_INFO', "Default value: Disabled. Show hours interval from the current hour to the next one.");
+    define('DOPBSP_MULTIPLE_DAYS_SELECT_INFO', "Valeur par défaut: Activé. Utiliser Départ/Arrivée ou uniquement un jour.");
+    define('DOPBSP_MORNING_CHECK_OUT_INFO', "Valeur par défaut: Désactivé. Cette option active l'Arrivée dans l'après-midi de la première journée et le Départ le matin du jour après le dernier jour.");
+    define('DOPBSP_HOURS_ENABLED_INFO', "Valeur par défaut: Désactivé. Activer les heures dans le calendrier.");
+    define('DOPBSP_HOURS_DEFINITIONS_INFO', "Entrez hh:mm ... ajouter une heure par ligne. En changeant ces valeurs, les paramètres précédents seront écrasés. Utilisez uniquement le format 24h.");
+    define('DOPBSP_MULTIPLE_HOURS_SELECT_INFO', "Valeur par défaut: Activé. Utiliser les heures de Départ/Arrivée ou uniquement sélectionner une heure.");
+    define('DOPBSP_HOURS_AMPM_INFO', "Valeur par défaut: Désactivé. Afficher les heure au format AP/PM. NOTE: Les heures doivent rester en format 24 heures.");
+    define('DOPBSP_LAST_HOUR_TO_TOTAL_PRICE_INFO', "Valeur par défaut: Activé. Cela calcule le prix total avant les dernières heures sélectionnées si cela est désactivée. Cela calcule le prix total, y compris la dernière heure choisie si elle est activée. <br /> <br /> <strong> Attention: </ strong> Dans le panel d'administration les dernières heures de votre liste de définitions ne sera pas affichée.");
+    define('DOPBSP_HOURS_INTERVAL_ENABLED_INFO', "Valeur par défaut: Désactivé. Afficher l'intervalle des heures à partir de l'heure courante à la suivante.");
     
-    define('DOPBS_DISCOUNTS_NO_DAYS_INFO', "Select the number of days to which you want to add a discount (up to 31 days).");
-    define('DOPBS_DISCOUNTS_NO_DAYS_DAYS_INFO', "Default value 0. Set the discount percent that a user will get when booking this number of days.");
+    define('DOPBSP_DISCOUNTS_NO_DAYS_INFO', "Sélectionnez le nombre de jours auxquels vous souhaitez ajouter un rabais (jusqu'à 31 jours).");
+    define('DOPBSP_DISCOUNTS_NO_DAYS_DAYS_INFO', "Valeur par défaut 0. Réglez le pourcentage de rabais qu'un utilisateur obtiendra lors de la réservation pour ce nombre de jours.");
     
-    define('DOPBS_DEPOSIT_INFO', "Default value: 0. Set the percent value for the deposit. The Deposit is available only if you have a Payment Service activated.");
+    define('DOPBSP_DEPOSIT_INFO', "Valeur par défaut: 0. Réglez la valeur en pourcentage pour le dépôt. Le dépôt est disponible uniquement si vous avez un service de paiement activé.");
     
-    define('DOPBS_FORM_INFO', "Select the form for Contact Form.");
-    define('DOPBS_INSTANT_BOOKING_ENABLED_INFO', "Default value: Disabled. Instantly book the data in a calendar once the request has been submitted.");
-    define('DOPBS_NO_PEOPLE_ENABLED_INFO', "Default value: Enabled. Request number of people that will use the booked item.");
-    define('DOPBS_MIN_NO_PEOPLE_INFO', "Default value: 1. Set minimum number of allowed people per booked item.");
-    define('DOPBS_MAX_NO_PEOPLE_INFO', "Default value: 4. Set maximum number of allowed people per booked item.");
-    define('DOPBS_NO_CHILDREN_ENABLED_INFO', "Default value: Enabled. Request number of children that will use the booked item.");
-    define('DOPBS_MIN_NO_CHILDREN_INFO', "Default value: 0. Set minimum number of allowed children per booked item.");
-    define('DOPBS_MAX_NO_CHILDREN_INFO', "Default value: 2. Set maximum number of allowed children per booked item.");
-    define('DOPBS_PAYMENT_ARRIVAL_ENABLED_INFO', "Default value: Enabled. Allow user to pay on arrival. Need approval.");
+    define('DOPBSP_FORM_INFO', "Sélectionnez le formulaire du système de réservation.");
+    define('DOPBSP_INSTANT_BOOKING_ENABLED_INFO', "Valeur par défaut: Désactivé. Réserver immédiatement les données dans un calendrier dès que la demande a été présentée.");
+    define('DOPBSP_NO_PEOPLE_ENABLED_INFO', "Valeur par défaut: Activé. Demander le nombre de personnes qui utiliseront l'élément réservé.");
+    define('DOPBSP_MIN_NO_PEOPLE_INFO', "Valeur par défaut: 1. Définir le nombre minimum de personnes autorisées par réservation.");
+    define('DOPBSP_MAX_NO_PEOPLE_INFO', "Valeur par défaut: 4. Définir le nombre maximum de personnes autorisées par réservation.");
+    define('DOPBSP_NO_CHILDREN_ENABLED_INFO', "Valeur par défaut: Activer. Demander le nombre d'enfants qui utiliseront l'élément réservé.");
+    define('DOPBSP_MIN_NO_CHILDREN_INFO', "Valeur par défaut: 0. Définir le nombre minimum d'enfants autorisés par réservation.");
+    define('DOPBSP_MAX_NO_CHILDREN_INFO', "Valeur par défaut: 2. Définir le nombre maximum d'enfants autorisés par réservation.");
+    define('DOPBSP_PAYMENT_ARRIVAL_ENABLED_INFO', "Valeur par défaut: Activé. Autoriser les utilisateurs à payer à l'arrivée. Besoin d'approbation.");
     
-    define('DOPBS_PAYMENT_PAYPAL_ENABLED_INFO', "Default value: Disabled. Allow user to pay with PayPal. The period is instantly booked.");
-    define('DOPBS_PAYMENT_PAYPAL_USERNAME_INFO', "Enter PayPal API Credentials User Name. View Help section to see from were you can get them.");
-    define('DOPBS_PAYMENT_PAYPAL_PASSWORD_INFO', "Enter PayPal API Credentials Password. View Help section to see from were you can get them.");
-    define('DOPBS_PAYMENT_PAYPAL_SIGNATURE_INFO', "Enter PayPal API Credentials Signature. View Help section to see from were you can get them.");
-    define('DOPBS_PAYMENT_PAYPAL_CREDIT_CARD_INFO', "Enable so that users can pay directly with their Credit Card.");
-    define('DOPBS_PAYMENT_PAYPAL_SANDBOX_ENABLED_INFO', "Enable to use PayPal Sandbox features.");
+    define('DOPBSP_PAYMENT_PAYPAL_ENABLED_INFO', "Valeur par défaut: Désactivé. Autoriser les utilisateurs à payer avec Paypal. La période est automatiquement réservée.");
+    define('DOPBSP_PAYMENT_PAYPAL_USERNAME_INFO', "Entrer les informations de nom d'utilisateur de l'API de PayPal. Voir la section Aide pour voir d'où vous pouvez les obtenir.");
+    define('DOPBSP_PAYMENT_PAYPAL_PASSWORD_INFO', "Entrer les informations de mot de passe de l'API de PayPal. Voir la section Aide pour voir d'où vous pouvez les obtenir.");
+    define('DOPBSP_PAYMENT_PAYPAL_SIGNATURE_INFO', "Entrer les informations de signature de l'API de PayPal. Voir la section Aide pour voir d'où vous pouvez les obtenir.");
+    define('DOPBSP_PAYMENT_PAYPAL_CREDIT_CARD_INFO', "Valeur par défaut: Désactivé. Activer afin que les utilisateurs puissent payer directement avec leur carte de crédit.");
+    define('DOPBSP_PAYMENT_PAYPAL_SANDBOX_ENABLED_INFO', "Valeur par défaut: Désactivé. Activer pour utiliser les fonctionnalités de PayPal Sandbox.");
     
-    define('DOPBS_TERMS_AND_CONDITIONS_ENABLED_INFO', "Default value: Disabled. Enable Terms & Conditions check box.");
-    define('DOPBS_TERMS_AND_CONDITIONS_LINK_INFO', "Enter the link to Terms & Conditions page.");
+    define('DOPBSP_TERMS_AND_CONDITIONS_ENABLED_INFO', "Valeur par défaut: Désactivé. Activer la case à cocher des Termes & Conditions.");
+    define('DOPBSP_TERMS_AND_CONDITIONS_LINK_INFO', "Entrer le lien de la page des Termes & Conditions.");
     
     // Booking Forms
-    define('DOPBS_TITLE_BOOKING_FORMS', "Booking Forms");
-    define('DOPBS_BOOKING_FORMS_HELP', "Click on the 'plus' icon to add a booking form. Click on a booking form item to open the editing area.");
-    define('DOPBS_BOOKING_FORMS_LOADED', "Booking forms list loaded.");
-    define('DOPBS_BOOKING_FORM_SETTINGS_HELP', "Click 'Submit Button' to save changes. Click 'Delete Button' to delete the form.");
-    define('DOPBS_BOOKING_FORM_LOADED', "Booking form loaded.");
-    define('DOPBS_NO_BOOKING_FORMS', "No booking forms.");
+    define('DOPBSP_TITLE_BOOKING_FORMS', "Formulaires de réservation");
+    define('DOPBSP_BOOKING_FORMS_HELP', "Cliquez sur l'icône 'Plus' pour ajouter un formulaire de réservation. Cliquez sur un élément du formulaire de réservation pour la zone d'édition.");
+    define('DOPBSP_BOOKING_FORMS_LOADED', "Liste des formulaires de réservation chargée.");
+    define('DOPBSP_BOOKING_FORM_SETTINGS_HELP', "Clquez sur le bouton 'Sauvegarder' pour sauvegarder les changements. Cliquez sur le bouton 'Supprimer' pour supprimer le formulaire.");
+    define('DOPBSP_BOOKING_FORM_LOADED', "Formulaire de réservation chargé.");
+    define('DOPBSP_NO_BOOKING_FORMS', "Aucun formulaire de réservation.");
     
     // Add Booking Form
-    define('DOPBS_ADD_BOOKING_FORM_NAME', "Booking Form");
+    define('DOPBSP_ADD_BOOKING_FORM_NAME', "Nouveau formulaire de réservation");
     
     // Edit Booking Form
-    define('DOPBS_EDIT_BOOKING_FORM_SUBMIT', "Submit");
-    define('DOPBS_EDIT_BOOKING_FORM_SUCCESS', "You have succesfully edited the form.");
+    define('DOPBSP_EDIT_BOOKING_FORM_SUBMIT', "Sauvegarder");
+    define('DOPBSP_EDIT_BOOKING_FORM_SUCCESS', "Vous avez édité le formulaire avec succès.");
     
     // Booking Form Fields
-    define('DOPBS_BOOKING_FORM_NAME', "Form Name");
-    define('DOPBS_BOOKING_FORM_NAME_DEFAULT', "Default Form");
-    define('DOPBS_BOOKING_FORM_FIELDS_TITLE', "Form Fields");
-    define('DOPBS_BOOKING_FORM_FIELDS_SHOW_SETTINGS', "Show Settings");
-    define('DOPBS_BOOKING_FORM_FIELDS_HIDE_SETTINGS', "Hide Settings");
-    define('DOPBS_BOOKING_FORM_FIELDS_TYPE_TEXT_LABEL', "Text");
-    define('DOPBS_BOOKING_FORM_FIELDS_TYPE_TEXTAREA_LABEL', "Textarea");
-    define('DOPBS_BOOKING_FORM_FIELDS_TYPE_CHECKBOX_LABEL', "Checkbox");
-    define('DOPBS_BOOKING_FORM_FIELDS_TYPE_SELECT_LABEL', "Drop Down");
-    define('DOPBS_BOOKING_FORM_FIELDS_LANGUAGE_LABEL', "Language");
-    define('DOPBS_BOOKING_FORM_FIELDS_NAME_LABEL', "Label");
-    define('DOPBS_BOOKING_FORM_FIELDS_NEW_FIELD_TEXT_LABEL', "New Text Field");
-    define('DOPBS_BOOKING_FORM_FIELDS_NEW_FIELD_TEXTAREA_LABEL', "New Textarea Field");
-    define('DOPBS_BOOKING_FORM_FIELDS_NEW_FIELD_CHECKBOX_LABEL', "New Checkbox Field");
-    define('DOPBS_BOOKING_FORM_FIELDS_NEW_FIELD_SELECT_LABEL', "New Drop Down Field");
-    define('DOPBS_BOOKING_FORM_FIELDS_ALLOWED_CHARACTERS_LABEL', "Allowed Characters");
-    define('DOPBS_BOOKING_FORM_FIELDS_SIZE_LABEL', "Size");
-    define('DOPBS_BOOKING_FORM_FIELDS_EMAIL_LABEL', "Is Email");
-    define('DOPBS_BOOKING_FORM_FIELDS_REQUIRED_LABEL', "Required");
-    define('DOPBS_BOOKING_FORM_FIELDS_SELECT_OPTIONS_LABEL', "Options");
-    define('DOPBS_BOOKING_FORM_FIELDS_SELECT_ADD_OPTION', "Add Option");
-    define('DOPBS_BOOKING_FORM_FIELDS_SELECT_NEW_OPTION_LABEL', "New Option");
-    define('DOPBS_BOOKING_FORM_FIELDS_SELECT_DELETE_OPTION', "Delete Option");
-    define('DOPBS_BOOKING_FORM_FIELDS_SELECT_MULTIPLE_SELECT_LABEL', "Multiple Select");
-    define('DOPBS_BOOKING_FORM_CHECKED', "Checked");
-    define('DOPBS_BOOKING_FORM_UNCHECKED', "Unchecked");
+    define('DOPBSP_BOOKING_FORM_NAME', "Nom du formulaire");
+    define('DOPBSP_BOOKING_FORM_NAME_DEFAULT', "Formulaire par défaut");
+    define('DOPBSP_BOOKING_FORM_FIELDS_TITLE', "Champs de formulaire");
+    define('DOPBSP_BOOKING_FORM_FIELDS_SHOW_SETTINGS', "Montrer les paramètres");
+    define('DOPBSP_BOOKING_FORM_FIELDS_HIDE_SETTINGS', "Cacher les paramètres");
+    define('DOPBSP_BOOKING_FORM_FIELDS_TYPE_TEXT_LABEL', "Texte");
+    define('DOPBSP_BOOKING_FORM_FIELDS_TYPE_TEXTAREA_LABEL', "Zone de texte");
+    define('DOPBSP_BOOKING_FORM_FIELDS_TYPE_CHECKBOX_LABEL', "Case à cocher");
+    define('DOPBSP_BOOKING_FORM_FIELDS_TYPE_SELECT_LABEL', "Menu déroulant");
+    define('DOPBSP_BOOKING_FORM_FIELDS_LANGUAGE_LABEL', "Language");
+    define('DOPBSP_BOOKING_FORM_FIELDS_NAME_LABEL', "Titre");
+    define('DOPBSP_BOOKING_FORM_FIELDS_NEW_FIELD_TEXT_LABEL', "Nouveau champs de texte");
+    define('DOPBSP_BOOKING_FORM_FIELDS_NEW_FIELD_TEXTAREA_LABEL', "Nouveau champs de zone de texte");
+    define('DOPBSP_BOOKING_FORM_FIELDS_NEW_FIELD_CHECKBOX_LABEL', "Nouveau champs case à cocher");
+    define('DOPBSP_BOOKING_FORM_FIELDS_NEW_FIELD_SELECT_LABEL', "Nouveau champs déroulant");
+    define('DOPBSP_BOOKING_FORM_FIELDS_ALLOWED_CHARACTERS_LABEL', "Caractères autorisés");
+    define('DOPBSP_BOOKING_FORM_FIELDS_SIZE_LABEL', "Taille");
+    define('DOPBSP_BOOKING_FORM_FIELDS_EMAIL_LABEL', "Est un e-mail");
+    define('DOPBSP_BOOKING_FORM_FIELDS_REQUIRED_LABEL', "Requis");
+    define('DOPBSP_BOOKING_FORM_FIELDS_SELECT_OPTIONS_LABEL', "Options");
+    define('DOPBSP_BOOKING_FORM_FIELDS_SELECT_ADD_OPTION', "Ajouter une option");
+    define('DOPBSP_BOOKING_FORM_FIELDS_SELECT_NEW_OPTION_LABEL', "Nouvelle option");
+    define('DOPBSP_BOOKING_FORM_FIELDS_SELECT_DELETE_OPTION', "Supprimer une option");
+    define('DOPBSP_BOOKING_FORM_FIELDS_SELECT_MULTIPLE_SELECT_LABEL', "Sélection multiple");
+    define('DOPBSP_BOOKING_FORM_CHECKED', "Coché");
+    define('DOPBSP_BOOKING_FORM_UNCHECKED', "Non coché");
     
     // Booking Form Fields Info
-    define('DOPBS_BOOKING_FORM_NAME_INFO', "Change form name and click Submit.");
-    define('DOPBS_BOOKING_FORM_FIELDS_INFO', "Drag the Field Type from right to left to create a new Field. Drag a created Field to trash to delete. Click Show Settings to edit a created Field.");
-    define('DOPBS_BOOKING_FORM_FIELDS_LANGUAGE_INFO', "Select the language for which you want to change the names (labels).");
-    define('DOPBS_BOOKING_FORM_FIELDS_NAME_INFO', "Enter field name (label).");
-    define('DOPBS_BOOKING_FORM_FIELDS_ALLOWED_CHARACTERS_INFO', "Enter the caracters allowed in this field. Leave it blank if all characters are allowed.");
-    define('DOPBS_BOOKING_FORM_FIELDS_SIZE_INFO', "Enter the maximum number of characters allowed. Leave it blank for unlimited.");
-    define('DOPBS_BOOKING_FORM_FIELDS_EMAIL_INFO', "Check it if you want this field to be verified if an email has been added or not.");
-    define('DOPBS_BOOKING_FORM_FIELDS_REQUIRED_INFO', "Check it if you want the field to be mandatory.");
-    define('DOPBS_BOOKING_FORM_FIELDS_SELECT_OPTIONS_INFO', "Add the Plus Icon to add another option and enter the name. Click on the Delete Icon to remove the option.");
-    define('DOPBS_BOOKING_FORM_FIELDS_SELECT_MULTIPLE_SELECT_INFO', "Check it if you want a multiple select Drop Down.");
+    define('DOPBSP_BOOKING_FORM_NAME_INFO', "Changer le nom du formulaire et cliquez sur Enregistrer.");
+    define('DOPBSP_BOOKING_FORM_FIELDS_INFO', "Faites glisser le type de champs de droite à gauche pour créer un nouveau champs. Faites glisser un champs créé à la corbeille pour supprimer. Cliquez sur Afficher les paramètres pour modifier un champs créé.");
+    define('DOPBSP_BOOKING_FORM_FIELDS_LANGUAGE_INFO', "Sélectionnez la langue pour laquelle vous souhaitez modifier les noms (titres).");
+    define('DOPBSP_BOOKING_FORM_FIELDS_NAME_INFO', "Entrez le nom du champs (titre).");
+    define('DOPBSP_BOOKING_FORM_FIELDS_ALLOWED_CHARACTERS_INFO', "Entrez les caractères autorisés dans ce champs. Laissez ce champs vide si tous les caractères sont autorisés.");
+    define('DOPBSP_BOOKING_FORM_FIELDS_SIZE_INFO', "Entrez le nombre maximum de caractères autorisés. Laissez ce champs vide pour un nombre illimité.");
+    define('DOPBSP_BOOKING_FORM_FIELDS_EMAIL_INFO', "Vérifiez si vous souhaitez que ce champs vérifie si un e-mail a été ajouté ou non.");
+    define('DOPBSP_BOOKING_FORM_FIELDS_REQUIRED_INFO', "Vérifiez si vous souhaitez que ce champs soit obligatoire.");
+    define('DOPBSP_BOOKING_FORM_FIELDS_SELECT_OPTIONS_INFO', "Ajouter l'icône Plus pour ajouter une autre option et entrez le nom. Cliquez sur le bouton supprimer pour supprimer l'option.");
+    define('DOPBSP_BOOKING_FORM_FIELDS_SELECT_MULTIPLE_SELECT_INFO', "Vérifiez si vous voulez un menu déroulant de sélection multiple.");
     
     // Help
-    define('DOPBS_HELP_DOCUMENTATION', "Documentation");
-    define('DOPBS_HELP_FAQ', "FAQ");
+    define('DOPBSP_HELP_DOCUMENTATION', "Documentation");
+    define('DOPBSP_HELP_FAQ', "FAQ");
 
 ?>

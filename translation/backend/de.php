@@ -2,7 +2,7 @@
 
 /*
 * Title                   : Booking System (WordPress Plugin)
-* Version                 : 1.0
+* Version                 : 1.1
 * File                    : de.php
 * File Version            : 1.0
 * Created / Last Modified : 29 July 2013
@@ -10,303 +10,303 @@
 * Copyright               : © 2013 Dot on Paper
 * Website                 : http://www.dotonpaper.net
 * Description             : German Back End Translation.
-* Translated by           : Dot on Paper.
+* Translated by           : Dieter Pfenning - dieter.pfenning@winball.de
 */
 
-    define('DOPBS_TITLE', "Booking System");
+    define('DOPBS_TITLE', "Buchungssystem");
 
     // Loading ...
-    define('DOPBS_LOAD', "Load data ...");
+    define('DOPBS_LOAD', "Lade Daten ...");
 
     // Save ...
-    define('DOPBS_SAVE', "Save data ...");
-    define('DOPBS_SAVE_SUCCESS', "Data has been saved.");
+    define('DOPBS_SAVE', "Speichere Daten ...");
+    define('DOPBS_SAVE_SUCCESS', "Die Daten wurden gespeichert.");
     
     // Months & Week Days
     global $DOPBS_month_names;
-    $DOPBS_month_names = array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
+    $DOPBS_month_names = array('Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember');
     
     global $DOPBS_day_names;
-    $DOPBS_day_names = array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+    $DOPBS_day_names = array('Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag');
     
     // Help
-    define('DOPBS_CALENDARS_HELP', "Click on a calendar item to open the editing area.");
-    define('DOPBS_CALENDAR_EDIT_HELP', "Select the days and hours to edit them. Click on the 'pencil' icon to edit calendar settings. Click on the 'mail' icon to see if you have reservations. Read documentation for more information.");
-    define('DOPBS_CALENDAR_EDIT_SETTINGS_HELP', "Click 'Submit Button' to save changes. Click 'Back Button' to return to the calendar.");
+    define('DOPBS_CALENDARS_HELP', "Klick auf ein Kalendereintrag um die Bearbeitungsmaske zu öffnen.");
+    define('DOPBS_CALENDAR_EDIT_HELP', "Selektiere die Tage und Stunden, um sie zu bearbeiten. Klick auf das Bleistift-Icon, um die Kalender-Einstellungen zu bearbeiten. Klick auf das Brief-Icon, um nachzusehen, ob Du Reservierungen hast  Lies die Dokumentation für mehr Informationen.");
+    define('DOPBS_CALENDAR_EDIT_SETTINGS_HELP', "Klicke den 'Submit Button' um Änderungen zu speichern. Klicke den 'Back Button' um zum Kalender zurückzukehren.");
     
     // Form
-    define('DOPBS_SUBMIT', "Submit");
-    define('DOPBS_DELETE', "Delete");
-    define('DOPBS_BACK', "Back");
-    define('DOPBS_BACK_SUBMIT', "Back to calendar.");
-    define('DOPBS_ENABLED', "Enabled");
-    define('DOPBS_DISABLED', "Disabled");
-    define('DOPBS_DATE_TYPE_AMERICAN', "American (mm dd, yyyy)");
-    define('DOPBS_DATE_TYPE_EUROPEAN', "European (dd mm yyyy)");
+    define('DOPBS_SUBMIT', "Senden");
+    define('DOPBS_DELETE', "LÖschen");
+    define('DOPBS_BACK', "Zurück");
+    define('DOPBS_BACK_SUBMIT', "Zurück zum Kalender.");
+    define('DOPBS_ENABLED', "Aktiv");
+    define('DOPBS_DISABLED', "Inaktive");
+    define('DOPBS_DATE_TYPE_AMERICAN', "Amerikanisch (mm dd, yyyy)");
+    define('DOPBS_DATE_TYPE_EUROPEAN', "Europäisch (dd mm yyyy)");
 
     // Calendars    
-    define('DOPBS_SHOW_CALENDARS', "Calendars");
-    define('DOPBS_CALENDARS_LOADED', "Calendars list loaded.");
-    define('DOPBS_CALENDAR_LOADED', "Calendar loaded.");
-    define('DOPBS_NO_CALENDARS', "No calendars.");    
+    define('DOPBS_SHOW_CALENDARS', "Kalender");
+    define('DOPBS_CALENDARS_LOADED', "Kalender-Liste geladen.");
+    define('DOPBS_CALENDAR_LOADED', "Kalender geladen.");
+    define('DOPBS_NO_CALENDARS', "Keine Kalender.");    
     
     // Calendar 
-    define('DOPBS_ADD_MONTH_VIEW', "Add Month View");
-    define('DOPBS_REMOVE_MONTH_VIEW', "Remove Month View");
-    define('DOPBS_PREVIOUS_MONTH', "Previous Month");
-    define('DOPBS_NEXT_MONTH', "Next Month");
-    define('DOPBS_AVAILABLE_ONE_TEXT', "available");
-    define('DOPBS_AVAILABLE_TEXT', "available");
-    define('DOPBS_BOOKED_TEXT', "booked");
-    define('DOPBS_UNAVAILABLE_TEXT', "unavailable");
+    define('DOPBS_ADD_MONTH_VIEW', "Füge Monatsansicht hinzu");
+    define('DOPBS_REMOVE_MONTH_VIEW', "Entferne Monatsansicht");
+    define('DOPBS_PREVIOUS_MONTH', "Voriger Monat");
+    define('DOPBS_NEXT_MONTH', "Nächster Monat");
+    define('DOPBS_AVAILABLE_ONE_TEXT', "verfügbar");
+    define('DOPBS_AVAILABLE_TEXT', "verfügbar");
+    define('DOPBS_BOOKED_TEXT', "belegt");
+    define('DOPBS_UNAVAILABLE_TEXT', "nicht verfügbar");
                             
     // Calendar Form 
-    define('DOPBS_DATE_START_LABEL', "Start Date");
-    define('DOPBS_DATE_END_LABEL', "End Date");    
+    define('DOPBS_DATE_START_LABEL', "Start-Datum");
+    define('DOPBS_DATE_END_LABEL', "End-Datum");    
     define('DOPBS_STATUS_LABEL', "Status");
-    define('DOPBS_STATUS_AVAILABLE_TEXT', "Available");
-    define('DOPBS_STATUS_BOOKED_TEXT', "Booked");
+    define('DOPBS_STATUS_AVAILABLE_TEXT', "Verfügbar");
+    define('DOPBS_STATUS_BOOKED_TEXT', "Belegt");
     define('DOPBS_STATUS_SPECIAL_TEXT', "Special");
-    define('DOPBS_STATUS_UNAVAILABLE_TEXT', "Unavailable");
-    define('DOPBS_PRICE_LABEL', "Price");    
-    define('DOPBS_PROMO_LABEL', "Promo Price");               
-    define('DOPBS_AVAILABLE_LABEL', "No. Available");         
-    define('DOPBS_HOURS_DEFINITIONS_CHANGE_LABEL', "Change Hours Definitions (changing the definitions will overwrite any previous hours data)");
-    define('DOPBS_HOURS_DEFINITIONS_LABEL', "Hours Definitions (hh:mm add one per line). Use only 24 hours format.");  
-    define('DOPBS_HOURS_SET_DEFAULT_DATA_LABEL', "Set default hours values for this day(s). This will overwrite any existing data.)"); 
-    define('DOPBS_HOURS_START_LABEL', "Start Hour"); 
-    define('DOPBS_HOURS_END_LABEL', "End Hour");
-    define('DOPBS_HOURS_INFO_LABEL', "Information (users will see this message)");
-    define('DOPBS_HOURS_NOTES_LABEL', "Notes (only you will see this message)");
-    define('DOPBS_GROUP_DAYS_LABEL', "Group Days");
-    define('DOPBS_GROUP_HOURS_LABEL', "Group Hours");
-    define('DOPBS_RESET_CONFIRMATION', "Are you sure you want to reset data? If you reset days, hours data from those days will be reset to.");
+    define('DOPBS_STATUS_UNAVAILABLE_TEXT', "Nicht verfügbar");
+    define('DOPBS_PRICE_LABEL', "Preis");    
+    define('DOPBS_PROMO_LABEL', "Promotions-Preis");               
+    define('DOPBS_AVAILABLE_LABEL', "Nein. Verfügbar");         
+    define('DOPBS_HOURS_DEFINITIONS_CHANGE_LABEL', "Ändere die Stunden-Definitionen (das Ändern der Definitionen wird alle früheren Stunden-Daten überschreiben)");
+    define('DOPBS_HOURS_DEFINITIONS_LABEL', "Stunden-Definitionen (hh:mm füge eine pro Zeile hinzu). Verwende nur das 24-Stunden-Format.");  
+    define('DOPBS_HOURS_SET_DEFAULT_DATA_LABEL', "Lege die Stunden-Vorgabe-Werte für diese(n) Tag(e) fest. (Dies wird alle bestehenden Daten überschreiben )"); 
+    define('DOPBS_HOURS_START_LABEL', "Anfangs-Stunde"); 
+    define('DOPBS_HOURS_END_LABEL', "End-Stunde");
+    define('DOPBS_HOURS_INFO_LABEL', "Information (Anwender können diese Information anzeigen)");
+    define('DOPBS_HOURS_NOTES_LABEL', "Bemerkungen (nur Du (Administrator) kannst diese Bemerkungen sehen");
+    define('DOPBS_GROUP_DAYS_LABEL', "Gruppen-Tage");
+    define('DOPBS_GROUP_HOURS_LABEL', "Gruppen-Stunden");
+    define('DOPBS_RESET_CONFIRMATION', "Bist Du sicher, alle Daten zurückzusetzen? Wenn Du Tage zurücksetzt, werden die Stunden-Daten auch zurückgesetzt.");
     
     // Add Calendar
-    define('DOPBS_ADD_CALENDAR_NAME', "Booking Calendar");
+    define('DOPBS_ADD_CALENDAR_NAME', "Buchungs-Kalender");
 
     // Edit Calendar
-    define('DOPBS_EDIT_CALENDAR_SUBMIT', "Edit Calendar");
-    define('DOPBS_EDIT_CALENDAR_USERS_PERMISSIONS', "Users Permissions");
-    define('DOPBS_EDIT_CALENDAR_SUCCESS', "You have succesfully edited the calendar.");
+    define('DOPBS_EDIT_CALENDAR_SUBMIT', "Bearbeite Kalender");
+    define('DOPBS_EDIT_CALENDAR_USERS_PERMISSIONS', "Benutzerrechte");
+    define('DOPBS_EDIT_CALENDAR_SUCCESS', "Du hast den Kalender erfolgreich bearbeitet.");
     
     // Reservations
-    define('DOPBS_SHOW_RESERVATIONS', "Show Reservations");    
-    define('DOPBS_NO_RESERVATIONS', "There are no reservations.");
+    define('DOPBS_SHOW_RESERVATIONS', "Zeige Reserierungen");    
+    define('DOPBS_NO_RESERVATIONS', "Es gibt keine Reservierungen.");
     
-    define('DOPBS_RESERVATIONS_ID', "Reservation ID");
+    define('DOPBS_RESERVATIONS_ID', "Reservierungs-ID");
     
-    define('DOPBS_RESERVATIONS_CHECK_IN_LABEL', "Check In");
-    define('DOPBS_RESERVATIONS_CHECK_OUT_LABEL', "Check Out");
-    define('DOPBS_RESERVATIONS_START_HOURS_LABEL', "Start at"); 
-    define('DOPBS_RESERVATIONS_END_HOURS_LABEL', "Finish at");
+    define('DOPBS_RESERVATIONS_CHECK_IN_LABEL', "Anreise");
+    define('DOPBS_RESERVATIONS_CHECK_OUT_LABEL', "Abreise");
+    define('DOPBS_RESERVATIONS_START_HOURS_LABEL', "Start um"); 
+    define('DOPBS_RESERVATIONS_END_HOURS_LABEL', "Ende um");
     
-    define('DOPBS_RESERVATIONS_FIRST_NAME_LABEL', "First Name");
-    define('DOPBS_RESERVATIONS_LAST_NAME_LABEL', "Last Name");
+    define('DOPBS_RESERVATIONS_FIRST_NAME_LABEL', "Vorname");
+    define('DOPBS_RESERVATIONS_LAST_NAME_LABEL', "Nachname");
     define('DOPBS_RESERVATIONS_STATUS_LABEL', "Status");
-    define('DOPBS_RESERVATIONS_STATUS_PENDING', "Pending");
-    define('DOPBS_RESERVATIONS_STATUS_APPROVED', "Approved");        
-    define('DOPBS_RESERVATIONS_DATE_CREATED_LABEL', "Date Created");    
-    define('DOPBS_RESERVATIONS_PAYMENT_METHOD_LABEL', 'Payment Method');
-    define('DOPBS_RESERVATIONS_PAYMENT_METHOD_ARRIVAL', 'On Arrival');
+    define('DOPBS_RESERVATIONS_STATUS_PENDING', "Offen");
+    define('DOPBS_RESERVATIONS_STATUS_APPROVED', "Genehmigt");        
+    define('DOPBS_RESERVATIONS_DATE_CREATED_LABEL', "Erstellungs-Datum");    
+    define('DOPBS_RESERVATIONS_PAYMENT_METHOD_LABEL', 'Bezahl-Methode');
+    define('DOPBS_RESERVATIONS_PAYMENT_METHOD_ARRIVAL', 'Bei Ankunft');
     define('DOPBS_RESERVATIONS_PAYMENT_METHOD_PAYPAL', 'PayPal');
-    define('DOPBS_RESERVATIONS_PAYMENT_METHOD_PAYPAL_TRANSACTION_ID_LABEL', 'PayPal Transaction ID');   
-    define('DOPBS_RESERVATIONS_TOTAL_PRICE_LABEL', "Total:"); 
-    define('DOPBS_RESERVATIONS_NO_ITEMS_LABEL', "No Booked Items"); 
-    define('DOPBS_RESERVATIONS_PRICE_LABEL', "Price"); 
-    define('DOPBS_RESERVATIONS_DEPOSIT_PRICE_LABEL', "Deposit");
-    define('DOPBS_RESERVATIONS_DEPOSIT_PRICE_LEFT_LABEL', " Left to Pay");
-    define('DOPBS_RESERVATIONS_DISCOUNT_PRICE_LABEL', "Actual Price");
-    define('DOPBS_RESERVATIONS_DISCOUNT_PRICE_TEXT', "discount");
+    define('DOPBS_RESERVATIONS_PAYMENT_METHOD_PAYPAL_TRANSACTION_ID_LABEL', 'PayPal-Transaktions-ID');   
+    define('DOPBS_RESERVATIONS_TOTAL_PRICE_LABEL', "Summe:"); 
+    define('DOPBS_RESERVATIONS_NO_ITEMS_LABEL', "Keine gebuchten Elemente"); 
+    define('DOPBS_RESERVATIONS_PRICE_LABEL', "Preis"); 
+    define('DOPBS_RESERVATIONS_DEPOSIT_PRICE_LABEL', "Anzahlung");
+    define('DOPBS_RESERVATIONS_DEPOSIT_PRICE_LEFT_LABEL', " offener Restbetrag");
+    define('DOPBS_RESERVATIONS_DISCOUNT_PRICE_LABEL', "Aktueller Preis");
+    define('DOPBS_RESERVATIONS_DISCOUNT_PRICE_TEXT', "Rabatt");
     define('DOPBS_RESERVATIONS_EMAIL_LABEL', "Email"); 
-    define('DOPBS_RESERVATIONS_PHONE_LABEL', "Phone"); 
-    define('DOPBS_RESERVATIONS_NO_PEOPLE_LABEL', "No People"); 
-    define('DOPBS_RESERVATIONS_NO_ADULTS_LABEL', "No Adults"); 
-    define('DOPBS_RESERVATIONS_NO_CHILDREN_LABEL', "No Children"); 
-    define('DOPBS_RESERVATIONS_MESSAGE_LABEL', "Message");
+    define('DOPBS_RESERVATIONS_PHONE_LABEL', "Telefon"); 
+    define('DOPBS_RESERVATIONS_NO_PEOPLE_LABEL', "Keine Gäste"); 
+    define('DOPBS_RESERVATIONS_NO_ADULTS_LABEL', "Erwachsene"); 
+    define('DOPBS_RESERVATIONS_NO_CHILDREN_LABEL', "Kinder"); 
+    define('DOPBS_RESERVATIONS_MESSAGE_LABEL', "Nachricht");
     
-    define('DOPBS_RESERVATIONS_JUMP_TO_DAY_LABEL', 'Jump to day');
-    define('DOPBS_RESERVATIONS_APPROVE_LABEL', 'Approve');
-    define('DOPBS_RESERVATIONS_REJECT_LABEL', 'Reject');
-    define('DOPBS_RESERVATIONS_CANCEL_LABEL', 'Cancel');
+    define('DOPBS_RESERVATIONS_JUMP_TO_DAY_LABEL', 'Springe zum Tag');
+    define('DOPBS_RESERVATIONS_APPROVE_LABEL', 'Genehmigen');
+    define('DOPBS_RESERVATIONS_REJECT_LABEL', 'Ablehnen');
+    define('DOPBS_RESERVATIONS_CANCEL_LABEL', 'Stornieren');
     
-    define('DOPBS_RESERVATIONS_APPROVE_CONFIRMATION', 'Are you sure you want to approve this reservation?');
-    define('DOPBS_RESERVATIONS_APPROVE_SUCCESS', 'The reservation has been approved.');
-    define('DOPBS_RESERVATIONS_REJECT_CONFIRMATION', 'Are you sure you want to reject this reservation?');
-    define('DOPBS_RESERVATIONS_REJECT_SUCCESS', 'The reservation has been rejected.');
-    define('DOPBS_RESERVATIONS_CANCEL_CONFIRMATION', 'Are you sure you want to cancel this reservation?');
-    define('DOPBS_RESERVATIONS_CANCEL_SUCCESS', 'The reservation has been canceled.');
+    define('DOPBS_RESERVATIONS_APPROVE_CONFIRMATION', 'Bist Du sicher, dass Du diese Reservierung bestätigen möchtest?');
+    define('DOPBS_RESERVATIONS_APPROVE_SUCCESS', 'Die Reservierung wurde bestätigt.');
+    define('DOPBS_RESERVATIONS_REJECT_CONFIRMATION', 'Bist Du sicher, dass Du diese Reservierung ablehnen möchtest?');
+    define('DOPBS_RESERVATIONS_REJECT_SUCCESS', 'Die Reservierung wurde abgelehnt.');
+    define('DOPBS_RESERVATIONS_CANCEL_CONFIRMATION', 'Bist Du sicher, dass Du diese Reservierung stornieren möchtest?');
+    define('DOPBS_RESERVATIONS_CANCEL_SUCCESS', 'Die Reservierung wurde storniert.');
     
     // TinyMCE
-    define('DOPBS_TINYMCE_ADD', 'Add Calendar');
+    define('DOPBS_TINYMCE_ADD', 'Füge Kalnder hinzu');
     
     // Settings
-    define('DOPBS_GENERAL_STYLES_SETTINGS', "General Settings");
+    define('DOPBS_GENERAL_STYLES_SETTINGS', "Allgemeine Einstellungen");
     define('DOPBS_CALENDAR_NAME', "Name");
-    define('DOPBS_AVAILABLE_DAYS', "Available Days");
-    define('DOPBS_FIRST_DAY', "First Day");
-    define('DOPBS_CURRENCY', "Currency");
-    define('DOPBS_DATE_TYPE', "Date Type");
-    define('DOPBS_PREDEFINED', "Select Predifined Settings");
+    define('DOPBS_AVAILABLE_DAYS', "Verfügbare Tage");
+    define('DOPBS_FIRST_DAY', "Erster Tag");
+    define('DOPBS_CURRENCY', "Währung");
+    define('DOPBS_DATE_TYPE', "Datums-Typ");
+    define('DOPBS_PREDEFINED', "Wähle vordefinierte Einstellungen");
     define('DOPBS_TEMPLATE', "Style Template");
-    define('DOPBS_MIN_STAY', "Minimum Stay");
-    define('DOPBS_MAX_STAY', "Maximum Stay");
-    define('DOPBS_NO_ITEMS_ENABLED', "Enable Number of Items Select");
-    define('DOPBS_VIEW_ONLY', "View Only Info");
-    define('DOPBS_PAGE_URL', "Page URL");
+    define('DOPBS_MIN_STAY', "Min. Aufenthaltsdauer");
+    define('DOPBS_MAX_STAY', "Max. Aufenthaltsdauer");
+    define('DOPBS_NO_ITEMS_ENABLED', "Aktiviere Anzahl-Auswahl");
+    define('DOPBS_VIEW_ONLY', "Nur Anzeige Info");
+    define('DOPBS_PAGE_URL', "Seiten-URL");
     
-    define('DOPBS_NOTIFICATIONS_STYLES_SETTINGS', "Notifications Settings");
-    define('DOPBS_NOTIFICATIONS_TEMPLATE', "Email Template");
-    define('DOPBS_NOTIFICATIONS_EMAIL', "Notifications Email");
-    define('DOPBS_NOTIFICATIONS_SMTP_ENABLED', "Enable SMTP");
+    define('DOPBS_NOTIFICATIONS_STYLES_SETTINGS', "Benachrichtigungs-Einstellungen");
+    define('DOPBS_NOTIFICATIONS_TEMPLATE', "Email-Template");
+    define('DOPBS_NOTIFICATIONS_EMAIL', "Benachrichtigungs-Email");
+    define('DOPBS_NOTIFICATIONS_SMTP_ENABLED', "Aktiviere SMTP");
     define('DOPBS_NOTIFICATIONS_SMTP_HOST_NAME', "SMTP Host Name");
     define('DOPBS_NOTIFICATIONS_SMTP_HOST_PORT', "SMTP Host Port");
     define('DOPBS_NOTIFICATIONS_SMTP_SSL', "SMTP SSL Conenction");
     define('DOPBS_NOTIFICATIONS_SMTP_USER', "SMTP Host User");
     define('DOPBS_NOTIFICATIONS_SMTP_PASSWORD', "SMTP Host Password");
                                               
-    define('DOPBS_HOURS_STYLES_SETTINGS', "Days/Hours Settings");
-    define('DOPBS_MULTIPLE_DAYS_SELECT', "Use Check In/Check Out");
-    define('DOPBS_MORNING_CHECK_OUT', "Morning Check Out");
-    define('DOPBS_HOURS_ENABLED', "Use Hours");
-    define('DOPBS_HOURS_DEFINITIONS', "Define Hours");
-    define('DOPBS_MULTIPLE_HOURS_SELECT', "Use Start/Finish Hours");
-    define('DOPBS_HOURS_AMPM', "Enable AM/PM format");
-    define('DOPBS_LAST_HOUR_TO_TOTAL_PRICE', "Add last selected hour price to total price");
-    define('DOPBS_HOURS_INTERVAL_ENABLED', "Enable hours interval");
+    define('DOPBS_HOURS_STYLES_SETTINGS', "Tage/Stunden Einstellungen");
+    define('DOPBS_MULTIPLE_DAYS_SELECT', "Verwende An-/Abreise");
+    define('DOPBS_MORNING_CHECK_OUT', "Abreise Morgens");
+    define('DOPBS_HOURS_ENABLED', "Verwende Stunden");
+    define('DOPBS_HOURS_DEFINITIONS', "Definiere Stunden");
+    define('DOPBS_MULTIPLE_HOURS_SELECT', "Verwende Anfangs-/Ende-Stunden");
+    define('DOPBS_HOURS_AMPM', "Aktiviere AM/PM Format");
+    define('DOPBS_LAST_HOUR_TO_TOTAL_PRICE', "Addiere den letzten Stundenpreis zur Endsumme");
+    define('DOPBS_HOURS_INTERVAL_ENABLED', "Aktiviere Stunden-Intervall");
     
-    define('DOPBS_DISCOUNTS_NO_DAYS_SETTINGS', "Discounts by Number of Days");
-    define('DOPBS_DISCOUNTS_NO_DAYS', "Number of Days");
-    define('DOPBS_DISCOUNTS_NO_DAYS_DAYS', "days booking");
+    define('DOPBS_DISCOUNTS_NO_DAYS_SETTINGS', "Rabatt bei Anzahl Tagen");
+    define('DOPBS_DISCOUNTS_NO_DAYS', "Anzahl Tage");
+    define('DOPBS_DISCOUNTS_NO_DAYS_DAYS', "Tagesbuchung");
     
-    define('DOPBS_DEPOSIT_SETTINGS', "Deposit");
-    define('DOPBS_DEPOSIT', "Deposit value");
+    define('DOPBS_DEPOSIT_SETTINGS', "Anzahlung");
+    define('DOPBS_DEPOSIT', "Anzahlungsbetrag");
     
-    define('DOPBS_FORM_STYLES_SETTINGS', "Contact Form Settings");
-    define('DOPBS_FORM', "Select Form");
-    define('DOPBS_INSTANT_BOOKING_ENABLED', "Instant Booking");
-    define('DOPBS_NO_PEOPLE_ENABLED', "Enable Number of People Allowed");
-    define('DOPBS_MIN_NO_PEOPLE', "Minimum number of allowed people");
-    define('DOPBS_MAX_NO_PEOPLE', "Maximum number of allowed people");
-    define('DOPBS_NO_CHILDREN_ENABLED', "Enable Number of Children Allowed");
-    define('DOPBS_MIN_NO_CHILDREN', "Minimum number of allowed children");
-    define('DOPBS_MAX_NO_CHILDREN', "Maximum number of allowed children");
-    define('DOPBS_PAYMENT_ARRIVAL_ENABLED', "Enable Payment on Arrival");
+    define('DOPBS_FORM_STYLES_SETTINGS', "Kontaktformular Einstellungen");
+    define('DOPBS_FORM', "Wähle Formular");
+    define('DOPBS_INSTANT_BOOKING_ENABLED', "Sofort-Buchung");
+    define('DOPBS_NO_PEOPLE_ENABLED', "Aktiviere Anzahl Personen erlaubt");
+    define('DOPBS_MIN_NO_PEOPLE', "Min. Anzahl erlaubter Personen");
+    define('DOPBS_MAX_NO_PEOPLE', "Max. Anzahl erlaubter Personen");
+    define('DOPBS_NO_CHILDREN_ENABLED', "Aktiviere Anzahl Kinder erlaubt");
+    define('DOPBS_MIN_NO_CHILDREN', "Min. Anzahl erlaubter Kinder");
+    define('DOPBS_MAX_NO_CHILDREN', "Max. Anzahl erlaubter Kinder");
+    define('DOPBS_PAYMENT_ARRIVAL_ENABLED', "Aktiviere Bezahlung bei Ankunft");
     
-    define('DOPBS_PAYMENT_PAYPAL_STYLES_SETTINGS', "PayPal Settings");
-    define('DOPBS_PAYMENT_PAYPAL_ENABLED', "Enable PayPal Payment");
-    define('DOPBS_PAYMENT_PAYPAL_USERNAME', "PayPal API User Name");
-    define('DOPBS_PAYMENT_PAYPAL_PASSWORD', "PayPal API Password");
-    define('DOPBS_PAYMENT_PAYPAL_SIGNATURE', "PayPal API Signature");
-    define('DOPBS_PAYMENT_PAYPAL_CREDIT_CARD', "Enable Credit Card Payment");
-    define('DOPBS_PAYMENT_PAYPAL_SANDBOX_ENABLED', "Enable PayPal Sandbox");
+    define('DOPBS_PAYMENT_PAYPAL_STYLES_SETTINGS', "PayPal Einstellungen");
+    define('DOPBS_PAYMENT_PAYPAL_ENABLED', "Aktiviere PayPal-Bezahlung");
+    define('DOPBS_PAYMENT_PAYPAL_USERNAME', "PayPal-API User Name");
+    define('DOPBS_PAYMENT_PAYPAL_PASSWORD', "PayPal-API Password");
+    define('DOPBS_PAYMENT_PAYPAL_SIGNATURE', "PayPal-API Signature");
+    define('DOPBS_PAYMENT_PAYPAL_CREDIT_CARD', "Aktiviere Kreditkartenzahlung");
+    define('DOPBS_PAYMENT_PAYPAL_SANDBOX_ENABLED', "Aktiviere PayPal-Sandbox");
     
-    define('DOPBS_TERMS_AND_CONDITIONS_ENABLED', "Enable Terms & Conditions");
-    define('DOPBS_TERMS_AND_CONDITIONS_LINK', "Terms & Conditions Link");
+    define('DOPBS_TERMS_AND_CONDITIONS_ENABLED', "Aktiviere AGB");
+    define('DOPBS_TERMS_AND_CONDITIONS_LINK', "AGB Link");
     
-    define('DOPBS_GO_TOP', "go top");
-    define('DOPBS_SHOW', "show");
-    define('DOPBS_HIDE', "hide");
+    define('DOPBS_GO_TOP', "Nach oben");
+    define('DOPBS_SHOW', "Zeige");
+    define('DOPBS_HIDE', "Verberge");
     
     // Settings Info
-    define('DOPBS_CALENDAR_NAME_INFO', "Change calendar name.");
-    define('DOPBS_AVAILABLE_DAYS_INFO', "Default value: all available. Select available days.");
-    define('DOPBS_FIRST_DAY_INFO', "Default value: Monday. Select calendar first day.");
-    define('DOPBS_CURRENCY_INFO', "Default value: USD. Select calendar currency.");
-    define('DOPBS_DATE_TYPE_INFO', "Default value: American. Select date format: American (mm dd, yyyy) or European (dd mm yyyy)");
-    define('DOPBS_PREDEFINED_INFO', "If selected on Submit the below settings will be changed.");
-    define('DOPBS_TEMPLATE_INFO', "Default value: default. Select styles template.");
-    define('DOPBS_MIN_STAY_INFO', "Default value: 1. Set minimum amount of days that can be selected.");
-    define('DOPBS_MAX_STAY_INFO', "Default value: 0. Set maximum amount of days that can be selected. If you set 0 the number is unlimited.");
-    define('DOPBS_NO_ITEMS_ENABLED_INFO', "Default value: Enabled. Set to display only booking information in Front End.");
-    define('DOPBS_VIEW_ONLY_INFO', "Default value: Enabled. Set to display only booking information in Front End.");
-    define('DOPBS_PAGE_URL_INFO', "Set page URL were the calendar will be added. It is mandatory if you create a searching system through some calendars.");
+    define('DOPBS_CALENDAR_NAME_INFO', "Ändere Kalendername.");
+    define('DOPBS_AVAILABLE_DAYS_INFO', "Vorgabewert: alle verfügbar. Wähle verfügbare Tage.");
+    define('DOPBS_FIRST_DAY_INFO', "Vorgabewert: Montag. Wähle ersten Tag.");
+    define('DOPBS_CURRENCY_INFO', "Vorgabewert: USD. Wähle Kalender-Währung.");
+    define('DOPBS_DATE_TYPE_INFO', "Vorgabewert: Amerikanisch. Wähle ein Datumsformat: Amerikanisch (mm dd, yyyy) oder Europäisch (dd mm yyyy)");
+    define('DOPBS_PREDEFINED_INFO', "Wenn beim Senden ausgewählt, werden die folgenden Einstellungen geändert.");
+    define('DOPBS_TEMPLATE_INFO', "Vorgabewert: default. Wähle das Style-Template.");
+    define('DOPBS_MIN_STAY_INFO', "Vorgabewert: 1. Definiere die min. Anzahl Tage, die ausgewählt werden kann.");
+    define('DOPBS_MAX_STAY_INFO', "Vorgabewert: 0. Definiere die max. Anzahl Tage, die ausgewählt werden kann. (0 = unbegrenzt)");
+    define('DOPBS_NO_ITEMS_ENABLED_INFO', "Vorgabewert: Aktiviert. Aktiviere zum einschränken auf reine Anzeige der Buchungsinformationen im Frontend.");
+    define('DOPBS_VIEW_ONLY_INFO', "orgabewert: Aktiviert. Aktiviere zum einschränken auf reine Anzeige der Buchungsinformationen im Frontend.");
+    define('DOPBS_PAGE_URL_INFO', "Definiere Seiten-URL auf der der Kalender eingefügt wird. Das ist notwendig, wenn Du ein Suchsystem für mehrere Kalender erstellen möchtest.");
     
-    define('DOPBS_NOTIFICATIONS_TEMPLATE_INFO', "Default value: default. Select email template.");
-    define('DOPBS_NOTIFICATIONS_EMAIL_INFO', "Enter the email were you will notified about booking requests or you will use to notify users.");
-    define('DOPBS_NOTIFICATIONS_SMTP_ENABLED_INFO', "Use SMTP to send emails.");
-    define('DOPBS_NOTIFICATIONS_SMTP_HOST_NAME_INFO', "Enter SMTP host name");
-    define('DOPBS_NOTIFICATIONS_SMTP_HOST_PORT_INFO', "Enter SMTP host port.");
-    define('DOPBS_NOTIFICATIONS_SMTP_SSL_INFO', "Use a  SSL conenction.");
-    define('DOPBS_NOTIFICATIONS_SMTP_USER_INFO', "Enter SMTP host username.");
-    define('DOPBS_NOTIFICATIONS_SMTP_PASSWORD_INFO', "Enter SMTP host password.");
+    define('DOPBS_NOTIFICATIONS_TEMPLATE_INFO', "Vorgabewert: default. Wähle das Email-Template.");
+    define('DOPBS_NOTIFICATIONS_EMAIL_INFO', " Gib die Emailadresse ein, unter der Du über Buchungsanfragen informiert wirst oder über die Endkunden informiert werden.");
+    define('DOPBS_NOTIFICATIONS_SMTP_ENABLED_INFO', "Verwende SMTP zum Versenden der Emails.");
+    define('DOPBS_NOTIFICATIONS_SMTP_HOST_NAME_INFO', "SMTP Hostname");
+    define('DOPBS_NOTIFICATIONS_SMTP_HOST_PORT_INFO', "SMTP Hostport.");
+    define('DOPBS_NOTIFICATIONS_SMTP_SSL_INFO', "Verwende SSL.");
+    define('DOPBS_NOTIFICATIONS_SMTP_USER_INFO', "SMTP Host username.");
+    define('DOPBS_NOTIFICATIONS_SMTP_PASSWORD_INFO', "SMTP Host password.");
     
-    define('DOPBS_MULTIPLE_DAYS_SELECT_INFO', "Default value: Enabled. Use Check In/Check Out or select only one day.");
-    define('DOPBS_MORNING_CHECK_OUT_INFO', "Default value: Disabled. This option enables Check In in the afternoon of first day and Check Out in the morning of the day after last day.");
-    define('DOPBS_HOURS_ENABLED_INFO', "Default value: Disabled. Enable hours for the calendar.");
-    define('DOPBS_HOURS_DEFINITIONS_INFO', "Enter hh:mm ... add one per line. Changing the definitions will overwrite any previous hours data. Use only 24 hours format.");
-    define('DOPBS_MULTIPLE_HOURS_SELECT_INFO', "Default value: Enabled. Use Start/Finish Hours or select only one hour.");
-    define('DOPBS_HOURS_AMPM_INFO', "Default value: Disabled. Display hours in AM/PM format. NOTE: Hours definitions still need to be in 24 hours format.");
-    define('DOPBS_LAST_HOUR_TO_TOTAL_PRICE_INFO', "Default value: Enabled. It calculates the total price before the last hours selected if Disabled. It calculates the total price including the last hour selected if Enabled.");
-    define('DOPBS_HOURS_INTERVAL_ENABLED_INFO', "Default value: Disabled. Show hours interval from the current hour to the next one.");
+    define('DOPBS_MULTIPLE_DAYS_SELECT_INFO', "Vorgabewert: Aktiviert. Verwende An-/Abreise oder wähle nur einen Tag.");
+    define('DOPBS_MORNING_CHECK_OUT_INFO', "Vorgabewert: Deaktiviert. Diese Option aktiviert die Anreise am Nachmittag des ersten Tages und die Abreise am Morgen nach dem letzten Tag.");
+    define('DOPBS_HOURS_ENABLED_INFO', "Vorgabewert: Deaktiviert. Aktiviere die Stunden für den Kalender.");
+    define('DOPBS_HOURS_DEFINITIONS_INFO', "Gib ein hh:mm ... ein Eintrag pro Zeile. Eine Änderung der Definitionen überschreibt alle früheren Stundendefinitionen. Verwende nur das 24-Stunden-Format.");
+    define('DOPBS_MULTIPLE_HOURS_SELECT_INFO', "Vorgabewert: Aktiviert. Verwende Start-/End-Stunden oder wähle nur eine Stunde aus.");
+    define('DOPBS_HOURS_AMPM_INFO', "Vorgabewert: Deaktiviert. Zeige Stunden im AM/PM-Format. Anmerkung: Stundendefinitionen müssen trotzdem im 24-Stunden-Format eingegeben werden.");
+    define('DOPBS_LAST_HOUR_TO_TOTAL_PRICE_INFO', "Vorgabewert: Aktiviert. Der Preis wird ohne die letzte Stunde berechnet, falls deaktiviert. Der Preis wird inklusive der letzten Stunde berechnet, falls aktiviert.");
+    define('DOPBS_HOURS_INTERVAL_ENABLED_INFO', "Vorgabewert: Deaktiviert. Zeigt den Stundenzeitraum zwischen der aktuellen und der nächsten Stunde an.");
     
-    define('DOPBS_DISCOUNTS_NO_DAYS_INFO', "Select the number of days to which you want to add a discount (up to 31 days).");
-    define('DOPBS_DISCOUNTS_NO_DAYS_DAYS_INFO', "Default value 0. Set the discount percent that a user will get when booking this number of days.");
+    define('DOPBS_DISCOUNTS_NO_DAYS_INFO', "Wähle die Anzahl Tage bei der Du einen Rabatt geben möchtest (bis zu 31 Tage).");
+    define('DOPBS_DISCOUNTS_NO_DAYS_DAYS_INFO', "Vorgabewert: 0. Definiere den Rabattprozentsatz, den ein Kunde erhält, wenn er diese Anzahl an Tagen bucht.");
     
-    define('DOPBS_DEPOSIT_INFO', "Default value: 0. Set the percent value for the deposit. The Deposit is available only if you have a Payment Service activated.");
+    define('DOPBS_DEPOSIT_INFO', "Vorgabewert: 0. Definiere den Prozentsatz für die Anzahlung. Die Anzahlung ist nur verfügbar, wenn eine Bezahlmethode aktiviert ist.");
     
-    define('DOPBS_FORM_INFO', "Select the form for Contact Form.");
-    define('DOPBS_INSTANT_BOOKING_ENABLED_INFO', "Default value: Disabled. Instantly book the data in a calendar once the request has been submitted.");
-    define('DOPBS_NO_PEOPLE_ENABLED_INFO', "Default value: Enabled. Request number of people that will use the booked item.");
-    define('DOPBS_MIN_NO_PEOPLE_INFO', "Default value: 1. Set minimum number of allowed people per booked item.");
-    define('DOPBS_MAX_NO_PEOPLE_INFO', "Default value: 4. Set maximum number of allowed people per booked item.");
-    define('DOPBS_NO_CHILDREN_ENABLED_INFO', "Default value: Enabled. Request number of children that will use the booked item.");
-    define('DOPBS_MIN_NO_CHILDREN_INFO', "Default value: 0. Set minimum number of allowed children per booked item.");
-    define('DOPBS_MAX_NO_CHILDREN_INFO', "Default value: 2. Set maximum number of allowed children per booked item.");
-    define('DOPBS_PAYMENT_ARRIVAL_ENABLED_INFO', "Default value: Enabled. Allow user to pay on arrival. Need approval.");
+    define('DOPBS_FORM_INFO', "Wähle das Kontaktformular.");
+    define('DOPBS_INSTANT_BOOKING_ENABLED_INFO', "Vorgabewert: Deaktiviert. Buche die Daten sofort in den Kalender, sobald die Anfrage abgesendet wurde.");
+    define('DOPBS_NO_PEOPLE_ENABLED_INFO', "Vorgabewert: Aktiviert. Erfrage die Anzahl Personen, die das gebuchte Objekt benutzen wollen.");
+    define('DOPBS_MIN_NO_PEOPLE_INFO', "Vorgabewert: 1. Definiere die min. erlaubte Anzahl Personen pro gebuchtem Objekt.");
+    define('DOPBS_MAX_NO_PEOPLE_INFO', "Vorgabewert: 4. Definiere die max. erlaubte Anzahl Personen pro gebuchtem Objekt.");
+    define('DOPBS_NO_CHILDREN_ENABLED_INFO', "Vorgabewert: Aktiviert. Erfrage die Anzahl Kinder, die das Objekt benutzen wollen.");
+    define('DOPBS_MIN_NO_CHILDREN_INFO', "Vorgabewert: 0. Definiere die min. erlaubte Anzahl Kinder pro gebuchtem Objekt.");
+    define('DOPBS_MAX_NO_CHILDREN_INFO', "Vorgabewert: 2. Definiere die max. erlaubte Kinder Personen pro gebuchtem Objekt.");
+    define('DOPBS_PAYMENT_ARRIVAL_ENABLED_INFO', "Vorgabewert: Aktiviert. Erlaube Gästen bei Ankunft zu bezahlen. Benötigt Genehmigung.");
     
-    define('DOPBS_PAYMENT_PAYPAL_ENABLED_INFO', "Default value: Disabled. Allow user to pay with PayPal. The period is instantly booked.");
-    define('DOPBS_PAYMENT_PAYPAL_USERNAME_INFO', "Enter PayPal API Credentials User Name. View Help section to see from were you can get them.");
-    define('DOPBS_PAYMENT_PAYPAL_PASSWORD_INFO', "Enter PayPal API Credentials Password. View Help section to see from were you can get them.");
-    define('DOPBS_PAYMENT_PAYPAL_SIGNATURE_INFO', "Enter PayPal API Credentials Signature. View Help section to see from were you can get them.");
-    define('DOPBS_PAYMENT_PAYPAL_CREDIT_CARD_INFO', "Enable so that users can pay directly with their Credit Card.");
-    define('DOPBS_PAYMENT_PAYPAL_SANDBOX_ENABLED_INFO', "Enable to use PayPal Sandbox features.");
+    define('DOPBS_PAYMENT_PAYPAL_ENABLED_INFO', "Vorgabewert: Deaktiviert. Erlaube die Bezahlung per Paypal. Der Zeitraum wird sofort gebucht.");
+    define('DOPBS_PAYMENT_PAYPAL_USERNAME_INFO', "Gib die PayPal API-Daten ein (Benutzername). Siehe im Hilfebereich nach, woher Du die Daten bekommen kannst.");
+    define('DOPBS_PAYMENT_PAYPAL_PASSWORD_INFO', "Gib die PayPal API-Daten ein (Kennwort). Siehe im Hilfebereich nach, woher Du die Daten bekommen kannst.");
+    define('DOPBS_PAYMENT_PAYPAL_SIGNATURE_INFO', "Gib die PayPal API-Daten ein (Signatur). Siehe im Hilfebereich nach, woher Du die Daten bekommen kannst.");
+    define('DOPBS_PAYMENT_PAYPAL_CREDIT_CARD_INFO', "Aktiviere, damit Benutzer direkt per Kreditkarte bezahlen können.");
+    define('DOPBS_PAYMENT_PAYPAL_SANDBOX_ENABLED_INFO', "Aktiviere, um die Paypal-Sandbox zu verwenden.");
     
-    define('DOPBS_TERMS_AND_CONDITIONS_ENABLED_INFO', "Default value: Disabled. Enable Terms & Conditions check box.");
-    define('DOPBS_TERMS_AND_CONDITIONS_LINK_INFO', "Enter the link to Terms & Conditions page.");
+    define('DOPBS_TERMS_AND_CONDITIONS_ENABLED_INFO', "Vorgabewert: Deaktiviert. Aktiviere AGB-Checkbox.");
+    define('DOPBS_TERMS_AND_CONDITIONS_LINK_INFO', "Link zur AGB-Seite.");
     
     // Booking Forms
-    define('DOPBS_TITLE_BOOKING_FORMS', "Booking Forms");
-    define('DOPBS_BOOKING_FORMS_HELP', "Click on the 'plus' icon to add a booking form. Click on a booking form item to open the editing area.");
-    define('DOPBS_BOOKING_FORMS_LOADED', "Booking forms list loaded.");
-    define('DOPBS_BOOKING_FORM_SETTINGS_HELP', "Click 'Submit Button' to save changes. Click 'Delete Button' to delete the form.");
-    define('DOPBS_BOOKING_FORM_LOADED', "Booking form loaded.");
-    define('DOPBS_NO_BOOKING_FORMS', "No booking forms.");
+    define('DOPBS_TITLE_BOOKING_FORMS', "Buchungsformulare");
+    define('DOPBS_BOOKING_FORMS_HELP', "Klicke auf das Plus-Icon um eine Buchungsformular hinzu zu fügen. Klicke auf ein Formularelement, um die Bearbeitungsmaske zu öffnen.");
+    define('DOPBS_BOOKING_FORMS_LOADED', "Buchungsformular-Liste geladen.");
+    define('DOPBS_BOOKING_FORM_SETTINGS_HELP', "Klicke auf den 'Senden'-Button, um Änderungen zu speichern. Klicke auf dem 'Löschen'-Button, um ein Formular zu löschen.");
+    define('DOPBS_BOOKING_FORM_LOADED', "Buchungsformular geladen.");
+    define('DOPBS_NO_BOOKING_FORMS', "Keine Buchungsformulare.");
     
     // Add Booking Form
-    define('DOPBS_ADD_BOOKING_FORM_NAME', "Booking Form");
+    define('DOPBS_ADD_BOOKING_FORM_NAME', "Buchungs-Formular");
     
     // Edit Booking Form
-    define('DOPBS_EDIT_BOOKING_FORM_SUBMIT', "Submit");
-    define('DOPBS_EDIT_BOOKING_FORM_SUCCESS', "You have succesfully edited the form.");
+    define('DOPBS_EDIT_BOOKING_FORM_SUBMIT', "Senden");
+    define('DOPBS_EDIT_BOOKING_FORM_SUCCESS', "Du hast das Formular erfolgreich bearbeitet.");
     
     // Booking Form Fields
-    define('DOPBS_BOOKING_FORM_NAME', "Form Name");
-    define('DOPBS_BOOKING_FORM_NAME_DEFAULT', "Default Form");
-    define('DOPBS_BOOKING_FORM_FIELDS_TITLE', "Form Fields");
-    define('DOPBS_BOOKING_FORM_FIELDS_SHOW_SETTINGS', "Show Settings");
-    define('DOPBS_BOOKING_FORM_FIELDS_HIDE_SETTINGS', "Hide Settings");
+    define('DOPBS_BOOKING_FORM_NAME', "Formular-Name");
+    define('DOPBS_BOOKING_FORM_NAME_DEFAULT', "Default-Formular");
+    define('DOPBS_BOOKING_FORM_FIELDS_TITLE', "Formular-Felder");
+    define('DOPBS_BOOKING_FORM_FIELDS_SHOW_SETTINGS', "Zeige Einstellungen");
+    define('DOPBS_BOOKING_FORM_FIELDS_HIDE_SETTINGS', "Blende Einstellungen aus");
     define('DOPBS_BOOKING_FORM_FIELDS_TYPE_TEXT_LABEL', "Text");
     define('DOPBS_BOOKING_FORM_FIELDS_TYPE_TEXTAREA_LABEL', "Textarea");
     define('DOPBS_BOOKING_FORM_FIELDS_TYPE_CHECKBOX_LABEL', "Checkbox");
     define('DOPBS_BOOKING_FORM_FIELDS_TYPE_SELECT_LABEL', "Drop Down");
-    define('DOPBS_BOOKING_FORM_FIELDS_LANGUAGE_LABEL', "Language");
+    define('DOPBS_BOOKING_FORM_FIELDS_LANGUAGE_LABEL', "Sprache");
     define('DOPBS_BOOKING_FORM_FIELDS_NAME_LABEL', "Label");
-    define('DOPBS_BOOKING_FORM_FIELDS_NEW_FIELD_TEXT_LABEL', "New Text Field");
-    define('DOPBS_BOOKING_FORM_FIELDS_NEW_FIELD_TEXTAREA_LABEL', "New Textarea Field");
-    define('DOPBS_BOOKING_FORM_FIELDS_NEW_FIELD_CHECKBOX_LABEL', "New Checkbox Field");
-    define('DOPBS_BOOKING_FORM_FIELDS_NEW_FIELD_SELECT_LABEL', "New Drop Down Field");
-    define('DOPBS_BOOKING_FORM_FIELDS_ALLOWED_CHARACTERS_LABEL', "Allowed Characters");
-    define('DOPBS_BOOKING_FORM_FIELDS_SIZE_LABEL', "Size");
-    define('DOPBS_BOOKING_FORM_FIELDS_EMAIL_LABEL', "Is Email");
-    define('DOPBS_BOOKING_FORM_FIELDS_REQUIRED_LABEL', "Required");
-    define('DOPBS_BOOKING_FORM_FIELDS_SELECT_OPTIONS_LABEL', "Options");
-    define('DOPBS_BOOKING_FORM_FIELDS_SELECT_ADD_OPTION', "Add Option");
-    define('DOPBS_BOOKING_FORM_FIELDS_SELECT_NEW_OPTION_LABEL', "New Option");
-    define('DOPBS_BOOKING_FORM_FIELDS_SELECT_DELETE_OPTION', "Delete Option");
-    define('DOPBS_BOOKING_FORM_FIELDS_SELECT_MULTIPLE_SELECT_LABEL', "Multiple Select");
-    define('DOPBS_BOOKING_FORM_CHECKED', "Checked");
-    define('DOPBS_BOOKING_FORM_UNCHECKED', "Unchecked");
+    define('DOPBS_BOOKING_FORM_FIELDS_NEW_FIELD_TEXT_LABEL', "Neues Text-Feld");
+    define('DOPBS_BOOKING_FORM_FIELDS_NEW_FIELD_TEXTAREA_LABEL', "Neues Textarea-Feld");
+    define('DOPBS_BOOKING_FORM_FIELDS_NEW_FIELD_CHECKBOX_LABEL', "Neues Checkbox-Feld");
+    define('DOPBS_BOOKING_FORM_FIELDS_NEW_FIELD_SELECT_LABEL', "Neues Drop Down-Feld");
+    define('DOPBS_BOOKING_FORM_FIELDS_ALLOWED_CHARACTERS_LABEL', "Erlaubte Buchstaben");
+    define('DOPBS_BOOKING_FORM_FIELDS_SIZE_LABEL', "Größe");
+    define('DOPBS_BOOKING_FORM_FIELDS_EMAIL_LABEL', "Ist Emailadresse");
+    define('DOPBS_BOOKING_FORM_FIELDS_REQUIRED_LABEL', "Erforderlich");
+    define('DOPBS_BOOKING_FORM_FIELDS_SELECT_OPTIONS_LABEL', "Optionen");
+    define('DOPBS_BOOKING_FORM_FIELDS_SELECT_ADD_OPTION', "Füge Option hinzu");
+    define('DOPBS_BOOKING_FORM_FIELDS_SELECT_NEW_OPTION_LABEL', "Neue Option");
+    define('DOPBS_BOOKING_FORM_FIELDS_SELECT_DELETE_OPTION', "Lösche Option");
+    define('DOPBS_BOOKING_FORM_FIELDS_SELECT_MULTIPLE_SELECT_LABEL', "Mehrfachauswahl");
+    define('DOPBS_BOOKING_FORM_CHECKED', "Ausgewählt");
+    define('DOPBS_BOOKING_FORM_UNCHECKED', "Nicht ausgewählt");
     
     // Booking Form Fields Info
     define('DOPBS_BOOKING_FORM_NAME_INFO', "Change form name and click Submit.");
@@ -321,7 +321,7 @@
     define('DOPBS_BOOKING_FORM_FIELDS_SELECT_MULTIPLE_SELECT_INFO', "Check it if you want a multiple select Drop Down.");
     
     // Help
-    define('DOPBS_HELP_DOCUMENTATION', "Documentation");
+    define('DOPBS_HELP_DOCUMENTATION', "Dokumentation");
     define('DOPBS_HELP_FAQ', "FAQ");
 
 ?>

@@ -2,7 +2,7 @@
 
 /*
 * Title                   : Booking System (WordPress Plugin)
-* Version                 : 1.0
+* Version                 : 1.1
 * File                    : af.php
 * File Version            : 1.0
 * Created / Last Modified : 29 July 2013
