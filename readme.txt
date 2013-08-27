@@ -98,10 +98,24 @@ View [demo](http://dopdemo.net/wp/booking-system/) here.
 
 == Changelog ==
 
+= 1.1 =
+* Access-Control-Allow-Origin Buster bug fixed.
+* French Translation updated thanks to Asselin de Beauville Christophe - http://gegeek.net/
+* German Translation updated thanks to Dieter Pfenning - dieter.pfenning@winball.de
+* Polish Translation updated thanks to Kwasniewski Krzysztof - http://etechnologie.pl
+* Small fixes.
+
 = 1.0 =
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.1 =
+* Access-Control-Allow-Origin Buster bug fixed.
+* French Translation updated thanks to Asselin de Beauville Christophe - http://gegeek.net/
+* German Translation updated thanks to Dieter Pfenning - dieter.pfenning@winball.de
+* Polish Translation updated thanks to Kwasniewski Krzysztof - http://etechnologie.pl
+* Small fixes.
 
 = 1.0 =
 * Initial release.
