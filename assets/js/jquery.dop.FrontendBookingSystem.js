@@ -1,7 +1,7 @@
 
 /*
 * Title                   : Booking System (WordPress Plugin)
-* Version                 : 1.1
+* Version                 : 1.2
 * File                    : jquery.dop.FrontendBookingSystem.js
 * File Version            : 1.1
 * Created / Last Modified : 27 August 2013

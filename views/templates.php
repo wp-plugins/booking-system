@@ -2,10 +2,10 @@
 
 /*
 * Title                   : Booking System (WordPress Plugin)
-* Version                 : 1.1
+* Version                 : 1.2
 * File                    : templates.php
-* File Version            : 1.0
-* Created / Last Modified : 29 July 2013
+* File Version            : 1.1
+* Created / Last Modified : 29 August 2013
 * Author                  : Dot on Paper
 * Copyright               : © 2013 Dot on Paper
 * Website                 : http://www.dotonpaper.net
@@ -33,7 +33,7 @@
                 var DOPBS_curr_page = "<?php echo $DOPBS_curr_page?>",
                 DOPBS_user_role = "<?php echo wp_get_current_user()->roles[0]?>",
                 DOPBS_plugin_url = "<?php echo WP_PLUGIN_URL.'/booking-system/'?>",
-                DOPBS_plugin_abs = "<?php echo ABSPATH.'wp-content/plugins/booking-system/'?>",
+                DOPBS_plugin_abs = "<?php echo str_replace('\\', '/', ABSPATH).'wp-content/plugins/booking-system/'?>",
 
                 DOPBS_TITLE = "<?php echo DOPBS_TITLE?>",
 

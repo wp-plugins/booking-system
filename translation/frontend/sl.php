@@ -2,7 +2,7 @@
 
 /*
 * Title                   : Booking System (WordPress Plugin)
-* Version                 : 1.1
+* Version                 : 1.2
 * File                    : sl.php
 * File Version            : 1.0
 * Created / Last Modified : 29 July 2013

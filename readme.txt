@@ -99,6 +99,9 @@ View [demo](http://dopdemo.net/wp/booking-system/) here.
 
 == Changelog ==
 
+= 1.2 =
+* Localhost bugs fixed.
+
 = 1.1 =
 * Access-Control-Allow-Origin Buster bug fixed.
 * French Translation updated thanks to Asselin de Beauville Christophe - http://gegeek.net/
@@ -110,6 +113,9 @@ View [demo](http://dopdemo.net/wp/booking-system/) here.
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.2 =
+* Localhost bugs fixed.
 
 = 1.1 =
 * Access-Control-Allow-Origin Buster bug fixed.

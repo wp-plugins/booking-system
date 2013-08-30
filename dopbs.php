@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Booking System (Booking Calendar)
-Version: 1.1
+Version: 1.2
 Plugin URI: http://www.dopdemo.net/wp/booking-system
 Description: This Plugin will help you to easily create a booking/reservation system your WordPress website or blog.
 Author: Dot on Paper
@@ -9,17 +9,21 @@ Author URI: http://www.dotonpaper.net
 
 Change log:
 
+        1.2 (2012-08-29)
+	
+            * Localhost bugs fixed.
+
         1.1 (2012-08-27)
 	
-		* Access-Control-Allow-Origin Buster bug fixed.
-                * French Translation updated thanks to Asselin de Beauville Christophe - http://gegeek.net/
-                * German Translation updated thanks to Dieter Pfenning - dieter.pfenning@winball.de
-                * Polish Translation updated thanks to Kwasniewski Krzysztof - http://etechnologie.pl
-                * Small fixes.
+            * Access-Control-Allow-Origin Buster bug fixed.
+            * French Translation updated thanks to Asselin de Beauville Christophe - http://gegeek.net/
+            * German Translation updated thanks to Dieter Pfenning - dieter.pfenning@winball.de
+            * Polish Translation updated thanks to Kwasniewski Krzysztof - http://etechnologie.pl
+            * Small fixes.
 
         1.0 (2012-07-28)
 	
-		* Initial release.
+            * Initial release.
 		
 Installation: Upload the folder booking-system from the zip file to "wp-content/plugins/" and activate the plugin in your admin panel or upload booking-system.zip in the "Add new" section.
 */

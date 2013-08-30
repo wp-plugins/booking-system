@@ -2,10 +2,10 @@
 
 /*
 * Title                   : Booking System (WordPress Plugin)
-* Version                 : 1.1
+* Version                 : 1.2
 * File                    : dopbs-backend.php
-* File Version            : 1.0
-* Created / Last Modified : 29 July 2013
+* File Version            : 1.1
+* Created / Last Modified : 29 August 2013
 * Author                  : Dot on Paper
 * Copyright               : © 2013 Dot on Paper
 * Website                 : http://www.dotonpaper.net
@@ -71,7 +71,7 @@
 
                 // Paths
                 if (!defined('DOPBS_Plugin_AbsPath')){
-                    define('DOPBS_Plugin_AbsPath', ABSPATH.'wp-content/plugins/booking-system/');
+                    define('DOPBS_Plugin_AbsPath', str_replace('\\', '/', ABSPATH).'wp-content/plugins/booking-system/');
                 }
                 if (!defined('DOPBS_Plugin_URL')){
                     define('DOPBS_Plugin_URL', WP_PLUGIN_URL.'/booking-system/');
@@ -119,7 +119,7 @@
                 $current_db_version = get_option('DOPBS_db_version');
                 
                 if ($this->DOPBS_db_version != $current_db_version){
-                    require_once(ABSPATH.'wp-admin/includes/upgrade.php');
+                    require_once(str_replace('\\', '/', ABSPATH).'wp-admin/includes/upgrade.php');
 
                     $sql_settings = "CREATE TABLE " . DOPBS_Settings_table . " (
                                         id INT NOT NULL AUTO_INCREMENT,
@@ -189,23 +189,23 @@
 
                     $sql_reservations = "CREATE TABLE " . DOPBS_Reservations_table . " (
                                         id int NOT NULL AUTO_INCREMENT,
-                                        calendar_id int NOT NULL,
+                                        calendar_id INT NOT NULL,
                                         check_in VARCHAR(16) DEFAULT '' COLLATE utf8_unicode_ci NOT NULL,
                                         check_out VARCHAR(16) DEFAULT '' COLLATE utf8_unicode_ci NOT NULL,
                                         start_hour VARCHAR(16) DEFAULT '' COLLATE utf8_unicode_ci NOT NULL,
                                         end_hour VARCHAR(16) DEFAULT '' COLLATE utf8_unicode_ci NOT NULL,
-                                        no_items int DEFAULT 1 NOT NULL,
+                                        no_items INT DEFAULT 1 NOT NULL,
                                         currency VARCHAR(8) DEFAULT '' COLLATE utf8_unicode_ci NOT NULL,
                                         currency_code VARCHAR(8) DEFAULT '' COLLATE utf8_unicode_ci NOT NULL,
-                                        total_price int DEFAULT 0 NOT NULL,
-                                        discount int DEFAULT 0 NOT NULL,
-                                        price int DEFAULT 0 NOT NULL,
-                                        deposit int DEFAULT 0 NOT NULL,
+                                        total_price INT DEFAULT 0 NOT NULL,
+                                        discount INT DEFAULT 0 NOT NULL,
+                                        price INT DEFAULT 0 NOT NULL,
+                                        deposit INT DEFAULT 0 NOT NULL,
                                         language VARCHAR(8) DEFAULT 'en' COLLATE utf8_unicode_ci NOT NULL,
                                         email VARCHAR(128) DEFAULT '' COLLATE utf8_unicode_ci NOT NULL,
-                                        no_people int DEFAULT 1 NOT NULL,
-                                        no_children int DEFAULT 0 NOT NULL,
-                                        payment_method int DEFAULT 0 NOT NULL, 
+                                        no_people INT DEFAULT 1 NOT NULL,
+                                        no_children INT DEFAULT 0 NOT NULL,
+                                        payment_method INT DEFAULT 0 NOT NULL, 
                                         paypal_transaction_id VARCHAR(128) DEFAULT '' COLLATE utf8_unicode_ci NOT NULL, 
                                         status VARCHAR(16) DEFAULT 'pending' COLLATE utf8_unicode_ci NOT NULL,
                                         info TEXT COLLATE utf8_unicode_ci NOT NULL,
@@ -214,19 +214,19 @@
                                     );";
                     
                     $sql_forms = "CREATE TABLE " . DOPBS_Forms_table . " (
-                                        id int NOT NULL AUTO_INCREMENT,
+                                        id INT NOT NULL AUTO_INCREMENT,
                                         name VARCHAR(128) DEFAULT '' COLLATE utf8_unicode_ci NOT NULL,
                                         UNIQUE KEY id (id)
                                     );";
                     
                     $sql_forms_fields = "CREATE TABLE " . DOPBS_Forms_Fields_table . " (
-                                        id int NOT NULL AUTO_INCREMENT,
-                                        form_id int NOT NULL,
+                                        id INT NOT NULL AUTO_INCREMENT,
+                                        form_id INT NOT NULL,
                                         type VARCHAR(20) DEFAULT '' COLLATE utf8_unicode_ci NOT NULL,
-                                        position int NOT NULL,
+                                        position INT NOT NULL,
                                         multiple_select VARCHAR(6) DEFAULT 'false' COLLATE utf8_unicode_ci NOT NULL,
                                         allowed_characters TEXT COLLATE utf8_unicode_ci NOT NULL,
-                                        size int DEFAULT 0 NOT NULL,
+                                        size INT DEFAULT 0 NOT NULL,
                                         is_email VARCHAR(6) DEFAULT 'false' COLLATE utf8_unicode_ci NOT NULL,
                                         required VARCHAR(6) DEFAULT 'false' COLLATE utf8_unicode_ci NOT NULL,
                                         translation TEXT COLLATE utf8_unicode_ci NOT NULL,
@@ -234,8 +234,8 @@
                                     );";
                     
                     $sql_forms_select_options = "CREATE TABLE " . DOPBS_Forms_Select_Options_table . " (
-                                        id int NOT NULL AUTO_INCREMENT,
-                                        field_id int NOT NULL,
+                                        id INT NOT NULL AUTO_INCREMENT,
+                                        field_id INT NOT NULL,
                                         translation TEXT COLLATE utf8_unicode_ci NOT NULL,
                                         UNIQUE KEY id (id)
                                     );";
