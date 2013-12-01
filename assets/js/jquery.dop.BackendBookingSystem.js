@@ -196,7 +196,7 @@
                                 $.extend(Schedule, JSON.parse($.trim(data)));
                             }
                             
-                            if (showCalendar && (StartMonth < 12-noMonths+1 || firstYearLoaded)){
+                            if (showCalendar && (StartMonth < 12-noMonths+1 || firstYearLoaded || year == MaxYear)){
                                 showCalendar = false;
                                 dopbsToggleMessage('hide', DOPBS_CALENDAR_LOADED);
                                 methods.initCalendar();

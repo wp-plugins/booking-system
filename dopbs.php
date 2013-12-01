@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Booking System (Booking Calendar)
-Version: 1.2
+Version: 1.2.1
 Plugin URI: http://www.dopdemo.net/wp/booking-system
 Description: This Plugin will help you to easily create a booking/reservation system your WordPress website or blog.
 Author: Dot on Paper
@@ -9,6 +9,10 @@ Author URI: http://www.dotonpaper.net
 
 Change log:
 
+        1.2.1 (2012-12-01)
+	
+            * Calendar "is stuck" bug fix.
+  
         1.2 (2012-08-29)
 	
             * Localhost bugs fixed.
