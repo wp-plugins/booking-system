@@ -22,7 +22,7 @@
     require_once('../../../../../wp-load.php');  
     global $wpdb;
     
-    $form = $wpdb->get_results('SELECT * FROM '.DOPBS_Forms_Fields_table.' WHERE form_id="'.$_POST['DOPBookingSystem_FormID'.$cID].'" ORDER BY position');
+    $form = $wpdb->get_results($wpdb->prepare('SELECT * FROM '.DOPBS_Forms_Fields_table.' WHERE form_id="%d" ORDER BY position', $_POST['DOPBookingSystem_FormID'.$cID]));
     $fields = array();
     $field_data = array();
     $i = 0;

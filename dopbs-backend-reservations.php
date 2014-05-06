@@ -21,7 +21,7 @@
             function showNoReservations(){
                 global $wpdb;
                 
-                $reservations = $wpdb->get_results('SELECT * FROM '.DOPBS_Reservations_table.' WHERE calendar_id="'.$_POST['calendar_id'].'" AND CURDATE() <= check_in AND status <> "rejected" AND status <> "canceled"');
+                $reservations = $wpdb->get_results($wpdb->prepare('SELECT * FROM '.DOPBS_Reservations_table.' WHERE calendar_id="%d" AND CURDATE() <= check_in AND status <> "rejected" AND status <> "canceled"', $_POST['calendar_id']));
                 echo $wpdb->num_rows;
                 
             	die();      
@@ -31,8 +31,8 @@
                 global $wpdb;              
                 $reservationsHTML = array();
                                 
-                $settings = $wpdb->get_row('SELECT * FROM '.DOPBS_Settings_table.' WHERE calendar_id="'.$_POST['calendar_id'].'"');
-                $reservations = $wpdb->get_results('SELECT * FROM '.DOPBS_Reservations_table.' WHERE calendar_id="'.$_POST['calendar_id'].'" AND CURDATE() <= check_in AND status <> "rejected" AND status <> "canceled" ORDER BY check_in DESC');
+                $settings = $wpdb->get_row($wpdb->prepare('SELECT * FROM '.DOPBS_Settings_table.' WHERE calendar_id="%d"', $_POST['calendar_id']));
+                $reservations = $wpdb->get_results($wpdb->prepare('SELECT * FROM '.DOPBS_Reservations_table.' WHERE calendar_id="%d" AND CURDATE() <= check_in AND status <> "rejected" AND status <> "canceled" ORDER BY check_in DESC', $_POST['calendar_id']));
                      
                 array_push($reservationsHTML, '<ul>');
                 
@@ -251,8 +251,8 @@
                     $DOPemail = new DOPBookingSystemEmail();
                     $reservationId = $_POST['reservation_id'];
                                         
-                    $settings = $wpdb->get_row('SELECT * FROM '.DOPBS_Settings_table.' WHERE calendar_id="'.$_POST['calendar_id'].'"');
-                    $reservation = $wpdb->get_row('SELECT * FROM '.DOPBS_Reservations_table.' WHERE id="'.$reservationId.'"');
+                    $settings = $wpdb->get_row($wpdb->prepare('SELECT * FROM '.DOPBS_Settings_table.' WHERE calendar_id="%d"', $_POST['calendar_id']));
+                    $reservation = $wpdb->get_row($wpdb->prepare('SELECT * FROM '.DOPBS_Reservations_table.' WHERE id="%d"', $reservationId));
                     
                     $DOPemail->sendMessage('booking_approved',
                                            $reservation->language,
@@ -291,8 +291,8 @@
                     $DOPemail = new DOPBookingSystemEmail();
                     $reservationId = $_POST['reservation_id'];
                                         
-                    $settings = $wpdb->get_row('SELECT * FROM '.DOPBS_Settings_table.' WHERE calendar_id="'.$_POST['calendar_id'].'"');
-                    $reservation = $wpdb->get_row('SELECT * FROM '.DOPBS_Reservations_table.' WHERE id="'.$_POST['reservation_id'].'"');
+                    $settings = $wpdb->get_row($wpdb->prepare('SELECT * FROM '.DOPBS_Settings_table.' WHERE calendar_id="%d"', $_POST['calendar_id']));
+                    $reservation = $wpdb->get_row($wpdb->prepare('SELECT * FROM '.DOPBS_Reservations_table.' WHERE id="%d"', $_POST['reservation_id']));
                     
                     $DOPemail->sendMessage('booking_rejected',
                                            $reservation->language,
@@ -328,8 +328,8 @@
                     $wpdb->update(DOPBS_Reservations_table, array('status' => 'canceled'), array('id' => $reservationId));
                     $DOPemail = new DOPBookingSystemEmail();
                                         
-                    $settings = $wpdb->get_row('SELECT * FROM '.DOPBS_Settings_table.' WHERE calendar_id="'.$_POST['calendar_id'].'"');
-                    $reservation = $wpdb->get_row('SELECT * FROM '.DOPBS_Reservations_table.' WHERE id="'.$reservationId.'"');
+                    $settings = $wpdb->get_row($wpdb->prepare('SELECT * FROM '.DOPBS_Settings_table.' WHERE calendar_id="%d"', $_POST['calendar_id']));
+                    $reservation = $wpdb->get_row($wpdb->prepare('SELECT * FROM '.DOPBS_Reservations_table.' WHERE id="%d"', $reservationId));
                     
                     $DOPemail->sendMessage('booking_canceled',
                                            $reservation->language,

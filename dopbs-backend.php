@@ -374,7 +374,7 @@
                     global $DOPBS_day_names;
                     $data = array();
                     
-                    $settings = $wpdb->get_row('SELECT * FROM '.DOPBS_Settings_table.' WHERE calendar_id="'.$_POST['calendar_id'].'"');
+                    $settings = $wpdb->get_row($wpdb->prepare('SELECT * FROM '.DOPBS_Settings_table.' WHERE calendar_id="%d"', $_POST['calendar_id']));
                                         
                     $data = array('AddtMonthViewText' => DOPBS_ADD_MONTH_VIEW,
                                   'AvailableDays' => explode(',', $settings->available_days),
@@ -430,7 +430,7 @@
                     $schedule = array();
                     
                     $this->cleanSchedule();
-                    $days = $wpdb->get_results('SELECT * FROM '.DOPBS_Days_table.' WHERE calendar_id="'.$_POST['calendar_id'].'" AND year="'.$_POST['year'].'"');
+                    $days = $wpdb->get_results($wpdb->prepare('SELECT * FROM '.DOPBS_Days_table.' WHERE calendar_id="%d" AND year="%s"', $_POST['calendar_id'], $_POST['year']));
                     
                     foreach ($days as $day):
                         $schedule[$day->day] = json_decode($day->data);
@@ -457,7 +457,7 @@
                     while ($data = current($schedule)){
                         $day = key($schedule);
                         $day_items = explode('-', $day);
-                        $result = $wpdb->get_results('SELECT * FROM '.DOPBS_Days_table.' WHERE calendar_id='.$calendar_id.' AND day=\''.$day.'\'');
+                        $result = $wpdb->get_results($wpdb->prepare('SELECT * FROM '.DOPBS_Days_table.' WHERE calendar_id=%d AND day=\''.$day.'\'', $calendar_id));
                                                 
                         if ($wpdb->num_rows != 0){  
                             $wpdb->update(DOPBS_Days_table, array('data' => json_encode($data)), array('calendar_id' => $calendar_id, 
@@ -473,7 +473,7 @@
                         next($schedule);                        
                     }
                     
-                    $max_year = $wpdb->get_row('SELECT MAX(year) AS year FROM '.DOPBS_Days_table.' WHERE calendar_id="'.$calendar_id.'"');
+                    $max_year = $wpdb->get_row($wpdb->prepare('SELECT MAX(year) AS year FROM '.DOPBS_Days_table.' WHERE calendar_id="%d"', $calendar_id));
                     
                     if ($max_year->year > 0){
                         $wpdb->update(DOPBS_Settings_table, array('max_year' => $max_year->year), array('calendar_id' => $calendar_id));
@@ -497,11 +497,11 @@
                                         
                     while ($data = current($schedule)){
                         $day = key($schedule);
-                        $wpdb->query('DELETE FROM '.DOPBS_Days_table.' WHERE calendar_id='.$calendar_id.' AND day=\''.$day.'\'');                        
+                        $wpdb->query($wpdb->prepare('DELETE FROM '.DOPBS_Days_table.' WHERE calendar_id=%d AND day=\''.$day.'\'', $calendar_id));                        
                         next($schedule);                        
                     }
                     
-                    $max_year = $wpdb->get_row('SELECT MAX(year) AS year FROM '.DOPBS_Days_table.' WHERE calendar_id="'.$calendar_id.'"'); 
+                    $max_year = $wpdb->get_row($wpdb->prepare('SELECT MAX(year) AS year FROM '.DOPBS_Days_table.' WHERE calendar_id="%d"', $calendar_id));    
                     
                     if ($max_year->year > 0){
                         $wpdb->update(DOPBS_Settings_table, array('max_year' => $max_year->year), array('calendar_id' => $calendar_id));
@@ -526,8 +526,8 @@
                 global $DOPBS_pluginSeries_forms;
                 $result = array();
                 
-                $calendar = $wpdb->get_row('SELECT * FROM '.DOPBS_Calendars_table.' WHERE id="'.$_POST['calendar_id'].'"');
-                $settings = $wpdb->get_row('SELECT * FROM '.DOPBS_Settings_table.' WHERE calendar_id="'.$_POST['calendar_id'].'"');
+                $calendar = $wpdb->get_row($wpdb->prepare('SELECT * FROM '.DOPBS_Calendars_table.' WHERE id="%d"', $_POST['calendar_id']));
+                $settings = $wpdb->get_row($wpdb->prepare('SELECT * FROM '.DOPBS_Settings_table.' WHERE calendar_id="%d"', $_POST['calendar_id']));
   
                 $result['name'] = $calendar->name;
                 
@@ -744,7 +744,8 @@
                 $tinyMCE_data = DOPBS_TINYMCE_ADD.';;;;;'.implode(';;;', $calendarsList);
                 
                 echo '<script type="text/JavaScript">'.
-                     '    var DOPBS_tinyMCE_data = "'.$tinyMCE_data.'"'.
+                     '    var DOPBS_tinyMCE_data = "'.$tinyMCE_data.'",'.
+                     '        WP_version          = '.get_bloginfo("version").';'.    
                      '</script>';
             }
 

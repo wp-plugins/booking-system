@@ -212,7 +212,7 @@
                     global $wpdb;
                     $schedule = array();
                     
-                    $days = $wpdb->get_results('SELECT * FROM '.DOPBS_Days_table.' WHERE calendar_id="'.$_POST['calendar_id'].'"');
+                    $days = $wpdb->get_results($wpdb->prepare('SELECT * FROM '.DOPBS_Days_table.' WHERE calendar_id="%d"', $_POST['calendar_id']));
                     
                     foreach ($days as $day):
                         $schedule[$day->day] = json_decode($day->data);
@@ -240,7 +240,7 @@
                     $language = isset($_SESSION['DOPBookingSystemFrontEndLanguage'.$_POST['calendar_id']]) ? $_SESSION['DOPBookingSystemFrontEndLanguage'.$_POST['calendar_id']]:'en';
                     $form = $_POST['form'];
                     
-                    $settings = $wpdb->get_row('SELECT * FROM '.DOPBS_Settings_table.' WHERE calendar_id="'.$_POST['calendar_id'].'"');
+                    $settings = $wpdb->get_row($wpdb->prepare('SELECT * FROM '.DOPBS_Settings_table.' WHERE calendar_id="%d"', $_POST['calendar_id']));
                     
                     $wpdb->insert(DOPBS_Reservations_table, array('calendar_id' => $_POST['calendar_id'],
                                                                    'check_in' => $_POST['check_in'],

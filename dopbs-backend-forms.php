@@ -79,7 +79,7 @@
                     global $wpdb;
                     
                     $data = array();
-                    $form = $wpdb->get_row('SELECT * FROM '.DOPBS_Forms_table.' WHERE id="'.$_POST['id'].'"');
+                    $form = $wpdb->get_row($wpdb->prepare('SELECT * FROM '.DOPBS_Forms_table.' WHERE id="%d"', $_POST['id']));
                     
                     echo $form->name;
 
@@ -100,7 +100,7 @@
                 global $wpdb;
                 
                 $current_backend_language = get_option('DOPBS_backend_language_'.wp_get_current_user()->ID);
-                $fields = $wpdb->get_results('SELECT * FROM '.DOPBS_Forms_Fields_table.' WHERE form_id='.$_POST['booking_form_id'].' ORDER BY position ASC');
+                $fields = $wpdb->get_results($wpdb->prepare('SELECT * FROM '.DOPBS_Forms_Fields_table.' WHERE form_id=%d ORDER BY position ASC', $_POST['booking_form_id']));
                 
                 if ($wpdb->num_rows > 0){
                     $language = $_POST["language"];
@@ -109,7 +109,7 @@
                         $translations = json_decode(stripslashes($field->translation));
                         $ok_translation = str_replace('"', '#', stripslashes($field->translation));
                         
-                        $options = $wpdb->get_results('SELECT * FROM '.DOPBS_Forms_Select_Options_table.' WHERE field_id='.$field->id.' ORDER BY field_id ASC');
+                        $options = $wpdb->get_results($wpdb->prepare('SELECT * FROM '.DOPBS_Forms_Select_Options_table.' WHERE field_id=%d ORDER BY field_id ASC', $field->id));
                         
                         echo '<li class="booking-form-item" id="booking-form-field-'.$field->id.'">';
                         // Field Name and Show/Hide button
@@ -378,8 +378,8 @@
             function deleteBookingFormField(){
                 global $wpdb;
                 
-                $wpdb->query('DELETE FROM '.DOPBS_Forms_Fields_table.' WHERE id="'.$_POST['fieldId'].'"');
-                $wpdb->query('DELETE FROM '.DOPBS_Forms_Select_Options_table.' WHERE field_id="'.$_POST['fieldId'].'"');
+                $wpdb->query($wpdb->prepare('DELETE FROM '.DOPBS_Forms_Fields_table.' WHERE id="%d"', $_POST['fieldId']));
+                $wpdb->query($wpdb->prepare('DELETE FROM '.DOPBS_Forms_Select_Options_table.' WHERE field_id="%d"', $_POST['fieldId']));
                 
                 echo '';
                 die();
