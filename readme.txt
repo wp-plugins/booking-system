@@ -99,6 +99,10 @@ View [demo](http://dopdemo.net/wp/booking-system/) here.
 
 == Changelog ==
 
+= 1.3 =
+* Security fixes.
+* 3.9 compatibilities fixed.
+
 = 1.2 =
 * Localhost bugs fixed.
 
@@ -113,6 +117,10 @@ View [demo](http://dopdemo.net/wp/booking-system/) here.
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.3 =
+* Security fixes.
+* 3.9 compatibilities fixed.
 
 = 1.2 =
 * Localhost bugs fixed.
