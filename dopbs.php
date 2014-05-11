@@ -9,6 +9,10 @@ Author URI: http://www.dotonpaper.net
 
 Change log:
 
+        1.3.1 (20124-05-11)
+	
+            * TinyMCE shortcodes bug fixed.
+
         1.3 (20124-05-06)
 	
             * Security fixes.
