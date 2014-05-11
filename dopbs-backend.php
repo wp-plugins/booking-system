@@ -2,7 +2,7 @@
 
 /*
 * Title                   : Booking System (WordPress Plugin)
-* Version                 : 1.2
+* Version                 : 1.3.1
 * File                    : dopbs-backend.php
 * File Version            : 1.1
 * Created / Last Modified : 29 August 2013
@@ -745,7 +745,7 @@
                 
                 echo '<script type="text/JavaScript">'.
                      '    var DOPBS_tinyMCE_data = "'.$tinyMCE_data.'",'.
-                     '        WP_version          = '.get_bloginfo("version").';'.    
+                     '        WP_version          = "'.get_bloginfo("version").'";'. 
                      '</script>';
             }
 
