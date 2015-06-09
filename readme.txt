@@ -399,8 +399,6 @@ View [demo](http://dopdemo.net/wp/booking-system/) here.
 
 == Upgrade Notice ==
 
-
-
 = 2.0 =
 * "Add-ons" added. Increase and improve functionalities.
 * "Themes" added. A collection of themes specially created for the booking system.
