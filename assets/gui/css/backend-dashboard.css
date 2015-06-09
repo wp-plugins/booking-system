@@ -1,0 +1,319 @@
+@charset "utf-8";
+
+/*
+* Title                   : Booking System (WordPress Plugin)
+* Version                 : 2.0
+* File                    : assets/gui/css/backend-dashboard.css
+* File Version            : 1.0.7
+* Created / Last Modified : 19 January 2015
+* Author                  : Dot on Paper
+* Copyright               : © 2012 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : Booking System back end coupons stylesheet.
+*/
+
+/*
+ * ***************************************************************************** Begin dashboard.
+ */
+/*
+ * ********************************************************** Begin get started.
+ */
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+
+#DOPBSP-get-started{
+    width: 30%;
+}
+
+#DOPBSP-get-started ul{
+    margin: 20px 0 -5px 0;
+    overflow: hidden;
+}
+
+#DOPBSP-get-started ul li{
+    float: left;
+    margin: 0 5px 5px 0 !important;
+    overflow: hidden;
+    padding: 0 !important;
+    width: 220px;
+}
+
+#DOPBSP-get-started ul li a{
+    background-color: #ff6300;
+    color: #ffffff;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 !important;
+    overflow: hidden;
+    padding: 10px 15px !important;
+    text-decoration: none;
+    width: 300px;
+    -webkit-transition: background-color 600ms linear;
+    -moz-transition: background-color 600ms linear;
+    -o-transition: background-color 600ms linear;
+    transition: background-color 600ms linear;
+}
+
+#DOPBSP-get-started ul li a .dopbsp-icon{
+    background-image: url('../images/sprite.png');
+    display: block;
+    float: left; 
+    height: 20px;
+    margin: 0 15px 0 0;
+    width: 20px;
+}
+
+#DOPBSP-get-started ul li a .dopbsp-icon.dopbsp-calendars{
+    background-position: 0 -380px;
+}
+
+#DOPBSP-get-started ul li a .dopbsp-icon.dopbsp-events{
+    background-position: -20px -380px;
+}
+
+#DOPBSP-get-started ul li a .dopbsp-icon.dopbsp-staff{
+    background-position: -40px -380px;
+}
+
+#DOPBSP-get-started ul li a .dopbsp-icon.dopbsp-locations{
+    background-position: -60px -380px;
+}
+
+#DOPBSP-get-started ul li a .dopbsp-icon.dopbsp-reservations{
+    background-position: -80px -380px;
+}
+
+#DOPBSP-get-started ul li a .dopbsp-icon.dopbsp-reviews{
+    background-position: -100px -380px;
+}
+
+#DOPBSP-get-started ul li a:hover{
+    background-color: #464646;
+}
+
+.DOPBSP-pro-tips ul li a .dopbsp-info{
+    background-color: #448aff;
+    border-radius: 5px;
+    color: #ffffff;
+    display: none;
+    font-family: 'Josefin Sans';
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    max-width: 50px;
+    margin: -23px 0px 0 146px;
+    padding: 6px !important;
+    padding-bottom: 4px !important;
+    position: absolute;
+    white-space: normal;
+    z-index: 1000000;
+}
+
+.DOPBSP-pro-tips ul li a .dopbsp-info .dopbsp-pro{
+    font-family: Tahoma;
+    font-weight: bold;
+}
+
+.DOPBSP-pro-tips ul li a:hover .dopbsp-info{
+    display: block;
+}
+/*
+ * ************************************************************ End get started.
+ */
+
+/*
+ * ********************************************************* Begin more actions.
+ */
+#DOPBSP-more-actions{
+    width: 70%;
+}
+
+#DOPBSP-more-actions ul{
+    margin: 20px 0 -5px 0;
+    overflow: hidden;
+}
+
+#DOPBSP-more-actions ul li{
+    float: left;
+    margin: 0 5px 5px 0 !important;
+    overflow: hidden;
+    padding: 0 !important;
+    width: 220px;
+}
+
+#DOPBSP-more-actions ul li a{
+    background-color: #acacac;
+    color: #ffffff;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 !important;
+    overflow: hidden;
+    padding: 10px 15px !important;
+    text-decoration: none;
+    width: 300px;
+    -webkit-transition: background-color 600ms linear;
+    -moz-transition: background-color 600ms linear;
+    -o-transition: background-color 600ms linear;
+    transition: background-color 600ms linear;
+}
+
+#DOPBSP-more-actions ul li a.dopbsp-important{
+    background-color: #ff6300;
+}
+
+#DOPBSP-more-actions ul li a .dopbsp-icon{
+    background-image: url('../images/sprite.png');
+    display: block;
+    float: left; 
+    height: 20px;
+    margin: 0 15px 0 0;
+    width: 20px;
+}
+
+#DOPBSP-more-actions ul li a .dopbsp-icon.dopbsp-addons{
+    background-position: -120px -380px;
+}
+
+#DOPBSP-more-actions ul li a .dopbsp-icon.dopbsp-coupons{
+    background-position: -140px -380px;
+}
+
+#DOPBSP-more-actions ul li a .dopbsp-icon.dopbsp-discounts{
+    background-position: -160px -380px;
+}
+
+#DOPBSP-more-actions ul li a .dopbsp-icon.dopbsp-emails{
+    background-position: -180px -380px;
+}
+
+#DOPBSP-more-actions ul li a .dopbsp-icon.dopbsp-extras{
+    background-position: -200px -380px;
+}
+
+#DOPBSP-more-actions ul li a .dopbsp-icon.dopbsp-forms{
+    background-position: -220px -380px;
+}
+
+#DOPBSP-more-actions ul li a .dopbsp-icon.dopbsp-rules{
+    background-position: -240px -380px;
+}
+
+#DOPBSP-more-actions ul li a .dopbsp-icon.dopbsp-search{
+    background-position: -260px -380px;
+}
+
+#DOPBSP-more-actions ul li a .dopbsp-icon.dopbsp-fees{
+    background-position: -280px -380px;
+}
+
+#DOPBSP-more-actions ul li a .dopbsp-icon.dopbsp-templates{
+    background-position: -300px -380px;
+}
+
+#DOPBSP-more-actions ul li a .dopbsp-icon.dopbsp-settings{
+    background-position: -320px -380px;
+}
+
+#DOPBSP-more-actions ul li a .dopbsp-icon.dopbsp-translation{
+    background-position: -340px -380px;
+}
+
+#DOPBSP-more-actions ul li a .dopbsp-icon.dopbsp-themes{
+    background-position: -360px -380px;
+}
+
+#DOPBSP-more-actions ul li a .dopbsp-icon.dopbsp-tools{
+    background-position: -380px -380px;
+}
+
+#DOPBSP-more-actions ul li a:hover{
+    background-color: #464646;
+}
+/*
+ * *********************************************************** End more actions.
+ */
+
+/*
+ * ********************************************************** Begin server info.
+ */
+#DOPBSP-server col:first-child{
+    width: 70%;
+}
+
+#DOPBSP-server td{
+    text-align: center;
+}
+
+#DOPBSP-server td:first-child{
+    text-align: left;
+}
+
+#DOPBSP-server td .dopbsp-icon{
+    float: none;
+    margin: -10px auto;
+}
+/*
+ * ************************************************************ End server info.
+ */
+
+/*
+ * ***************************************************************************** Begin responsive.
+ */
+/*
+ * Get started.
+ */
+.DOPBSP-admin.dopbsp-tablet #DOPBSP-get-started,
+.DOPBSP-admin.dopbsp-phone #DOPBSP-get-started{
+    margin: 20px 0 15px 0;
+    width: 100%;
+}
+
+/*
+ * More actions.
+ */
+.DOPBSP-admin.dopbsp-tablet #DOPBSP-more-actions,
+.DOPBSP-admin.dopbsp-phone #DOPBSP-more-actions{
+    width: 100%;
+}
+
+/*
+ * Server info.
+ */
+.DOPBSP-admin.dopbsp-phone  #DOPBSP-server col:first-child{
+    width: 40%;
+}
+
+.DOPBSP-admin.dopbsp-phone  #DOPBSP-server td:first-child{
+    overflow: hidden;
+}
+
+.DOPBSP-admin.dopbsp-responsive-hidden #DOPBSP-server{
+    display: none;
+}
+/*
+ * ***************************************************************************** End responsive.
+ */
+
+/*
+ * ***************************************************************************** Begin retina.
+ */
+@media (-webkit-min-device-pixel-ratio: 2), 
+       (min-resolution: 192dpi){ 
+    #DOPBSP-get-started ul li a .dopbsp-icon,
+    #DOPBSP-more-actions ul li a .dopbsp-icon,
+    #DOPBSP-server td .dopbsp-icon{
+        background-image: url('../images/sprite-retina.png') !important;
+        background-size: 600px 500px !important;
+    }
+}
+/*
+ * ***************************************************************************** End retina.
+ */
+/*
+ * ***************************************************************************** End dashboard.
+ */
