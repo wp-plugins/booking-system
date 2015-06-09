@@ -1,4 +1,4 @@
-=== Booking System (Booking Calendar) ===
+=== Booking System (Booking Calendar + WooCommerce) ===
 Contributors: DOTonPAPER
 Donate link: http://www.dopdemo.net/wp/booking-system
 Tags: accommodations, admin, administration, ajax, appointment, availability, availability calendar, book, bookable, bookable events, boking, booking, booking calendar, booking form, booking module, booking plugin, booking system, bookings, calendar, event, event calendar, events, hotel, hotel booking, hotel rooms, jquery, management, meeting, meeting scheduling, organizer, payment, paypal, plugin, rent, rental, reservation, reservation calendar, reservation plugin, reservation system, schedule, schedule calendar, schedule system, scheduling, service, to book, villa booking
@@ -12,7 +12,7 @@ This Plugin will help you to easily create a booking/reservation system into you
 
 == Description ==
 
-View live demo of Booking System Front End [here](http://dopdemo.net/wp/booking-system/).
+View live demo of Booking System Front End [here](http://wordpressbooking.systems/).
 
 This Plugin will help you to easily create a booking/reservation system into your WordPress website or blog. The Booking System will display a calendar for users to see availability and book dates and hours.
 
@@ -81,7 +81,7 @@ If you want new features or functionalities in the Booking System drop us a line
 
 * PayPal (credit card supported)
 
-**View complete [List of Features](http://dopdemo.net/wp/booking-system/features/)**
+**View complete [List of Features](http://wordpressbooking.systems/features/)**
 
 == Installation ==
 
