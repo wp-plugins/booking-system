@@ -398,6 +398,5 @@ View [demo](http://dopdemo.net/wp/booking-system/) here.
 * Initial release.
 
 == Upgrade Notice ==
-
 = 2.0 =
-* Calendar sidebar widget CSS has been repaired.
+Calendar sidebar widget CSS has been repaired.
