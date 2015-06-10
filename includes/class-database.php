@@ -1104,8 +1104,8 @@
                             $newJSONData->bind = intval($newJSONData->bind);
                             $newJSONData->price = floatval($newJSONData->price);
                             $newJSONData->promo = floatval($newJSONData->promo);
-                            $newJSONData->info_info = [];
-                            $newJSONData->info_body = [];
+                            $newJSONData->info_info = array();
+                            $newJSONData->info_body = array();
 
 
                             $hours = $newJSONData->hours;
