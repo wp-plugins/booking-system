@@ -95,7 +95,7 @@ Click [here](http://help.dotonpaper.net/booking-system-wordpress-plugin.html#faq
 
 == Screenshots ==
 
-View [demo](http://dopdemo.net/wp/booking-system/) here.
+View [demo](http://wordpressbooking.systems/) here.
 
 == Changelog ==
 
