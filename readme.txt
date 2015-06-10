@@ -3,8 +3,8 @@ Contributors: DOTonPAPER
 Donate link: http://www.dopdemo.net/wp/booking-system
 Tags: accommodations, admin, administration, ajax, appointment, availability, availability calendar, book, bookable, bookable events, boking, booking, booking calendar, booking form, booking module, booking plugin, booking system, bookings, calendar, event, event calendar, events, hotel, hotel booking, hotel rooms, jquery, management, meeting, meeting scheduling, organizer, payment, paypal, plugin, rent, rental, reservation, reservation calendar, reservation plugin, reservation system, schedule, schedule calendar, schedule system, scheduling, service, to book, villa booking
 Requires at least: 3.5
-Tested up to: 4.2.2
-Stable tag: trunk
+Tested up to: 4.2
+Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -677,26 +677,3 @@ View [demo](http://dopdemo.net/wp/booking-system/) here.
 * Touch devices navigation has been enabled.
 * You can translate the sidebar datepicker.
 * You can use PayPal credit card payment, for booking requests.
-
-= 1.4 =
-* Security fixes.
-
-= 1.3.1 =
-* TinyMCE shortcodes bug fixed.
-
-= 1.3 =
-* Security fixes.
-* 3.9 compatibilities fixed.
-
-= 1.2 =
-* Localhost bugs fixed.
-
-= 1.1 =
-* Access-Control-Allow-Origin Buster bug fixed.
-* French Translation updated thanks to Asselin de Beauville Christophe - http://gegeek.net/
-* German Translation updated thanks to Dieter Pfenning - dieter.pfenning@winball.de
-* Polish Translation updated thanks to Kwasniewski Krzysztof - http://etechnologie.pl
-* Small fixes.
-
-= 1.0 =
-* Initial release.
