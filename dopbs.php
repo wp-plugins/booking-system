@@ -323,10 +323,8 @@ Change log:
 	
 		* Initial release of Booking System (WordPress Plugin).
 		
-Installation: Upload the folder dopbsp from the zip file to "wp-content/plugins/" and activate the plugin in your admin panel or upload dopbsp.zip in the "Add new" section.
+Installation: Upload the folder booking-system from the zip file to "wp-content/plugins/" and activate the plugin in your admin panel or upload booking-system.zip in the "Add new" section.
 */
-
-    // ini_set('error_reporting', version_compare(PHP_VERSION,5,'>=') && version_compare(PHP_VERSION,6,'<') ? E_ALL^E_STRICT^E_NOTICE^E_WARNING:E_ALL^E_NOTICE^E_WARNING);
 
     /*
      * Constants

@@ -398,8 +398,6 @@ View [demo](http://dopdemo.net/wp/booking-system/) here.
 * Initial release.
 
 == Upgrade Notice ==
-
-
 = 2.0 =
 * "Add-ons" added. Increase and improve functionalities.
 * "Themes" added. A collection of themes specially created for the booking system.
@@ -677,26 +675,3 @@ View [demo](http://dopdemo.net/wp/booking-system/) here.
 * Touch devices navigation has been enabled.
 * You can translate the sidebar datepicker.
 * You can use PayPal credit card payment, for booking requests.
-
-= 1.4 =
-* Security fixes.
-
-= 1.3.1 =
-* TinyMCE shortcodes bug fixed.
-
-= 1.3 =
-* Security fixes.
-* 3.9 compatibilities fixed.
-
-= 1.2 =
-* Localhost bugs fixed.
-
-= 1.1 =
-* Access-Control-Allow-Origin Buster bug fixed.
-* French Translation updated thanks to Asselin de Beauville Christophe - http://gegeek.net/
-* German Translation updated thanks to Dieter Pfenning - dieter.pfenning@winball.de
-* Polish Translation updated thanks to Kwasniewski Krzysztof - http://etechnologie.pl
-* Small fixes.
-
-= 1.0 =
-* Initial release.
