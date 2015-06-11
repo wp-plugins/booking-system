@@ -3,7 +3,6 @@
 /*
 * Title                   : Booking System (WordPress Plugin)
 * File                    : config.php
-* File Version            : 1.1.8
 * Created / Last Modified : 16 January 2015
 * Author                  : Dot on Paper
 * Copyright               : © 2012 Dot on Paper
