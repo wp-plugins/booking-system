@@ -2,7 +2,7 @@
 Contributors: DOTonPAPER
 Donate link: http://www.dopdemo.net/wp/booking-system
 Tags: accommodations, admin, administration, ajax, appointment, availability, availability calendar, book, bookable, bookable events, boking, booking, booking calendar, booking form, booking module, booking plugin, booking system, bookings, calendar, event, event calendar, events, hotel, hotel booking, hotel rooms, jquery, management, meeting, meeting scheduling, organizer, payment, paypal, plugin, rent, rental, reservation, reservation calendar, reservation plugin, reservation system, schedule, schedule calendar, schedule system, scheduling, service, to book, villa booking
-Requires at least: 3.3
+Requires at least: 3.5
 Tested up to: 4.2
 Stable tag: 2.0
 License: GPLv2 or later
