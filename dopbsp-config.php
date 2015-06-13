@@ -1,15 +1,5 @@
 <?php
 
-/*
-* Title                   : Booking System (WordPress Plugin)
-* File                    : config.php
-* Created / Last Modified : 16 January 2015
-* Author                  : Dot on Paper
-* Copyright               : © 2012 Dot on Paper
-* Website                 : http://www.dotonpaper.net
-* Description             : Booking System configuration file.
-*/
-
 // ***************************************************************************** Begin general defaults.
 
     define('DOPBSP_CONFIG_INIT_DATABASE', false); // Set to "true" if you want to update database structure at each action.
