@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Booking System (+WooCommerce)
-Version: 1.4
+Version: 2.0
 Plugin URI: https://wordpress.org/plugins/booking-system/
 Description: Transform your WordPress website into a booking/reservation system. If you like this plugin, feel free to rate it five stars at <a href="https://wordpress.org/support/view/plugin-reviews/booking-system" target="_blank">Wordpress</a> in Reviews section. If you encounter any problems please do not give a low rating but <a href="https://wordpress.org/support/plugin/booking-system" target="_blank">visit</a> our <a href="https://wordpress.org/support/plugin/booking-system" target="_blank">Support</a> first so we can help you.
 Author: Dot on Paper
