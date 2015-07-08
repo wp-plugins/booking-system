@@ -29,6 +29,7 @@
                 add_filter('dopbsp_filter_default_settings_calendar', array(&$this, 'setCalendar'), 9);
                 add_filter('dopbsp_filter_default_settings_notifications', array(&$this, 'setNotifications'), 9);
                 add_filter('dopbsp_filter_default_settings_payment', array(&$this, 'setPayment'), 9);
+                add_filter('dopbsp_filter_default_settings_global', array(&$this, 'setGlobal'), 9);
                 
                 add_action('init', array(&$this, 'init'));
             }
@@ -445,6 +446,19 @@
                                          'paypal_redirect' => '');
                 
                 return $default_payment;
+            }
+            
+            /*
+             * Set default global settings.
+             * 
+             * @param default_global (array): default global options values
+             * 
+             * @return default global settings array
+             */
+            function setGlobal($default_global){
+                $default_global = array('api_key' => 'D0PBSPAP1');
+                
+                return $default_global;
             }
         }
     }

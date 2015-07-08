@@ -50,6 +50,28 @@
                 }
 ?>
                 </ul>    
+                <script type="text/javascript">
+                    var DOPBSPMaxReservations = <?php echo $args['noReservations']; ?>,
+                        DOPBSPReservationsPerPage = <?php echo $_COOKIE['DOPBSP_reservations_per_page']; ?>,
+                        DOPBSPMaxPage = Math.round(DOPBSPMaxReservations/DOPBSPReservationsPerPage);
+                
+                        // Reinit Select
+                        if(jQuery('#DOPSelect-DOPBSP-reservations-page').html() === undefined) {
+                        
+                            jQuery('#DOPBSP-reservations-page').html('');
+
+                            for(var i = 1; i<= DOPBSPMaxPage; i++) {
+
+                                if(i < 2) {
+                                    jQuery('#DOPBSP-reservations-page').append('<option value="'+i+'" selected="selected">'+i+'</option>');
+                                } else {
+                                    jQuery('#DOPBSP-reservations-page').append('<option value="'+i+'">'+i+'</option>');
+                                }
+                            }
+
+                            jQuery('#DOPBSP-reservations-page').DOPSelect();
+                        }
+                </script>    
 <?php
             }
         }

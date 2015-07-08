@@ -58,6 +58,10 @@
                             </div>
                             <div class="dopbsp-column-content">
                                 <ul>
+                                    <li class="dopbsp-settings-item dopbsp-settings" onclick="DOPBSPSettings.displaySettings(0)">
+                                        <div class="dopbsp-icon"></div>
+                                        <div class="dopbsp-title"><?php echo $DOPBSP->text('SETTINGS_GENERAL_TITLE'); ?></div>
+                                    </li>
                                     <li class="dopbsp-settings-item dopbsp-licenses" onclick="DOPBSPSettingsLicenses.display(0)">
                                         <div class="dopbsp-icon"></div>
                                         <div class="dopbsp-title"><?php echo $DOPBSP->text('SETTINGS_LICENSES_TITLE'); ?></div>
@@ -65,10 +69,6 @@
 <?php
                 if (DOPBSP_DEVELOPMENT_MODE){
 ?>
-                                    <li class="dopbsp-settings-item dopbsp-settings" onclick="DOPBSPSettings.displaySettings(0)">
-                                        <div class="dopbsp-icon"></div>
-                                        <div class="dopbsp-title"><?php echo $DOPBSP->text('SETTINGS_GENERAL_TITLE'); ?></div>
-                                    </li>
                                     <li class="dopbsp-settings-item dopbsp-calendars" onclick="DOPBSPSettingsCalendar.display(0)">
                                         <div class="dopbsp-icon"></div>
                                         <div class="dopbsp-title"><?php echo $DOPBSP->text('SETTINGS_CALENDAR_TITLE'); ?></div>

@@ -208,7 +208,8 @@
                                                                      'enabled' => $woocommerce == 'true' ? true:false,
                                                                      'product_id' => $woocommerce_product_id),
                                                      'text' => array('none' => $DOPBSP->text('WOOCOMMERCE_PRODUCT_NONE'),
-                                                                     'reservation' => $DOPBSP->text('WOOCOMMERCE_PRODUCT_RESERVATION'))));
+                                                                     'reservation' => $DOPBSP->text('WOOCOMMERCE_PRODUCT_RESERVATION'),
+                                                                     'addToCart' => $DOPBSP->text('WOOCOMMERCE_ADD_TO_CART'))));
                 
                 return json_encode($data);
             }

@@ -163,8 +163,9 @@
                 /*
                  * ************************************************************* Get number of reservations.
                  */
+//                echo implode('', $query); die();
                 $reservations = $wpdb->get_results(implode('', $query));
-
+                
                 echo $wpdb->num_rows.';;;;;;;;;;;';
 
                 /*
@@ -175,9 +176,11 @@
                 /*
                  * ************************************************************* Get reservations.
                  */
-                $reservations = $wpdb->get_results(implode('', $query));
+                $noReservationsData = explode(' LIMIT',implode('', $query));
+                $noReservations = $wpdb->get_var(str_replace('*','COUNT(*)',$noReservationsData[0]));
                      
-                $DOPBSP->views->backend_reservations_list->template(array('reservations' => $reservations));
+                $DOPBSP->views->backend_reservations_list->template(array('reservations' => $reservations,
+                                                                          'noReservations' => $noReservations));
                 
             	die();
             }

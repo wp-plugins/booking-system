@@ -64,6 +64,14 @@
 ?>
                 </div>
 <?php
+                if (current_user_can( 'manage_options' )) {
+?>
+                    <div class="dopbsp-inputs-header dopbsp-hide">
+                        <h3>If you need more payment options please visit the <a href="?page=dopbsp-addons" style="cursor:pointer">add-ons section</a>.</h3>
+                    </div>
+<?php
+                }
+                
                 $this->templateAddressBilling($settings_payment);
                 $this->templateAddressShipping($settings_payment);
 /*

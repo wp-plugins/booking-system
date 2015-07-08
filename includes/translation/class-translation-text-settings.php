@@ -69,6 +69,9 @@
                 array_push($text, array('key' => 'SETTINGS_GENERAL_TITLE',
                                         'parent' => 'PARENT_SETTINGS',
                                         'text' => 'General settings'));
+                array_push($text, array('key' => 'SETTINGS_GENERAL_API_KEY',
+                                        'parent' => 'PARENT_SETTINGS',
+                                        'text' => 'Api Key'));
                 
                 return $text;
             }
@@ -88,6 +91,9 @@
                 array_push($text, array('key' => 'SETTINGS_HELP',
                                         'parent' => 'PARENT_SETTINGS_HELP',
                                         'text' => 'Edit booking system settings.'));
+                array_push($text, array('key' => 'SETTINGS_GENERAL_API_KEY_HELP',
+                                        'parent' => 'PARENT_SETTINGS_HELP',
+                                        'text' => 'Set your api key'));
                 
                 return $text;
             }

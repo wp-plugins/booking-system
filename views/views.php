@@ -257,6 +257,8 @@
                  */
                 array_push($this->views, array('key' => 'backend_settings',
                                                'name' => 'DOPBSPViewsBackEndSettings'));
+                array_push($this->views, array('key' => 'backend_settings_general',
+                                               'name' => 'DOPBSPViewsBackEndSettingsGeneral'));
                 array_push($this->views, array('key' => 'backend_settings_calendar',
                                                'name' => 'DOPBSPViewsBackEndSettingsCalendar'));
                 array_push($this->views, array('key' => 'backend_settings_notifications',

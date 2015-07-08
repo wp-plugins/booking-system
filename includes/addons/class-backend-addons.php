@@ -37,7 +37,11 @@
             function display(){
                 global $DOPBSP;
                 
-                $json = file_get_contents('http://wordpressbooking.systems/api/?data=addons');
+                if (function_exists('curl_init')) {
+                    $json = $this->file_get_contents_curl('http://wordpressbooking.systems/api/?data=addons');
+                } else {
+                    $json = file_get_contents('http://wordpressbooking.systems/api/?data=addons');
+                }
                 
                 if ($json === false){
                     echo 'error';
@@ -51,6 +55,14 @@
                 }
                 
                 die();
+            }
+        
+            function file_get_contents_curl($url){
+                curl_setopt($ch=curl_init(), CURLOPT_URL, $url);
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+                $response = curl_exec($ch);
+                curl_close($ch);
+                return $response;
             }
         }
     }

@@ -31,6 +31,21 @@ var DOPBSPSettings = new function(){
     };
     
     /*
+     * Display general settings.
+     */
+    this.displaySettings = function(id){
+        DOPBSP.toggleMessages('active', DOPBSP.text('MESSAGES_LOADING'));
+        DOPBSPSettings.toggle('settings');
+
+        $.post(ajaxurl, {action: 'dopbsp_settings_general_display'}, function(data){
+            DOPBSP.toggleMessages('success', DOPBSP.text('MESSAGES_LOADING_SUCCESS'));
+            $('#DOPBSP-column2 .dopbsp-column-content').html(data);
+        }).fail(function(data){
+            DOPBSP.toggleMessages('error', data.status+': '+data.statusText);
+        });
+    };
+    
+    /*
      * Set settings.
      * 
      * @param settingsType (String): settings type
@@ -206,7 +221,7 @@ var DOPBSPSettings = new function(){
          */
         DOPBSP.clearColumns(3);
         $('#DOPBSP-column2 .dopbsp-column-content').html('');
-
+        
         button = button === 'calendars' || button === 'searches' ? 'settings':button;
         
         if (button === 'calendar'){
@@ -230,6 +245,7 @@ var DOPBSPSettings = new function(){
         $('#DOPBSP-column2 .dopbsp-button.dopbsp-calendar').removeClass('dopbsp-selected');
         $('#DOPBSP-column2 .dopbsp-button.dopbsp-search').removeClass('dopbsp-selected');
         $('#DOPBSP-column2 .dopbsp-button.dopbsp-license-keys').removeClass('dopbsp-selected');
+        $('#DOPBSP-column1 .dopbsp-settings-item.dopbsp-settings').removeClass('dopbsp-selected');
         $('#DOPBSP-column2 .dopbsp-button.dopbsp-settings').removeClass('dopbsp-selected');
         $('#DOPBSP-column2 .dopbsp-button.dopbsp-notifications').removeClass('dopbsp-selected');
         $('#DOPBSP-column2 .dopbsp-button.dopbsp-payments').removeClass('dopbsp-selected');

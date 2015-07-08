@@ -314,6 +314,7 @@
                                                 'options' => '1',
                                                 'options_values' => '1',
                                                 'container_class' => '',
+                                                'dop_select' => false,
                                                 'input_class' => 'dopbsp-small'));
                 /*
                  * Per page.
@@ -451,6 +452,7 @@
                 $options_values = $args['options_values'];
                 $container_class = isset($args['container_class']) ? $args['container_class']:'';
                 $input_class = isset($args['input_class']) ? $args['input_class']:'';
+                $dop_select = isset($args['dop_select']) ? $args['dop_select']:true;
                 
                 $html = array();
                 $options_data = explode(';;', $options);
@@ -469,7 +471,10 @@
                     }
                 }
                 array_push($html, '     </select>');
-                array_push($html, '     <script type="text/JavaScript">jQuery(\'#DOPBSP-reservations-'.$id.'\').DOPSelect();</script>');
+                
+                if($dop_select === true) {
+                    array_push($html, '     <script type="text/JavaScript">jQuery(\'#DOPBSP-reservations-'.$id.'\').DOPSelect();</script>');
+                }
                 array_push($html, '     <a href="'.DOPBSP_CONFIG_HELP_DOCUMENTATION_URL.'" target="_blank" class="dopbsp-button dopbsp-help"><span class="dopbsp-info dopbsp-help">'.$help.'<br /><br />'.$DOPBSP->text('HELP_VIEW_DOCUMENTATION').'</span></a>');
                 array_push($html, ' </div>');
                 

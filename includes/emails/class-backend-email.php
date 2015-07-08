@@ -63,15 +63,6 @@
                                                                    1, $template));
                 }
                 
-                
-                $DOPBSP_db_debug = get_option('DOPBSP_db_debug');
-                
-                if (!isset($DOPBSP_db_debug)) {
-                    add_option('DOPBSP_db_debug',json_encode($settings_notifications->templates));
-                } else {
-                    update_option('DOPBSP_db_debug',json_encode($settings_notifications->templates));
-                }
-                
                 return $template_data;
             }
             

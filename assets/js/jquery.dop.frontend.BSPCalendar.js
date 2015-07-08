@@ -246,7 +246,8 @@
                     "woocommerce": {"data": {"enabled": false,
                                              "product_id": 0},
                                     "text": {"none": "No reservation",
-                                             "reservation": "Reservation"}}},
+                                             "reservation": "Reservation",
+                                             "addToCart": "Add to cart"}}},
         ajaxURL = '',
         Container = this,
         ID = 0,
@@ -5280,7 +5281,7 @@
                         || (methods_woocommerce.data['enabled']
                                 && methods_woocommerce.data['add_to_cart'])){
                     HTML.push('     <div class="dopbsp-input-wrapper dopbsp-add-to-cart-wrapper">');
-                    HTML.push('         <input type="submit" name="DOPBSPCalendar-add-to-cart'+ID+'" id="DOPBSPCalendar-add-to-cart'+ID+'" value="Add to cart" />');
+                    HTML.push('         <input type="submit" name="DOPBSPCalendar-add-to-cart'+ID+'" id="DOPBSPCalendar-add-to-cart'+ID+'" value="'+methods_woocommerce.text['addToCart']+'" />');
                     HTML.push('     </div>');
                 }
                 HTML.push(' </div>');

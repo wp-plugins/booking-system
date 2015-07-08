@@ -36,7 +36,7 @@
                 $text_group = $_POST['text_group'];
                 
                 if ($text_group == 'all'){
-                    $translation = $wpdb->get_results('SELECT t1.* FROM '.$DOPBSP->tables->translation.'_'.$language.' t1 ORDER BY IF (t1.parent_key="", t1.translation, (SELECT t2.translation FROM '.$DOPBSP->tables->translation.'_'.$language.' t2 WHERE t1.parent_key=t2.key_data)), IF (t1.parent_key="", " ", t1.text_data)  ASC');
+                    $translation = $wpdb->get_results($wpdb->prepare('SELECT t1.* FROM '.$DOPBSP->tables->translation.'_'.$language.' t1 ORDER BY IF (t1.parent_key="", t1.translation, (SELECT t2.translation FROM '.$DOPBSP->tables->translation.'_'.$language.' t2 WHERE t1.parent_key=t2.key_data)), IF (t1.parent_key="", " ", t1.text_data)  ASC'));
                 }
                 else{
                     $translation = $wpdb->get_results($wpdb->prepare('SELECT * FROM '.$DOPBSP->tables->translation.'_'.$language.' WHERE parent_key="%s" OR key_data="%s" ORDER BY IF (parent_key="", " ", text_data) ASC',

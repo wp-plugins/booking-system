@@ -76,6 +76,9 @@
                 array_push($text, array('key' => 'WOOCOMMERCE_VIEW_AVAILABILITY',
                                         'parent' => 'PARENT_WOOCOMMERCE',
                                         'text' => 'View availability'));
+                array_push($text, array('key' => 'WOOCOMMERCE_ADD_TO_CART',
+                                        'parent' => 'PARENT_WOOCOMMERCE',
+                                        'text' => 'Add to cart'));
                 array_push($text, array('key' => 'WOOCOMMERCE_TABS',
                                         'parent' => 'PARENT_WOOCOMMERCE',
                                         'text' => 'Book'));

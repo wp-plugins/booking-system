@@ -298,7 +298,7 @@
                                             email_id BIGINT UNSIGNED DEFAULT ".$this->db_config->emails_translation['email_id']." NOT NULL,
                                             template VARCHAR(64) DEFAULT '".$this->db_config->emails_translation['template']."' COLLATE ".$this->db_collation." NOT NULL,
                                             subject TEXT COLLATE ".$this->db_collation." NOT NULL,
-                                            message TEXT COLLATE ".$this->db_collation." NOT NULL,
+                                            message LONGTEXT COLLATE ".$this->db_collation." NOT NULL,
                                             UNIQUE KEY id (id),
                                             KEY email_id (email_id),
                                             KEY template (template)

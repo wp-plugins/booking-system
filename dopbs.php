@@ -1,17 +1,29 @@
 <?php
 /*
-Plugin Name: Booking System (+WooCommerce)
-Version: 2.0
+Plugin Name: Booking System
+Version: 2.1
 Plugin URI: https://wordpress.org/plugins/booking-system/
 Description: Transform your WordPress website into a booking/reservation system. If you like this plugin, feel free to rate it five stars at <a href="https://wordpress.org/support/view/plugin-reviews/booking-system" target="_blank">Wordpress</a> in Reviews section. If you encounter any problems please do not give a low rating but <a href="https://wordpress.org/support/plugin/booking-system" target="_blank">visit</a> our <a href="https://wordpress.org/support/plugin/booking-system" target="_blank">Support</a> first so we can help you.
 Author: Dot on Paper
 Author URI: http://www.dotonpaper.net
-*/
+ */
 
 /*
 Change log:
 
-        2.0 (2015-03-28)
+        2.1 (2015-06-29)
+
+                * "Add-ons" & "Themes" loading via cUrl method added.
+                * Pagination for Reservations created.
+                * JSON API created.
+                * JSON API: Get All Reservations data from all calendars added.
+                * JSON API: Get All Reservations data from calendar ID added.
+                * JSON API: Get Reservation ID data added.
+                * "Add to cart" text added in translation.
+                * PayPal bugs fixed.
+                * Security bug fixed.
+
+        2.0 (2015-03-28) 
 
                 * "Add-ons" added. Increase and improve functionalities.
                 * "Themes" added. A collection of themes specially created for the booking system.
@@ -325,8 +337,10 @@ Change log:
 	
 		* Initial release of Booking System (WordPress Plugin).
 		
-Installation: Upload the folder booking-system from the zip file to "wp-content/plugins/" and activate the plugin in your admin panel or upload booking-system.zip in the "Add new" section.
+Installation: Upload the folder dopbsp from the zip file to "wp-content/plugins/" and activate the plugin in your admin panel or upload dopbsp.zip in the "Add new" section.
 */
+
+    // ini_set('error_reporting', version_compare(PHP_VERSION,5,'>=') && version_compare(PHP_VERSION,6,'<') ? E_ALL^E_STRICT^E_NOTICE^E_WARNING:E_ALL^E_NOTICE^E_WARNING);
 
     /*
      * Constants
@@ -420,7 +434,8 @@ Installation: Upload the folder booking-system from the zip file to "wp-content/
         include_once 'views/rules/views-backend-rules.php';
         include_once 'views/rules/views-backend-rule.php';
 
-        include_once 'views/settings/views-backend-settings.php';
+        include_once 'views/settings/views-backend-settings.php';   
+        include_once 'views/settings/views-backend-settings-general.php';
         include_once 'views/settings/views-backend-settings-calendar.php';
         include_once 'views/settings/views-backend-settings-notifications.php';
         include_once 'views/settings/views-backend-settings-payment-gateways.php';
@@ -442,6 +457,7 @@ Installation: Upload the folder booking-system from the zip file to "wp-content/
         /*
          * Classes
          */
+        include_once 'includes/class-api.php';
         include_once 'includes/class-backend.php';
         include_once 'includes/class-frontend.php';
 
@@ -530,6 +546,7 @@ Installation: Upload the folder booking-system from the zip file to "wp-content/
         include_once 'includes/rules/class-frontend-rules.php';
 
         include_once 'includes/settings/class-backend-settings.php';
+        include_once 'includes/settings/class-backend-settings-general.php';
         include_once 'includes/settings/class-backend-settings-calendar.php';
         include_once 'includes/settings/class-backend-settings-notifications.php';
         include_once 'includes/settings/class-backend-settings-payment-gateways.php';
@@ -1028,6 +1045,7 @@ Installation: Upload the folder booking-system from the zip file to "wp-content/
                  * Initialize settings classes.
                  */
                 $this->classes->backend_settings = class_exists('DOPBSPBackEndSettings') ? new DOPBSPBackEndSettings():'Class does not exist!';
+                $this->classes->backend_settings_general = class_exists('DOPBSPBackEndSettingsGeneral') ? new DOPBSPBackEndSettingsGeneral():'Class does not exist!';
                 $this->classes->backend_settings_calendar = class_exists('DOPBSPBackEndSettingsCalendar') ? new DOPBSPBackEndSettingsCalendar():'Class does not exist!';
                 $this->classes->backend_settings_licenses = class_exists('DOPBSPBackEndSettingsLicenses') ? new DOPBSPBackEndSettingsLicenses():'Class does not exist!';
                 $this->classes->backend_settings_notifications = class_exists('DOPBSPBackEndSettingsNotifications') ? new DOPBSPBackEndSettingsNotifications():'Class does not exist!';
@@ -1278,6 +1296,7 @@ Installation: Upload the folder booking-system from the zip file to "wp-content/
                 /*
                  * Settings back end AJAX requests.
                  */
+                add_action('wp_ajax_dopbsp_settings_general_display', array(&$this->classes->backend_settings_general, 'display'));
                 add_action('wp_ajax_dopbsp_settings_calendar_display', array(&$this->classes->backend_settings_calendar, 'display'));
                 add_action('wp_ajax_dopbsp_settings_licenses_display', array(&$this->classes->backend_settings_licenses, 'display'));
                 add_action('wp_ajax_dopbsp_settings_licenses_activate', array(&$this->classes->backend_settings_licenses, 'activate'));
@@ -1378,6 +1397,11 @@ Installation: Upload the folder booking-system from the zip file to "wp-content/
             }
         }
         $DOPBSP = new DOPBSP();
+        
+        /*
+         * Initialize api class.
+         */
+        $DOPBSP->classes->api = class_exists('DOPBSPApi') ? new DOPBSPApi():'Class does not exist!';
     }
     
     /*

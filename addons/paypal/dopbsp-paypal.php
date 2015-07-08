@@ -158,6 +158,13 @@
                 $currency_code = $_POST['currency_code'];
                 $payment_method = $_POST['payment_method'];
                 $page_url = $_POST['page_url'];
+                $extra_url = '';
+                
+                if (strpos($page_url, '#') !== false) {
+                    	$page_url_piecesNew = explode('#',$page_url);
+			$page_url = $page_url_piecesNew[0];
+                        $extra_url = $page_url_piecesNew[1];
+                }
                 
                 /*
                  * If selected payment method is PayPal access express checkout API.
@@ -166,7 +173,8 @@
                     $this->set();
                     $this->expressCheckOut($language,
                                            $currency_code,
-                                           $page_url);
+                                           $page_url,
+                                           $extra_url);
                 }
             }
             
@@ -187,14 +195,19 @@
                 
                 if (isset($_GET['dopbsp_payment_gateway'])
                         && $_GET['dopbsp_payment_gateway'] == 'paypal'){
+                    $extra_url = $_GET['extra_url'];
                     $pay_action = $_GET['dopbsp_pay_action'];
                     $token = $_GET['dopbsp_token'];
+                    
+                    if($extra_url != '') {
+                        $extra_url = '#'.$extra_url;
+                    }
                     
                     /*
                      * Remove get variables from url.
                      */
                     $page_url = (isset($_SERVER['HTTPS']) ? 'https://':'http://').$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-                    $page_url_pieces =  explode((strpos($page_url, '?dopbsp_pay_action') !== false ? '?':'&').'dopbsp_pay_action', $page_url);
+                    $page_url_pieces =  explode((strpos($page_url, '?dopbsp_pay_action') !== false ? '?':'&').'dopbsp_pay_action', $page_url.$extra_url);
 
                     $this->set();
                     
@@ -241,7 +254,7 @@
                             /*
                              * Redirect to success page.
                              */
-                            header('Location: '.($this->redirect != '' ? $this->redirect:$page_url_pieces[0].(strpos($page_url_pieces[0], '?') !== false ? '&':'?').'dopbsp_payment_success=paypal'));
+                            header('Location: '.($this->redirect != '' ? $this->redirect:$page_url_pieces[0].(strpos($page_url_pieces[0], '?') !== false ? '&':'?').'dopbsp_payment_success=paypal'));  die();
                         }
                         else{
                             /*
@@ -252,7 +265,7 @@
                             /*
                              * Redirect to error page.
                              */
-                            header('Location: '.$page_url_pieces[0].(strpos($page_url_pieces[0], '?') !== false ? '&':'?').'dopbsp_payment_error=paypal');
+                            header('Location: '.$page_url_pieces[0].(strpos($page_url_pieces[0], '?') !== false ? '&':'?').'dopbsp_payment_error=paypal'); die();
                         }
                     }
                     else{
@@ -264,7 +277,7 @@
                         /*
                          * Redirect to cancel page.
                          */
-                        header('Location: '.$page_url_pieces[0].(strpos($page_url_pieces[0], '?') !== false ? '&':'?').'dopbsp_payment_cancel=paypal');
+                        header('Location: '.$page_url_pieces[0].(strpos($page_url_pieces[0], '?') !== false ? '&':'?').'dopbsp_payment_cancel=paypal'); die();
                     }
                 }
             }
